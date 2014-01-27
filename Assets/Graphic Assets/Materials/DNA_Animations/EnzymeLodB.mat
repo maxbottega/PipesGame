@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: EnzymeLodB
+  m_Shader: {fileID: 4800000, guid: 703ba0096f3b01542a4cdb365a530900, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 9691a46188c78f745a0dc28bb390565c, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 36f31ec538273924885fdd99f8a3e7ec, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 9691a46188c78f745a0dc28bb390565c, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: .552238822
+      data:
+        first:
+          name: _Shininess
+        second: .249320999
+      data:
+        first:
+          name: _RimPower
+        second: 1.24000001
+      data:
+        first:
+          name: _RimStr
+        second: .5
+      data:
+        first:
+          name: _Emission
+        second: 0
+      data:
+        first:
+          name: _Fresnel
+        second: 1
+      data:
+        first:
+          name: _Spec
+        second: 1
+      data:
+        first:
+          name: _RimA
+        second: .701791048
+      data:
+        first:
+          name: _Trans
+        second: 3.72000003
+      data:
+        first:
+          name: _speedX
+        second: 0
+      data:
+        first:
+          name: _speedY
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: .25373137, b: .582507014, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _RimColor
+        second: {r: 1, g: 1, b: 1, a: 0}
+      data:
+        first:
+          name: _Emission
+        second: {r: 0, g: 0, b: 0, a: 0}

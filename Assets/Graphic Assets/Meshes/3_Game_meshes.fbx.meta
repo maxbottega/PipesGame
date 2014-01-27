@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: dcfb6adc1c86e7c4a9e0dba0f7c3e1ab
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: ' Regulator_45?'
+    100002: ' Regulator_65?'
+    100004: //RootNode
+    100006: Boiler
+    100008: Casa
+    100010: Connector
+    100012: Connectors
+    100014: Group Locator
+    100016: 'Group Locator '
+    100018: I_
+    100020: L
+    100022: 'Mesh '
+    100024: Pavement_heating
+    100026: Pezzo1
+    100028: 'Pezzo1 '
+    100030: 'Pezzo1  '
+    100032: Pezzo1   1
+    100034: Pezzo1   2
+    100036: Pezzo1  1
+    100038: Pipe_curve_large
+    100040: Pipe_curve_mid
+    100042: Pipe_curve_small
+    100044: Pipe_sec_linear
+    100046: Pipe_T_junction
+    100048: Pump
+    100050: Radiator
+    100052: 'Radiator '
+    400000: ' Regulator_45?'
+    400002: ' Regulator_65?'
+    400004: //RootNode
+    400006: Boiler
+    400008: Casa
+    400010: Connector
+    400012: Connectors
+    400014: Group Locator
+    400016: 'Group Locator '
+    400018: I_
+    400020: L
+    400022: 'Mesh '
+    400024: Pavement_heating
+    400026: Pezzo1
+    400028: 'Pezzo1 '
+    400030: 'Pezzo1  '
+    400032: Pezzo1   1
+    400034: Pezzo1   2
+    400036: Pezzo1  1
+    400038: Pipe_curve_large
+    400040: Pipe_curve_mid
+    400042: Pipe_curve_small
+    400044: Pipe_sec_linear
+    400046: Pipe_T_junction
+    400048: Pump
+    400050: Radiator
+    400052: 'Radiator '
+    2300000: ' Regulator_45?'
+    2300002: ' Regulator_65?'
+    2300004: Boiler
+    2300006: Casa
+    2300008: Connector
+    2300010: Connectors
+    2300012: I_
+    2300014: L
+    2300016: 'Mesh '
+    2300018: Pavement_heating
+    2300020: Pezzo1
+    2300022: 'Pezzo1 '
+    2300024: 'Pezzo1  '
+    2300026: Pezzo1   1
+    2300028: Pezzo1   2
+    2300030: Pezzo1  1
+    2300032: Pipe_curve_large
+    2300034: Pipe_curve_mid
+    2300036: Pipe_curve_small
+    2300038: Pipe_sec_linear
+    2300040: Pipe_T_junction
+    2300042: Pump
+    2300044: Radiator
+    2300046: 'Radiator '
+    3300000: ' Regulator_45?'
+    3300002: ' Regulator_65?'
+    3300004: Boiler
+    3300006: Casa
+    3300008: Connector
+    3300010: Connectors
+    3300012: I_
+    3300014: L
+    3300016: 'Mesh '
+    3300018: Pavement_heating
+    3300020: Pezzo1
+    3300022: 'Pezzo1 '
+    3300024: 'Pezzo1  '
+    3300026: Pezzo1   1
+    3300028: Pezzo1   2
+    3300030: Pezzo1  1
+    3300032: Pipe_curve_large
+    3300034: Pipe_curve_mid
+    3300036: Pipe_curve_small
+    3300038: Pipe_sec_linear
+    3300040: Pipe_T_junction
+    3300042: Pump
+    3300044: Radiator
+    3300046: 'Radiator '
+    4300000: 'Mesh '
+    4300002: L
+    4300004: Casa
+    4300006: Radiator
+    4300008: Pezzo1
+    4300010: 'Pezzo1 '
+    4300012: 'Pezzo1  '
+    4300014: 'Pezzo1  '
+    4300016: 'Pezzo1  '
+    4300018: Pipe_sec_linear
+    4300020: Pipe_curve_small
+    4300022: Pipe_curve_large
+    4300024: Pipe_curve_mid
+    4300026: Pipe_T_junction
+    4300028: Pump
+    4300030: ' Regulator_65?'
+    4300032: ' Regulator_45?'
+    4300034: Connector
+    4300036: Pavement_heating
+    4300038: 'Pezzo1 '
+    4300040: Connectors
+    4300042: I_
+    4300044: Boiler
+    4300046: 'Radiator '
+    7400000: modo_Anim
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

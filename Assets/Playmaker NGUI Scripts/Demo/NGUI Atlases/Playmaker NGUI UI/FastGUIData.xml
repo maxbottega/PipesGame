@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psd width="800" height="600">
+<layer type='SPRITE'> 
+        <name>Background</name>
+        <path></path>
+        <posX>400</posX>
+        <posY>300</posY>
+        <source>Background.png</source>
+        <layerID>4</layerID>
+</layer> 
+<layer type='IMAGEBUTTON'> 
+        <name>ibtn_ChangeText</name>
+        <path></path>
+        <posX>655.5</posX>
+        <posY>65</posY>
+        <layerID>59</layerID>
+        <states> 
+                <idle>ibtn_ChangeTextidle.png</idle>
+                <hover>ibtn_ChangeText_hover.png</hover>
+                <pressed>ibtn_ChangeText_pressed.png</pressed>
+        </states>
+</layer> 
+<layer type='IMAGEBUTTON'> 
+        <name>ibtn_ClickTest</name>
+        <path></path>
+        <posX>174.5</posX>
+        <posY>268</posY>
+        <layerID>80</layerID>
+        <states> 
+                <idle>ibtn_ClickTestidle.png</idle>
+                <hover>ibtn_ClickTest_hover.png</hover>
+                <pressed>ibtn_ClickTest_pressed.png</pressed>
+        </states>
+</layer> 
+<layer type='IMAGEBUTTON'> 
+        <name>ibtn_DisableBtnTest_Enabled</name>
+        <path></path>
+        <posX>655.5</posX>
+        <posY>269</posY>
+        <layerID>94</layerID>
+        <states> 
+                <idle>ibtn_DisableBtnTest_Enabledidle.png</idle>
+                <hover>ibtn_DisableBtnTest_Enabled_hover.png</hover>
+                <pressed>ibtn_DisableBtnTest_Enabled_pressed.png</pressed>
+        </states>
+</layer> 
+<layer type='IMAGEBUTTON'> 
+        <name>ibtn_DisableBtnTest_Disabled</name>
+        <path></path>
+        <posX>655.5</posX>
+        <posY>269</posY>
+        <layerID>108</layerID>
+        <states> 
+                <idle>ibtn_DisableBtnTest_Disabledidle.png</idle>
+                <pressed>ibtn_DisableBtnTest_Disabled_pressed.png</pressed>
+                <hover>ibtn_DisableBtnTest_Disabled_hover.png</hover>
+        </states>
+</layer> 
+<layer type='PROGRESSBAR'> 
+        <name>pgsb_ProgressTest</name>
+        <path></path>
+        <posX>415</posX>
+        <posY>374</posY>
+        <layerID>14</layerID>
+        <states> 
+                <foreground>pgsb_ProgressTest_foreground.png</foreground>
+                <background>pgsb_ProgressTest_background.png</background>
+        </states>
+</layer> 
+<layer type='SLIDER'> 
+        <name>sld_SliderTest</name>
+        <path></path>
+        <posX>415</posX>
+        <posY>475</posY>
+        <layerID>20</layerID>
+        <states> 
+                <thumb>sld_SliderTest_thumb.png</thumb>
+                <foreground>sld_SliderTest_foreground.png</foreground>
+                <background>sld_SliderTest_background.png</background>
+        </states>
+</layer> 
+<layer type='TEXT_LABEL'> 
+        <name>txt_ChangeTextTest</name>
+        <path></path>
+        <posX>281.5</posX>
+        <posY>63.5</posY>
+        <fontName>ChangeTextTest</fontName>
+        <fontSize>36</fontSize>
+        <fontColor>255;255;255</fontColor>
+        <contents>This is some text which can be 
+changed dynamically.</contents>
+        <layerID>46</layerID>
+</layer>
+<layer type='TEXT_LABEL'> 
+        <name>txt_InputTest</name>
+        <path></path>
+        <posX>226.5</posX>
+        <posY>160</posY>
+        <fontName>InputTest</fontName>
+        <fontSize>36</fontSize>
+        <fontColor>241.000502407551;233.159243166447;18.9031515643001</fontColor>
+        <contents>Click to input text here</contents>
+        <layerID>51</layerID>
+</layer>
+</psd>
