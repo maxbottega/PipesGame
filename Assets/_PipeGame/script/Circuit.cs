@@ -6,11 +6,9 @@ namespace PipeGame{
 public class Circuit : TRNTH.MonoBehaviour {
 	public bool refresh=false;
 	public bool isAllWork=false;
-	public Element[] elementOrderList;
-	public Container[] containerOrderList;
-	// public LayerMask layerContainer;
-	// public LayerMask layerGround;
-	// public LayerMask layerElement;
+	internal Element[] elementOrderList;
+	internal Container[] containerOrderList;
+	internal CircuitSet circuitSet;
 	public void check(){
 		foreach(var e in elementOrderList){
 			if(!e)Debug.LogError("Circuit.elementOrderList is not completed");
@@ -31,8 +29,24 @@ public class Circuit : TRNTH.MonoBehaviour {
 				isOkay=false;
 				if(c.element!=null)c.element.status="broken";
 			}
+			switch(e.status){
+			case"work":
+				if(e.workActivate)e.workActivate.SetActive(true);
+				if(e.brokenActivate)e.brokenActivate.SetActive(false);
+				break;
+			case"broken":
+				if(e.workActivate)e.workActivate.SetActive(false);
+				if(e.brokenActivate)e.brokenActivate.SetActive(true);
+				break;
+			default:
+				if(e.workActivate)e.workActivate.SetActive(false);
+				if(e.brokenActivate)e.brokenActivate.SetActive(false);
+				break;
+			}
+			// Debug.Log(e.status);
 		}
 		isAllWork=isOkay;
+		if(circuitSet.successActivate)circuitSet.successActivate.SetActive(isAllWork);
 	}
 	Control control;
 	Element element;
@@ -40,7 +54,7 @@ public class Circuit : TRNTH.MonoBehaviour {
 		control=GetComponent<Control>();
 	}
 	void OnEnable(){
-		if(elementOrderList.Length!=containerOrderList.Length)Debug.LogWarning("elementOrderList.Length!=containerOrderList.Length");
+		// if(elementOrderList.Length!=containerOrderList.Length)Debug.LogWarning("elementOrderList.Length!=containerOrderList.Length");
 	}
 	void Update(){
 		if(control.isHover){
@@ -71,7 +85,7 @@ public class Circuit : TRNTH.MonoBehaviour {
 					}
 					element.container=c;
 					element.pos=c.pos;
-					element.tra.eulerAngles=element.eulerAngles+c.tra.eulerAngles;
+					// element.tra.eulerAngles=element.eulerAngles+c.tra.eulerAngles;
 				}
 				//end
 			}
