@@ -6,6 +6,7 @@ namespace PipeGame{
 public class Circuit : TRNTH.MonoBehaviour {
 	public bool refresh=false;
 	public bool isAllWork=false;
+	public UILabel timeRecord;
 	internal Element[] elementOrderList;
 	internal Container[] containerOrderList;
 	internal CircuitSet circuitSet;
@@ -50,13 +51,18 @@ public class Circuit : TRNTH.MonoBehaviour {
 	}
 	Control control;
 	Element element;
+	float timeStart;
 	void Awake(){
 		control=GetComponent<Control>();
+		timeStart=Time.realtimeSinceStartup;
 	}
 	void OnEnable(){
 		// if(elementOrderList.Length!=containerOrderList.Length)Debug.LogWarning("elementOrderList.Length!=containerOrderList.Length");
 	}
 	void Update(){
+		// time record 
+		timeRecord.text=Mathf.Floor(Time.realtimeSinceStartup-timeStart)+"";
+		// main `Element`s drag and drop
 		if(control.isHover){
 			var e=control.hit.collider.GetComponent<Element>();
 			if(control.isDown&&e){
