@@ -22,18 +22,30 @@ public class Circuit : TRNTH.MonoBehaviour {
 		var isOkay=true;
 		Element upstream=null;
 		int ll=Mathf.Min(elementOrderList.Length,containerOrderList.Length);
-		var count=0;
+		var count=0
 		foreach(var e in containerOrderList){
 			if(e.element)count++;
 		}
-		if(count!=containerOrderList.Length)return;
-		for(int i=0;i<ll;i++){
-			if(containerOrderList[i].element==elementOrderList[i])continue;
-			isOkay=false;
-			break;
+		if(count==containerOrderList.Length){
+			for(int i=0;i<ll;i++){
+				if(containerOrderList[i].element!=elementOrderList[i])break;
+			}
 		}
-		foreach(var e in elementOrderList){
-			e.status=isOkay?"work":"broken";
+		for(int i=0;i<ll;i++){
+			var c=containerOrderList[i];
+			if(!c)Debug.LogError("Circuit.containerOrderList is not completed");
+			var e=elementOrderList[i];
+			if(c.element==e){
+				e.upstream=upstream;
+				// e.status=isOkay?"work":"broken";
+				e.status="work";
+				upstream=e;
+			}else{
+				isOkay=false;
+				// e.status="broken";
+				if(c.element!=null)c.element.status="broken";
+				// c.element.status="broken";
+			}
 			switch(e.status){
 			case"work":
 				// e.OnWork();
@@ -51,6 +63,7 @@ public class Circuit : TRNTH.MonoBehaviour {
 				if(e.brokenActivate)e.brokenActivate.SetActive(false);
 				break;
 			}
+			// Debug.Log(e.status);
 		}
 		isAllWork=isOkay;
 		if(circuitSet.successActivate)circuitSet.successActivate.SetActive(isAllWork);
@@ -58,6 +71,7 @@ public class Circuit : TRNTH.MonoBehaviour {
 			if(targetFSM)targetFSM.SendEvent("Level_"+circuitSet.level+"_end");
 			isLocked=true;
 		}
+		// if(isAllWork&&targetFSM)targetFSM.SendEvent("Level_"+levelNow+"_start");
 	}
 	Control control;
 	Element element;

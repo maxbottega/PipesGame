@@ -47,18 +47,20 @@ MonoBehaviour:
       description: 
       colorIndex: 0
       position:
-        x: 156
-        y: 204
+        serializedVersion: 2
+        x: 56
+        y: 114
         width: 100
         height: 16
       isBreakpoint: 0
+      isSequence: 0
       hideUnused: 0
       transitions: []
       actionData:
         actionNames: []
         customNames: []
-        actionEnabled: []
-        actionIsOpen: []
+        actionEnabled: 
+        actionIsOpen: 
         actionStartIndex: 
         actionHashCodes: 
         unityObjectParams: []
@@ -73,7 +75,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: []
+        byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -163,6 +165,7 @@ MonoBehaviour:
     showStateLabel: 0
     maxLoopCount: 0
     watermark: 
+    version: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
