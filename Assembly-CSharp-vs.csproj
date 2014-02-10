@@ -20,6 +20,7 @@
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
 	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_2;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -43,6 +44,10 @@
 	</Reference>
 	<Reference Include="UnityEditor">
 	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity_432f1/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity_432f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -782,6 +787,40 @@
      <Compile Include="Assets\PlayMaker\Actions\iTween\iTweenShakeScale.cs" />
      <Compile Include="Assets\PlayMaker\Actions\iTween\iTweenStop.cs" />
      <Compile Include="Assets\PlayMaker\Include\iTweenFSMEvents.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Demo\Loading Screen Demo\Scripts\LoadBigSceneClick.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Helpers\Asset Bundles\AssetBundleInfo.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Helpers\Asset Bundles\ManagerAssetBundle.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Helpers\Fading\TweenFade.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Helpers\NGuiPlayMakerEvents.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Helpers\PmNguiDefine.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\NguiEventForwarder.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\ColorFromString.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\LoadAssetBundle.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\LoadAssetBundleList.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiAddPopupOption.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiChangeUifont.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiFadeIn.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiFadeOut.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiGetInputText.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiGetSliderValue.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiHudTextAdd.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiSceneLoaderObjList.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiSceneLoaderObjects.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiScrollbarChangeListener.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiScrollbarGetValue.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiScrollbarSetValue.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiSetActive.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiSetActiveMulti.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiSetButtonEnabled.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiSetSliderValue.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiSetSprite.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiSetWidgetColor.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiSetWidgetColorMulti.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiSliderValueToPercentLabel.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\NguiUpdateLabelText.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\StringCompareMulti.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\UnloadAssetBundle.cs" />
+     <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Playmaker Actions\UnloadAssetBundleCompressedContents.cs" />
      <Compile Include="Assets\SendEvent2Playmaker.cs" />
      <Compile Include="Assets\TrnthScript\Alarm.cs" />
      <Compile Include="Assets\TrnthScript\AnimatorController.cs" />
@@ -821,6 +860,12 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureAdd_Bumped.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureAdd_Bumped.shader" />
+     <None Include="Assets\Playmaker NGUI Scripts\Demo\Scrollbar Demo\Wooden\Arimo20.txt" />
+     <None Include="Assets\Playmaker NGUI Scripts\Demo\Loading Screen Demo\Fonts\Lucida Calligraphy 30 Italics\Lucida Calligraphy 30 Italics.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\Playmaker NGUI Scripts\Demo\Scrollbar Demo\Wooden\Arimo14.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
      <None Include="Assets\PlayMaker\Readme.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
@@ -828,6 +873,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\Playmaker NGUI Scripts\Demo\Scrollbar Demo\Wooden\Arimo18.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
      <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
@@ -850,6 +896,12 @@
      <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\release_history.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Graphic Assets\Shaders\Glass_clean_Reflect_Mobile.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Playmaker NGUI Scripts\Demo\NGUI Atlases\Refractive\Refractive Font - Normal.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Graphic Assets\Shaders\Glass_clean_Reflect_Mobile.shader" />
+     <None Include="Assets\Playmaker NGUI Scripts\README - Upgrading from Previous Versions.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Lit.shader" />
@@ -872,6 +924,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Plain.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Playmaker NGUI Scripts\Demo\Loading Screen Demo\NGUI Screens\LoadBigScene\FastGUIData.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Plain_Additive.shader" />
@@ -879,11 +932,13 @@
      <None Include="Assets\NGUI_Skin_volume_1\Textures\Fonts\Verdana32B.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\Playmaker NGUI Scripts\Demo\Loading Screen Demo\NGUI Screens\LoadingScreen\FastGUIData.xml" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureMult.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
      <None Include="Assets\PlayMaker\Resources\PlayMakerAssemblies.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\Playmaker NGUI Scripts\Demo\NGUI Atlases\Arimo\Arimo20.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionEffect.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GrayscaleEffect.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
@@ -898,12 +953,15 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA2.shader" />
      <None Include="Assets\Graphic Assets\Shaders\UberShader_Opaque.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\Playmaker NGUI Scripts\Demo\NGUI Atlases\Refractive\Refractive Font - Header.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureAdd.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectNormals.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\PrepareSunShaftsBlur.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\Blend.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\Playmaker NGUI Scripts\Demo\NGUI Atlases\Arimo\Large.txt" />
+     <None Include="Assets\Playmaker NGUI Scripts\Demo\NGUI Atlases\Playmaker NGUI UI\FastGUIData.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SimpleClear.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Textures\MaCrea\MaCrea.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
@@ -921,6 +979,10 @@
  <HintPath>Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="Assets\PlayMaker\PlayMaker">
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMaker">
  <HintPath>Assets\PlayMaker\PlayMaker.dll</HintPath>
  </Reference>
   </ItemGroup>
