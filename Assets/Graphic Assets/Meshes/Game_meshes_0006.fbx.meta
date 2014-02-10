@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: 4af19ccabc17f1540a57d60af3d44f2c
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: ' J_Regulator_65'
+    100002: ' K_Regulator_45'
+    100004: 3 Point Beige 01.lxe
+    100006: '3 Point Beige 01.lxe '
+    100008: A_pump
+    100010: B_AirExtractor
+    100012: Boiler
+    100014: Brushed Galvanized.lxp
+    100016: Bubbles
+    100018: C_DirtExtractor
+    100020: Camera
+    100022: Candy Apple Red.lxp
+    100024: Concrete 12.lxp
+    100026: D_FillingRegulator
+    100028: Directional Light
+    100030: Dirt
+    100032: E_Filter
+    100034: F_TemperatureStabilizer
+    100036: G_PressureStabilizer
+    100038: //RootNode
+    100040: H_VertCollector
+    100042: Heat
+    100044: L_HorizCollector
+    100046: Mesh
+    100048: 'Mesh '
+    100050: PavementHeating
+    100052: 'PIPES_1 '
+    100054: Rad_Ice
+    100056: Radiator
+    100058: Radiator_bubbles
+    100060: Radiator_dirt
+    100062: Radiator_heat
+    100064: Radiator_inner
+    100066: Radiator_section
+    100068: Radiator_water
+    100070: Room
+    100072: Sandblasted Brass.lxp
+    100074: 'Sandblasted Brass.lxp '
+    100076: Temp_PIPES_0
+    100078: Temp_PIPES_2
+    100080: Temp_PIPES_section
+    100082: Temp_PIPES_section_Inner
+    100084: Texture Group
+    100086: 'Texture Group '
+    100088: Texture Group  1
+    100090: TextureGroup
+    100092: Water
+    100094: Wet Concrete.lxp
+    400000: ' J_Regulator_65'
+    400002: ' K_Regulator_45'
+    400004: 3 Point Beige 01.lxe
+    400006: '3 Point Beige 01.lxe '
+    400008: A_pump
+    400010: B_AirExtractor
+    400012: Boiler
+    400014: Brushed Galvanized.lxp
+    400016: Bubbles
+    400018: C_DirtExtractor
+    400020: Camera
+    400022: Candy Apple Red.lxp
+    400024: Concrete 12.lxp
+    400026: D_FillingRegulator
+    400028: Directional Light
+    400030: Dirt
+    400032: E_Filter
+    400034: F_TemperatureStabilizer
+    400036: G_PressureStabilizer
+    400038: //RootNode
+    400040: H_VertCollector
+    400042: Heat
+    400044: L_HorizCollector
+    400046: Mesh
+    400048: 'Mesh '
+    400050: PavementHeating
+    400052: 'PIPES_1 '
+    400054: Rad_Ice
+    400056: Radiator
+    400058: Radiator_bubbles
+    400060: Radiator_dirt
+    400062: Radiator_heat
+    400064: Radiator_inner
+    400066: Radiator_section
+    400068: Radiator_water
+    400070: Room
+    400072: Sandblasted Brass.lxp
+    400074: 'Sandblasted Brass.lxp '
+    400076: Temp_PIPES_0
+    400078: Temp_PIPES_2
+    400080: Temp_PIPES_section
+    400082: Temp_PIPES_section_Inner
+    400084: Texture Group
+    400086: 'Texture Group '
+    400088: Texture Group  1
+    400090: TextureGroup
+    400092: Water
+    400094: Wet Concrete.lxp
+    2300000: ' J_Regulator_65'
+    2300002: ' K_Regulator_45'
+    2300004: A_pump
+    2300006: B_AirExtractor
+    2300008: Boiler
+    2300010: Bubbles
+    2300012: C_DirtExtractor
+    2300014: D_FillingRegulator
+    2300016: Dirt
+    2300018: E_Filter
+    2300020: F_TemperatureStabilizer
+    2300022: G_PressureStabilizer
+    2300024: H_VertCollector
+    2300026: Heat
+    2300028: L_HorizCollector
+    2300030: Mesh
+    2300032: 'Mesh '
+    2300034: PavementHeating
+    2300036: 'PIPES_1 '
+    2300038: Rad_Ice
+    2300040: Radiator
+    2300042: Radiator_bubbles
+    2300044: Radiator_dirt
+    2300046: Radiator_heat
+    2300048: Radiator_inner
+    2300050: Radiator_section
+    2300052: Radiator_water
+    2300054: Room
+    2300056: Temp_PIPES_0
+    2300058: Temp_PIPES_2
+    2300060: Temp_PIPES_section
+    2300062: Temp_PIPES_section_Inner
+    2300064: Water
+    3300000: ' J_Regulator_65'
+    3300002: ' K_Regulator_45'
+    3300004: A_pump
+    3300006: B_AirExtractor
+    3300008: Boiler
+    3300010: Bubbles
+    3300012: C_DirtExtractor
+    3300014: D_FillingRegulator
+    3300016: Dirt
+    3300018: E_Filter
+    3300020: F_TemperatureStabilizer
+    3300022: G_PressureStabilizer
+    3300024: H_VertCollector
+    3300026: Heat
+    3300028: L_HorizCollector
+    3300030: Mesh
+    3300032: 'Mesh '
+    3300034: PavementHeating
+    3300036: 'PIPES_1 '
+    3300038: Rad_Ice
+    3300040: Radiator
+    3300042: Radiator_bubbles
+    3300044: Radiator_dirt
+    3300046: Radiator_heat
+    3300048: Radiator_inner
+    3300050: Radiator_section
+    3300052: Radiator_water
+    3300054: Room
+    3300056: Temp_PIPES_0
+    3300058: Temp_PIPES_2
+    3300060: Temp_PIPES_section
+    3300062: Temp_PIPES_section_Inner
+    3300064: Water
+    4300000: Temp_PIPES_0
+    4300002: L_HorizCollector
+    4300004: C_DirtExtractor
+    4300006: D_FillingRegulator
+    4300008: ' K_Regulator_45'
+    4300010: Radiator
+    4300012: Radiator_heat
+    4300014: Radiator_dirt
+    4300016: Radiator_bubbles
+    4300018: Radiator_water
+    4300020: Radiator_inner
+    4300022: Radiator_section
+    4300024: F_TemperatureStabilizer
+    4300026: B_AirExtractor
+    4300028: G_PressureStabilizer
+    4300030: E_Filter
+    4300032: A_pump
+    4300034: ' J_Regulator_65'
+    4300036: H_VertCollector
+    4300038: Boiler
+    4300040: 'PIPES_1 '
+    4300042: Room
+    4300044: Temp_PIPES_2
+    4300046: Water
+    4300048: Temp_PIPES_section
+    4300050: 'Mesh '
+    4300052: PavementHeating
+    4300054: Rad_Ice
+    4300056: Heat
+    4300058: Dirt
+    4300060: Bubbles
+    4300062: Temp_PIPES_section_Inner
+    4300064: Mesh
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

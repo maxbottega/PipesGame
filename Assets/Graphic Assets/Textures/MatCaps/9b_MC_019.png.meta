@@ -37,7 +37,11 @@ TextureImporter:
   spritePivot: {x: .5, y: .5}
   spritePixelsToUnits: 100
   alphaIsTransparency: 0
+<<<<<<< HEAD
   textureType: 0
+=======
+  textureType: -1
+>>>>>>> new graphics
   buildTargetSettings: []
   spriteSheet:
     sprites: []
