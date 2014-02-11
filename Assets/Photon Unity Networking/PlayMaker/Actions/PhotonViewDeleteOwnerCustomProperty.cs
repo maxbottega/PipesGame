@@ -75,7 +75,7 @@ namespace HutongGames.PlayMaker.Actions
 				return false;
 			}
 			
-			Hashtable _prop = new Hashtable();
+			ExitGames.Client.Photon.Hashtable _prop = new ExitGames.Client.Photon.Hashtable();
 			
 			_prop[customPropertyKey.Value] = null;
 			_player.SetCustomProperties(_prop);

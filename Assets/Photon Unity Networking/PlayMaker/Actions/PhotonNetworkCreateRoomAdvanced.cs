@@ -56,7 +56,7 @@ namespace HutongGames.PlayMaker.Actions
 			}
 				
 
-			Hashtable _props = new Hashtable();
+			ExitGames.Client.Photon.Hashtable _props = new ExitGames.Client.Photon.Hashtable();
 			
 			int i = 0;
 			foreach(FsmString _prop in customPropertyKey)

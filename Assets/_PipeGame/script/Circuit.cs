@@ -4,8 +4,9 @@ using TRNTH;
 namespace PipeGame{
 [RequireComponent (typeof (TRNTH.Control))]
 public class Circuit : TRNTH.MonoBehaviour {
-	public bool refresh=false;
+	[HideInInspector]public bool refresh=false;
 	public bool isAllWork=false;
+	public float snapRadius=0.3f;
 	public UILabel timeRecord;
 	public PlayMakerFSM targetFSM;
 	public CircuitSet[] levels;
@@ -14,28 +15,32 @@ public class Circuit : TRNTH.MonoBehaviour {
 	internal CircuitSet circuitSet;
 	internal bool isLocked=false;
 	internal int levelNow=0;
-	public void check(){
+	public void checkCircuit(){
+		isAllWork=true;
+		foreach(var e in elementOrderList){
+			if(e.status!="work")isAllWork=false;
+		}
+		if(circuitSet.successActivate)circuitSet.successActivate.SetActive(isAllWork);
+		isLocked=false;
+		if(isAllWork){
+			if(targetFSM)targetFSM.SendEvent("Level_"+circuitSet.level+"_end");
+			isLocked=true;
+		}
+	}
+	public void checkElementStatus(){
 		foreach(var e in elementOrderList){
 			if(!e)Debug.LogError("Circuit.elementOrderList is not completed");
 			e.status="none";
 		}
-		var isOkay=true;
-		Element upstream=null;
 		int ll=Mathf.Min(elementOrderList.Length,containerOrderList.Length);
-		var count=0;
-		foreach(var e in containerOrderList){
-			if(e.element)count++;
-		}
-		if(count!=containerOrderList.Length)return;
 		for(int i=0;i<ll;i++){
-			if(containerOrderList[i].element==elementOrderList[i])continue;
-			isOkay=false;
-			break;
-		}
-		foreach(var e in elementOrderList){
-			e.status=isOkay?"work":"broken";
+			var e=elementOrderList[i];
+			if(!e)continue;
+			e.status=e==containerOrderList[i].element?"work":"broken";
+			// e.tra.localScale=e.scaleNormal*Vector3.one;
 			switch(e.status){
 			case"work":
+				// isLocked=true;
 				// e.OnWork();
 				if(targetFSM)targetFSM.SendEvent("item_"+e.name[0]+"_work");
 				if(e.workActivate)e.workActivate.SetActive(true);
@@ -49,14 +54,15 @@ public class Circuit : TRNTH.MonoBehaviour {
 			default:
 				if(e.workActivate)e.workActivate.SetActive(false);
 				if(e.brokenActivate)e.brokenActivate.SetActive(false);
+				// e.tra.localScale=e.scaleDock*Vector3.one;
 				break;
 			}
+			// Debug.Log(e.status);
 		}
-		isAllWork=isOkay;
-		if(circuitSet.successActivate)circuitSet.successActivate.SetActive(isAllWork);
-		if(isOkay){
-			if(targetFSM)targetFSM.SendEvent("Level_"+circuitSet.level+"_end");
-			isLocked=true;
+	}
+	void toggleEleCollider(bool value){
+		foreach(var e in elementOrderList){
+			e.collider.enabled=value;
 		}
 	}
 	Control control;
@@ -77,7 +83,7 @@ public class Circuit : TRNTH.MonoBehaviour {
 	}
 	void Update(){
 		// time record 
-		timeRecord.text=Mathf.Floor(Time.realtimeSinceStartup-timeStart)+"";
+		if(timeRecord)timeRecord.text=Mathf.Floor(Time.realtimeSinceStartup-timeStart)+"";
 		// main `Element`s drag and drop
 		if(!isLocked){
 			if(control.isHover){
@@ -90,6 +96,7 @@ public class Circuit : TRNTH.MonoBehaviour {
 					}
 					e.collider.enabled=false;
 					element=e;
+					toggleEleCollider(false);
 				}
 			}
 			if(element){
@@ -97,7 +104,7 @@ public class Circuit : TRNTH.MonoBehaviour {
 				if(control.isHold){
 					element.pos=control.hit.point;
 					element.status="air";
-					var cols=Physics.OverlapSphere(element.pos,2,~0);
+					var cols=Physics.OverlapSphere(element.pos,snapRadius,~0);
 					var arr=U.filter<Container>(cols);
 					// arr=filter(arr);
 					if(arr.Length>0){
@@ -108,7 +115,7 @@ public class Circuit : TRNTH.MonoBehaviour {
 						}
 						element.container=c;
 						element.pos=c.pos;
-						// element.tra.eulerAngles=element.eulerAngles+c.tra.eulerAngles;
+						element.tra.eulerAngles=element.eulerAngles+c.tra.eulerAngles;
 					}
 					//end
 				}
@@ -119,11 +126,10 @@ public class Circuit : TRNTH.MonoBehaviour {
 					element.container.gameObject.SetActive(false);
 					element.collider.enabled=true;
 					element=null;
-					refresh=true;
+					checkElementStatus();
+					toggleEleCollider(true);
 				}
 			}
-			if(refresh)check();
-			refresh=false;
 		}
 	}
 	void OnDestroy(){

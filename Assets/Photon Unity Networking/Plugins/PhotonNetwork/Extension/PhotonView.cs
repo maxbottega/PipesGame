@@ -8,13 +8,15 @@
 // <author>developer@exitgames.com</author>
 // ----------------------------------------------------------------------------
 
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
 using UnityEngine;
 using System.Reflection;
 
-public enum ViewSynchronization { Off, ReliableDeltaCompressed, Unreliable }
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
+
+public enum ViewSynchronization { Off, ReliableDeltaCompressed, Unreliable, UnreliableOnChange }
 public enum OnSerializeTransform { OnlyPosition, OnlyRotation, OnlyScale, PositionAndRotation, All }
 public enum OnSerializeRigidBody { OnlyVelocity, OnlyAngularVelocity, All }
 
@@ -40,6 +42,7 @@ public class PhotonView : Photon.MonoBehaviour
     
     public int group = 0;
 
+    protected internal bool mixedModeIsReliable = false;
 
     // NOTE: this is now an integer because unity won't serialize short (needed for instantiation). we SEND only a short though!
     // NOTE: prefabs have a prefixBackup of -1. this is replaced with any currentLevelPrefix that's used at runtime. instantiated GOs get their prefix set pre-instantiation (so those are not -1 anymore)
@@ -123,6 +126,12 @@ public class PhotonView : Photon.MonoBehaviour
 
     public int instantiationId; // if the view was instantiated with a GO, this GO has a instantiationID (first view's viewID)
 
+    /// <summary>True if the PhotonView was loaded with the scene (game object) or instantiated with InstantiateSceneObject.</summary>
+    /// <remarks>
+    /// Scene objects are not owned by a particular player but belong to the scene. Thus they don't get destroyed when their 
+    /// creator leaves the game and the current Master Client can control them (whoever that is).
+    /// The ownerIs is 0 (player IDs are 1 and up).
+    /// </remarks>
     public bool isSceneView
     {
         get { return this.ownerId == 0; }
@@ -236,9 +245,12 @@ public class PhotonView : Photon.MonoBehaviour
 
     public void RPC(string methodName, PhotonTargets target, params object[] parameters)
     {
-		if(PhotonNetwork.networkingPeer.hasSwitchedMC && target == PhotonTargets.MasterClient){
+		if(PhotonNetwork.networkingPeer.hasSwitchedMC && target == PhotonTargets.MasterClient)
+        {
 			PhotonNetwork.RPC(this, methodName, PhotonNetwork.masterClient, parameters);
-		}else{
+		}
+        else
+        {
         	PhotonNetwork.RPC(this, methodName, target, parameters);
 		}
     }

@@ -60,7 +60,7 @@ public class PlayMakerPhotonView : MonoBehaviour {
 	/// <summary>
 	/// Holds all the variables references to read from and write to during serialization.
 	/// </summary>
-	private ArrayList variableLOT;
+	private List<PlayMakerPhotonFsmVariableDefinition> variableLOT;
 	
 	
 	/// <summary>
@@ -68,7 +68,7 @@ public class PlayMakerPhotonView : MonoBehaviour {
 	/// </summary>	
 	private void Awake()
     {
-		variableLOT = new ArrayList();
+		variableLOT = new List<PlayMakerPhotonFsmVariableDefinition>();
 
     }// Awake
 
@@ -272,7 +272,9 @@ public class PlayMakerPhotonView : MonoBehaviour {
 						stream.SendNext(varDef.FsmRectPointer.Value); 
 						break;
 					case PlayMakerPhotonVarTypes.Color:
-						stream.SendNext(varDef.FsmColorPointer.Value); 
+						UnitySerializer us = new UnitySerializer ();  
+						us.Serialize(varDef.FsmColorPointer.Value); 
+						stream.SendNext(us.ByteArray); 
 						break;
 				}	
        		}
@@ -310,7 +312,8 @@ public class PlayMakerPhotonView : MonoBehaviour {
 						varDef.FsmRectPointer.Value = (Rect)stream.ReceiveNext();
 						break;
 					case PlayMakerPhotonVarTypes.Color:
-						varDef.FsmColorPointer.Value = (Color)stream.ReceiveNext();
+						UnitySerializer uds = new UnitySerializer ((byte[])stream.ReceiveNext());
+						varDef.FsmColorPointer.Value = uds.DeserializeColor();
 						break;
 				}	
        		}

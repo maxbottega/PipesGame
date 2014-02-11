@@ -51,7 +51,7 @@ namespace HutongGames.PlayMaker.Actions
 			int _maxPlayer = 0;
 			
 			
-			Hashtable _prop = new Hashtable();
+			ExitGames.Client.Photon.Hashtable _prop = new ExitGames.Client.Photon.Hashtable();
 			
 			if ( (! maxPlayer.IsNone) || maxPlayer.Value>0)
 			{

@@ -14,16 +14,47 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The gameVersion")]
 		public FsmString gameVersion;
 		
+		[Tooltip("If True, will check the cloud for the best server to connect the user. If False, will connect using the server addressed define in the settings.")]
+		public FsmBool connectToBestServer;
+		
+		
 		public override void Reset()
 		{
 			gameVersion  = "1.0";
+			connectToBestServer = true;
 		}
 
 		public override void OnEnter()
 		{
-			PhotonNetwork.ConnectUsingSettings(gameVersion.Value);
+			if (connectToBestServer.Value)
+			{
+				#if !(UNITY_WINRT || UNITY_WP8 || UNITY_PS3 || UNITY_WIIU)
+					PhotonNetwork.ConnectToBestCloudServer(gameVersion.Value);
+				#else
+					PhotonNetwork.ConnectUsingSettings(gameVersion.Value);
+				#endif
+			}else{
+				PhotonNetwork.ConnectUsingSettings(gameVersion.Value);
+			}
 			
+			// reset authentication failure properties.
+			PlayMakerPhotonProxy.lastAuthenticationDebugMessage = string.Empty;
+			PlayMakerPhotonProxy.lastAuthenticationFailed=false;
+
 			Finish();
+		}
+		
+		public override string ErrorCheck()
+		{
+			if (connectToBestServer.Value)
+			{
+				#if !(UNITY_WINRT || UNITY_WP8 || UNITY_PS3 || UNITY_WIIU)
+					return "";
+				#else
+					return "Connect to Best Server is not available on this platform, the normal connection protocol will be used instead.";
+				#endif	
+			}
+			return "";
 		}
 
 	}

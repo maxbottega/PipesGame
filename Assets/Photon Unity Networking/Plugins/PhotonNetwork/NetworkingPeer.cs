@@ -3,13 +3,15 @@
 //   Part of: Photon Unity Networking (PUN)
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
+
+using ExitGames.Client.Photon;
+using ExitGames.Client.Photon.Lite;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
-using ExitGames.Client.Photon;
-using ExitGames.Client.Photon.Lite;
 using UnityEngine;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 /// <summary>
 /// Implements Photon LoadBalancing used in PUN.
@@ -96,6 +98,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
     public PhotonPlayer mLocalActor { get; internal set; }
 
     public PhotonPlayer mMasterClient = null;
+
 	public bool hasSwitchedMC = false;
 
     public string mGameserver { get; internal set; }
@@ -699,21 +702,24 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
     public bool OpCreateGame(string gameID, bool isVisible, bool isOpen, byte maxPlayers, bool autoCleanUp, Hashtable customGameProperties, string[] propsListedInLobby)
     {
         this.mRoomToGetInto = new Room(gameID, customGameProperties, isVisible, isOpen, maxPlayers, autoCleanUp, propsListedInLobby);
+        this.mLastJoinType = JoinType.CreateGame;
         bool onGameServer = this.State == global::PeerState.Joining;    // set before this method is called by OpResponse for Auth
         return base.OpCreateRoom(gameID, isVisible, isOpen, maxPlayers, autoCleanUp, customGameProperties, (onGameServer) ? this.GetLocalActorProperties() : null, propsListedInLobby);
     }
 
-    public bool OpJoin(string gameID)
+    public bool OpJoin(string gameID, bool createIfNotExists)
     {
         this.mRoomToGetInto = new Room(gameID, null);
+        this.mLastJoinType = (createIfNotExists) ? JoinType.JoinOrCreateOnDemand : JoinType.JoinGame;
         bool onGameServer = this.State == global::PeerState.Joining;    // set before this method is called by OpResponse for Auth
-        return this.OpJoinRoom(gameID, (onGameServer) ? this.GetLocalActorProperties() : null);
+        return this.OpJoinRoom(gameID, (onGameServer) ? this.GetLocalActorProperties() : null, createIfNotExists);
     }
 
     // this override just makes sure we have a mRoomToGetInto, even if it's blank (the properties provided in this method are filters. they are not set when we join the game)
     public override bool OpJoinRandomRoom(Hashtable expectedCustomRoomProperties, byte expectedMaxPlayers, Hashtable playerProperties, MatchmakingMode matchingType)
     {
         this.mRoomToGetInto = new Room(null, null);
+        this.mLastJoinType = JoinType.JoinRandomGame;
         return base.OpJoinRandomRoom(expectedCustomRoomProperties, expectedMaxPlayers, playerProperties, matchingType);
     }
 
@@ -911,10 +917,10 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                                 this.AuthValues.Secret = null;  // currently, we discard the secret after it was used on the game server
                             }
 
-                            if (this.mLastJoinType == JoinType.JoinGame || this.mLastJoinType == JoinType.JoinRandomGame)
+                            if (this.mLastJoinType == JoinType.JoinGame || this.mLastJoinType == JoinType.JoinRandomGame || this.mLastJoinType == JoinType.JoinOrCreateOnDemand)
                             {
-                                // if we just "join" the game, do so
-                                this.OpJoin(this.mRoomToGetInto.name);
+                                // if we just "join" the game, do so. if we wanted to "create the room on demand", we have to send this to the game server as well.
+                                this.OpJoin(this.mRoomToGetInto.name, this.mLastJoinType == JoinType.JoinOrCreateOnDemand);
                             }
                             else if (this.mLastJoinType == JoinType.CreateGame)
                             {
@@ -960,7 +966,6 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
 
                         this.mGameserver = (string)operationResponse[ParameterCode.Address];
                         this.DisconnectFromMaster();
-                        this.mLastJoinType = JoinType.CreateGame;
                     }
                     else
                     {
@@ -989,7 +994,6 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
 
                         this.mGameserver = (string)operationResponse[ParameterCode.Address];
                         this.DisconnectFromMaster();
-                        this.mLastJoinType = JoinType.JoinGame;
                     }
                     else
                     {
@@ -1007,7 +1011,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                     {
                         if (operationResponse.ReturnCode == ErrorCode.NoRandomMatchFound)
                         {
-                            this.DebugReturn(DebugLevel.WARNING, "JoinRandom failed: No open game. Client stays in lobby.");
+                            this.DebugReturn(DebugLevel.INFO, "JoinRandom failed: No open game. Calling: OnPhotonRandomJoinFailed() and staying on master server.");
                         }
                         else if (this.DebugOut >= DebugLevel.ERROR)
                         {
@@ -1023,7 +1027,6 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                     this.mRoomToGetInto.name = gameID;
                     this.mGameserver = (string)operationResponse[ParameterCode.Address];
                     this.DisconnectFromMaster();
-                    this.mLastJoinType = JoinType.JoinRandomGame;
                     break;
                 }
 
@@ -1261,7 +1264,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                 break;
 
             case StatusCode.TimeoutDisconnect:
-            case StatusCode.InternalReceiveException:
+            case StatusCode.ExceptionOnReceive:
             case StatusCode.DisconnectByServer:
             case StatusCode.DisconnectByServerLogic:
             case StatusCode.DisconnectByServerUserLimit:
@@ -1449,12 +1452,19 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                     {
                         if (this.mLocalActor.ID != actorNrToCheck && !this.mActors.ContainsKey(actorNrToCheck))
                         {
-                            Debug.Log("creating player");
                             this.AddNewPlayer(actorNrToCheck, new PhotonPlayer(false, actorNrToCheck, string.Empty));
                         }
                     }
 
-                    SendMonoMessage(PhotonNetworkingMessage.OnJoinedRoom);
+                    // joinWithCreateOnDemand can turn an OpJoin into creating the room. Then actorNumber is 1 and callback: OnCreatedRoom()
+                    if (this.mLastJoinType == JoinType.JoinOrCreateOnDemand && this.mLocalActor.ID == 1)
+                    {
+                        SendMonoMessage(PhotonNetworkingMessage.OnCreatedRoom);
+                    }
+                    else
+                    {
+                        SendMonoMessage(PhotonNetworkingMessage.OnJoinedRoom);
+                    }
                 }
                 else
                 {
@@ -1579,22 +1589,31 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
 
     public static void SendMonoMessage(PhotonNetworkingMessage methodString, params object[] parameters)
     {
-        HashSet<GameObject> haveSendGOS = new HashSet<GameObject>();
-        MonoBehaviour[] mos = (MonoBehaviour[])GameObject.FindObjectsOfType(typeof(MonoBehaviour));
-        for (int index = 0; index < mos.Length; index++)
+        HashSet<GameObject> objectsToCall;
+        if (PhotonNetwork.SendMonoMessageTargets != null)
         {
-            MonoBehaviour mo = mos[index];
-            if (!haveSendGOS.Contains(mo.gameObject))
+            objectsToCall = PhotonNetwork.SendMonoMessageTargets;
+        }
+        else
+        {
+            objectsToCall = new HashSet<GameObject>();
+            Component[] targetComponents = (Component[])GameObject.FindObjectsOfType(typeof(MonoBehaviour));
+            for (int index = 0; index < targetComponents.Length; index++)
             {
-                haveSendGOS.Add(mo.gameObject);
-                if (parameters != null && parameters.Length == 1)
-                {
-                    mo.SendMessage(methodString.ToString(), parameters[0], SendMessageOptions.DontRequireReceiver);
-                }
-                else
-                {
-                    mo.SendMessage(methodString.ToString(), parameters, SendMessageOptions.DontRequireReceiver);
-                }
+                objectsToCall.Add(targetComponents[index].gameObject);
+            }
+        }
+
+        string methodName = methodString.ToString();
+        foreach (GameObject gameObject in objectsToCall)
+        {
+            if (parameters != null && parameters.Length == 1)
+            {
+                gameObject.SendMessage(methodName, parameters[0], SendMessageOptions.DontRequireReceiver);
+            }
+            else
+            {
+                gameObject.SendMessage(methodName, parameters, SendMessageOptions.DontRequireReceiver);
             }
         }
     }
@@ -1738,7 +1757,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
 
             if (cachedRPCMethods == null)
             {
-                List<MethodInfo> entries = SupportClass.GetMethods(type, typeof(UnityEngine.RPC));
+                List<MethodInfo> entries = SupportClass.GetMethods(type, typeof(RPC));
 
                 this.monoRPCMethodsCache[type] = entries;
                 cachedRPCMethods = entries;
@@ -1766,7 +1785,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                             object result = mInfo.Invoke((object)monob, inMethodParameters);
                             if (mInfo.ReturnType == typeof(IEnumerator))
                             {
-                                monob.StartCoroutine((IEnumerator)result);
+                                PhotonHandler.SP.StartCoroutine((IEnumerator)result);
                             }
                         }
                     }
@@ -1787,7 +1806,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                                 object result = mInfo.Invoke((object)monob, deParamsWithInfo);
                                 if (mInfo.ReturnType == typeof(IEnumerator))
                                 {
-                                    monob.StartCoroutine((IEnumerator)result);
+                                    PhotonHandler.SP.StartCoroutine((IEnumerator)result);
                                 }
                             }
                         }
@@ -1798,7 +1817,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                         object result = mInfo.Invoke((object)monob, new object[] { inMethodParameters });
                         if (mInfo.ReturnType == typeof(IEnumerator))
                         {
-                            monob.StartCoroutine((IEnumerator)result);
+                            PhotonHandler.SP.StartCoroutine((IEnumerator)result);
                         }
                     }
                 }
@@ -2082,7 +2101,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                 object result = methodI.Invoke((object)mono, messageInfoParam);
                 if (methodI.ReturnType == typeof(System.Collections.IEnumerator))
                 {
-                    mono.StartCoroutine((IEnumerator)result);
+                    PhotonHandler.SP.StartCoroutine((IEnumerator)result);
                 }
             }
         }
@@ -2797,7 +2816,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                         continue;
                     }
 
-                    if (view.synchronization == ViewSynchronization.ReliableDeltaCompressed)
+                    if (view.synchronization == ViewSynchronization.ReliableDeltaCompressed || view.mixedModeIsReliable)
                     {
                         if (!evData.ContainsKey((byte)1) && !evData.ContainsKey((byte)2))
                         {
@@ -2918,6 +2937,25 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
         }
 
         object[] dataArray = data.ToArray();
+        
+        if (view.synchronization == ViewSynchronization.UnreliableOnChange)
+        {
+            if (AlmostEquals(dataArray, view.lastOnSerializeDataSent))
+            {
+                if (view.mixedModeIsReliable)
+                {
+                    return null;
+                }
+
+                view.mixedModeIsReliable = true;
+                view.lastOnSerializeDataSent = dataArray;
+            }
+            else
+            {
+                view.mixedModeIsReliable = false;
+                view.lastOnSerializeDataSent = dataArray;
+            }
+        }
 
         // EVDATA:
         // 0=View ID (an int, never compressed cause it's not in the data)
@@ -2928,6 +2966,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
         evData[(byte)0] = (int)view.viewID;
         evData[(byte)1] = dataArray;    // this is the actual data (script or observed object)
 
+        
         if (view.synchronization == ViewSynchronization.ReliableDeltaCompressed)
         {
             // compress content of data set (by comparing to view.lastOnSerializeDataSent)
@@ -2974,6 +3013,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
         {
             return; // Ignore group
         }
+
 
         if (view.synchronization == ViewSynchronization.ReliableDeltaCompressed)
         {
@@ -3022,6 +3062,31 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
         {
             Debug.LogError("Type of observed is unknown when receiving.");
         }
+    }
+
+    private bool AlmostEquals(object[] lastData, object[] currentContent)
+    {
+        if (lastData == null && currentContent == null)
+        {
+            return true;
+        }
+
+        if (lastData == null || currentContent == null || (lastData.Length != currentContent.Length))
+        {
+            return false;
+        }
+
+        for (int index = 0; index < currentContent.Length; index++)
+        {
+            object newObj = currentContent[index];
+            object oldObj = lastData[index];
+            if (!this.ObjectIsSameWithInprecision(newObj, oldObj))
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     /// <summary>
