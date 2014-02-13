@@ -28,7 +28,7 @@ Material:
       data:
         first:
           name: _InvFade
-        second: .839821398
+        second: 1.10678566
     m_Colors:
       data:
         first:
@@ -37,4 +37,4 @@ Material:
       data:
         first:
           name: _TintColor
-        second: {r: .112132356, g: .448529422, b: .239731252, a: .733333349}
+        second: {r: .911764681, g: .446727782, b: .194420427, a: .733333349}

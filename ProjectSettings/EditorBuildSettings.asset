@@ -6,64 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/_103.unity
+    path: Assets/Scenes/Demo_01.unity
   - enabled: 0
-    path: Assets/Scenes/_104.unity
+    path: Assets/Scenes/Demo_01.unity
   - enabled: 0
-    path: Assets/Scenes/_105.unity
-  - enabled: 0
-    path: Assets/Scenes/_106.unity
-  - enabled: 0
-    path: Assets/Scenes/_107.unity
-  - enabled: 0
-    path: Assets/Scenes/test_net_vars.unity
-  - enabled: 0
-    path: Assets/Scenes/_107.unity
-  - enabled: 0
-    path: Assets/Scenes/test_net_vars.unity
-  - enabled: 0
-    path: Assets/Scenes/_108.unity
-  - enabled: 0
-    path: Assets/Scenes/_109.unity
-  - enabled: 0
-    path: Assets/Scenes/_110.unity
-  - enabled: 0
-    path: Assets/Scenes/_111.unity
-  - enabled: 0
-    path: Assets/Scenes/_112.unity
-  - enabled: 0
-    path: Assets/Scenes/_113.unity
-  - enabled: 0
-    path: Assets/Scenes/_114.unity
-  - enabled: 0
-    path: Assets/Scenes/Trash/Menu_001.unity
-  - enabled: 0
-    path: Assets/Scenes/Level_Heating.unity
-  - enabled: 0
-    path: Assets/Scenes/Trash/discard_Level_Sanitary_002.unity
-  - enabled: 0
-    path: Assets/Scenes/Trash/Level_Test.unity
-  - enabled: 0
-    path: Assets/Scenes/Trash/Menu_001.unity
-  - enabled: 0
-    path: Assets/Scenes/Level_Sanitary.unity
-  - enabled: 0
-    path: Assets/Scenes/Level_Heating.unity
-  - enabled: 0
-    path: Assets/Scenes/Menu.unity
-  - enabled: 0
-    path: Assets/Scenes/Trash/Menu_test.unity
-  - enabled: 0
-    path: Assets/Scenes/_114.unity
-  - enabled: 0
-    path: Assets/Scenes/Menu.unity
-  - enabled: 0
-    path: Assets/Scenes/Level_Heating.unity
-  - enabled: 0
-    path: Assets/Scenes/Level_Sanitary.unity
-  - enabled: 0
-    path: Assets/Scenes/Trash/discard_Level_Sanitary_002.unity
-  - enabled: 0
-    path: Assets/Level_heating_noNetwork.unity
+    path: Assets/Scenes/Game_flow.unity
   - enabled: 1
-    path: Assets/Scenes/Level_Sanitary.unity
+    path: Assets/Scenes/Network.unity

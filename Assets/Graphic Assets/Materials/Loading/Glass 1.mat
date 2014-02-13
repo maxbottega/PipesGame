@@ -38,7 +38,7 @@ Material:
       data:
         first:
           name: _Ref
-        second: 1.97232139
+        second: 1.25874996
     m_Colors:
       data:
         first:
@@ -47,4 +47,4 @@ Material:
       data:
         first:
           name: _RefColor
-        second: {r: .286764681, g: .286764681, b: .286764681, a: 0}
+        second: {r: .303241283, g: .410447776, b: .392455041, a: 0}

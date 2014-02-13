@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: b31d14255d8f680458672561083002c8
 ModelImporter:
-  serializedVersion: 15
+  serializedVersion: 16
   fileIDToRecycleName:
     100000: ' J_Regulator_65'
     100002: ' K_Regulator_45'
@@ -57,8 +57,6 @@ ModelImporter:
     100102: TextureGroup  1
     100104: 'TextureGroup  '
     100106: Pipes_section_inner2
-    100108: Texture Group   1
-    100110: TextureLocators
     400000: ' J_Regulator_65'
     400002: ' K_Regulator_45'
     400004: 3 Point Beige 01.lxe
@@ -113,8 +111,6 @@ ModelImporter:
     400102: TextureGroup  1
     400104: 'TextureGroup  '
     400106: Pipes_section_inner2
-    400108: Texture Group   1
-    400110: TextureLocators
     2300000: ' J_Regulator_65'
     2300002: ' K_Regulator_45'
     2300004: A_pump
@@ -271,4 +267,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
+  additionalBone: 0
   userData: 

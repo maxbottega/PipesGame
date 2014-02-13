@@ -19,6 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
 	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_2;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
@@ -39,6 +40,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
 	  <HintPath>C:/Program Files (x86)/Unity_432f1/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
@@ -167,6 +172,13 @@
      <Compile Include="Assets\PlayMaker\Editor\PlayMakerMainMenu.cs" />
      <Compile Include="Assets\PlayMaker\Editor\PlayMakerWelcomeWindow.cs" />
      <Compile Include="Assets\PlayMaker\Editor\ReportWindow.cs" />
+     <Compile Include="Assets\iTween\PlayMaker\Editor\iTweenMoveToActionEditor.cs" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Photon Unity Networking\PlayMaker\ReleaseNotes.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureAdd_Bumped.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
      <Compile Include="Assets\Playmaker NGUI Scripts\Scripts\Editor\ExportAssetBundles.cs" />
      <Compile Include="Assets\iTween\PlayMaker\Editor\iTweenMoveToActionEditor.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
@@ -206,6 +218,11 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
      <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.xml" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\release_history.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Graphic Assets\Shaders\Glass_clean_Reflect_Mobile.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Graphic Assets\Textures\Shaders\Hologram.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
@@ -288,6 +305,65 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\_MatCap Shaders Readme.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+ <Reference Include="Assets\JMO Assets\Editor\JMOAssets">
+ <HintPath>Assets\JMO Assets\Editor\JMOAssets.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\Newtonsoft.Json">
+ <HintPath>Assets\Photon Unity Networking\Editor\PhotonNetwork\Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D">
+ <HintPath>Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\PlayMaker\PlayMaker">
+ <HintPath>Assets\PlayMaker\PlayMaker.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\PlayMaker\Editor\PlayMakerEditor">
+ <HintPath>Assets\PlayMaker\Editor\PlayMakerEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\PlayMaker\Editor\PlayMakerEditorResources">
+ <HintPath>Assets\PlayMaker\Editor\PlayMakerEditorResources.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\PlayMaker\Editor\de\PlayMakerEditor.de.resources">
+ <HintPath>Assets\PlayMaker\Editor\de\PlayMakerEditor.de.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\PlayMaker\Editor\es-ES\PlayMakerEditor.es-ES.resources">
+ <HintPath>Assets\PlayMaker\Editor\es-ES\PlayMakerEditor.es-ES.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\PlayMaker\Editor\fr\PlayMakerEditor.fr.resources">
+ <HintPath>Assets\PlayMaker\Editor\fr\PlayMakerEditor.fr.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\PlayMaker\Editor\it\PlayMakerEditor.it.resources">
+ <HintPath>Assets\PlayMaker\Editor\it\PlayMakerEditor.it.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\PlayMaker\Editor\ja\PlayMakerEditor.ja.resources">
+ <HintPath>Assets\PlayMaker\Editor\ja\PlayMakerEditor.ja.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\PlayMaker\Editor\nl\PlayMakerEditor.nl.resources">
+ <HintPath>Assets\PlayMaker\Editor\nl\PlayMakerEditor.nl.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\PlayMaker\Editor\pt-BR\PlayMakerEditor.pt-BR.resources">
+ <HintPath>Assets\PlayMaker\Editor\pt-BR\PlayMakerEditor.pt-BR.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\PlayMaker\Editor\sv-SE\PlayMakerEditor.sv-SE.resources">
+ <HintPath>Assets\PlayMaker\Editor\sv-SE\PlayMakerEditor.sv-SE.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\PlayMaker\Editor\zh-CN\PlayMakerEditor.zh-CN.resources">
+ <HintPath>Assets\PlayMaker\Editor\zh-CN\PlayMakerEditor.zh-CN.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\PlayMaker\Editor\zh-TW\PlayMakerEditor.zh-TW.resources">
+ <HintPath>Assets\PlayMaker\Editor\zh-TW\PlayMakerEditor.zh-TW.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs">
+ <HintPath>\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="\Applications\Unity\Unity.app\Contents\PlaybackEngines\iPhonePlayer\EditorExtensions\UnityEditor.iOS.Extensions">
+ <HintPath>\Applications\Unity\Unity.app\Contents\PlaybackEngines\iPhonePlayer\EditorExtensions\UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="\Applications\Unity\Unity.app\Contents\PlaybackEngines\BB10Player\EditorExtensions\UnityEditor.BB10.Extensions">
+ <HintPath>\Applications\Unity\Unity.app\Contents\PlaybackEngines\BB10Player\EditorExtensions\UnityEditor.BB10.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="\Applications\Unity\Unity.app\Contents\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions">
+ <HintPath>\Applications\Unity\Unity.app\Contents\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions.dll</HintPath>
  <Reference Include="JMOAssets">
  <HintPath>Assets\JMO Assets\Editor\JMOAssets.dll</HintPath>
  </Reference>
