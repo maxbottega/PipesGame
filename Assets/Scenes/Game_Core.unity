@@ -18613,7 +18613,7 @@ MonoBehaviour:
       - fsmEvent:
           name: item_B_work
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: State 6
         linkStyle: 0
         linkConstraint: 0
@@ -19116,52 +19116,52 @@ MonoBehaviour:
       isGlobal: 0
     - name: item_A_broken
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_A_work
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_B_broken
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_B_work
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_C_broken
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_C_work
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_D_broken
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_D_work
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_E_broken
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_E_work
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_F_broken
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_F_work
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_G_broken
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_G_work
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_H_broken
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_H_work
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: item_I_work
       isSystemEvent: 0
       isGlobal: 0
@@ -19229,6 +19229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   refresh: 0
   isAllWork: 0
+  snapRadius: .300000012
   timeRecord: {fileID: 1181046981}
   targetFSM: {fileID: 1629970817}
   levels:

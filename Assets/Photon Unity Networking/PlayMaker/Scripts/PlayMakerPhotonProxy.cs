@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2013. All rights reserved.
 
 using UnityEngine;
 using System.Collections;
@@ -60,10 +60,19 @@ public class PlayMakerPhotonProxy : Photon.MonoBehaviour
 	public PhotonPlayer lastMessagePhotonPlayer;
 	
 	/// <summary>
-	/// The last disonnection or connection failure cause
+	/// The last disconnection or connection failure cause
 	/// </summary>
 	public DisconnectCause lastDisconnectCause;
 	
+	/// <summary>
+	/// The last authentication failed debug message. Message is reseted when authentication is triggered again.
+	/// </summary>
+	public static string lastAuthenticationDebugMessage = string.Empty;
+	
+	/// <summary>
+	/// Is True if the last authentication failed.
+	/// </summary>
+	public static bool lastAuthenticationFailed = false;
 	
 	
 	#region Photon network synch
@@ -74,7 +83,7 @@ public class PlayMakerPhotonProxy : Photon.MonoBehaviour
 	/// </summary>
 	void Start()
 	{
-		ArrayList FsmToObserveList = GetFsmsWithNetworkSynchedVariables();
+		List<PlayMakerFSM> FsmToObserveList = GetFsmsWithNetworkSynchedVariables();
 		
 		//now for each of these Fsm check that a playmaker Photon gameObject proxy is attached to it, else will complain
 		foreach(PlayMakerFSM fsm in FsmToObserveList)
@@ -87,6 +96,8 @@ public class PlayMakerPhotonProxy : Photon.MonoBehaviour
 			}
 			
 		}
+		
+		//Debug.Log(PingCloudRegions.closestRegion);
 		
 	}// start
 	
@@ -133,7 +144,7 @@ public class PlayMakerPhotonProxy : Photon.MonoBehaviour
 		PhotonView[] allPhotonViews = go.GetComponentsInChildren<PhotonView>();
 		
 		// now make sure all fsm with network synchronized variable have a photonView attached
-		ArrayList fsmsToObserve = GetFsmsWithNetworkSynchedVariables(go);
+		List<PlayMakerFSM> fsmsToObserve = GetFsmsWithNetworkSynchedVariables(go);
 		Debug.Log("found fsm to observe : "+fsmsToObserve.Count);
 		foreach(PlayMakerFSM fsm in fsmsToObserve)
 		{		
@@ -183,10 +194,10 @@ public class PlayMakerPhotonProxy : Photon.MonoBehaviour
 	/// <returns>
 	/// The list of fsm with network fsm synched variables on that gameObject.
 	/// </returns>
-	private ArrayList GetFsmsWithNetworkSynchedVariables(GameObject go)
+	private List<PlayMakerFSM> GetFsmsWithNetworkSynchedVariables(GameObject go)
 	{
 		
-		ArrayList FsmToObserveList = new ArrayList();
+		List<PlayMakerFSM> FsmToObserveList = new List<PlayMakerFSM>();
 		
 		PlayMakerFSM[] allFsms = go.GetComponentsInChildren<PlayMakerFSM>();
 		
@@ -213,11 +224,11 @@ public class PlayMakerPhotonProxy : Photon.MonoBehaviour
 	/// <returns>
 	/// The list of fsm with network fsm synched variables.
 	/// </returns>
-	private ArrayList GetFsmsWithNetworkSynchedVariables()
+	private List<PlayMakerFSM> GetFsmsWithNetworkSynchedVariables()
 	{
 		
-		ArrayList FsmToObserveList = new ArrayList();
-		
+		List<PlayMakerFSM> FsmToObserveList = new List<PlayMakerFSM>();
+
 		foreach(PlayMakerFSM fsm in PlayMakerFSM.FsmList)
 		{	
 			if (! FsmToObserveList.Contains(fsm))
@@ -559,6 +570,28 @@ public class PlayMakerPhotonProxy : Photon.MonoBehaviour
 
 	#region Photon Messages
 	
+	/// <summary>
+	/// compose this message to dispatch the associated global Fsm Event. 
+    /// This method is called when Custom Authentication is setup for your app but fails for any reasons.
+    /// </summary>
+    /// <remarks>
+    /// Unless you setup a custom authentication service for your app (in the Dashboard), this won't be called.
+    /// If authentication is successful, this method is not called but OnJoinedLobby, OnConnectedToMaster and the 
+    /// others will be called.
+    /// </remarks>
+    /// <param name="debugMessage"></param>
+    public void OnCustomAuthenticationFailed(string debugMessage)
+    {
+        lastAuthenticationDebugMessage = debugMessage;
+        lastAuthenticationFailed = true;
+		
+		if (debug) {
+			Debug.Log ("PLayMaker Photon proxy: OnCustomAuthenticationFailed: " + debugMessage);
+		}
+		
+		PlayMakerFSM.BroadcastEvent ("PHOTON / CUSTOM AUTHENTICATION FAILED");
+		
+    }
 	
 	
 	/// <summary>

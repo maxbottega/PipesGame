@@ -33,6 +33,11 @@ namespace HutongGames.PlayMaker.Actions
 		public override void OnEnter()
 		{
 			PhotonNetwork.Connect(serverAddress.Value,port.Value,applicationID.Value,clientGameVersion.Value);	
+			
+			// reset authentication failure properties.
+			PlayMakerPhotonProxy.lastAuthenticationDebugMessage = string.Empty;
+			PlayMakerPhotonProxy.lastAuthenticationFailed=false;
+			
 			Finish();
 		}
 

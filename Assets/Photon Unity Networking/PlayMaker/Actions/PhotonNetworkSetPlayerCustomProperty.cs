@@ -39,7 +39,7 @@ namespace HutongGames.PlayMaker.Actions
 			
 			PhotonPlayer _player = PhotonNetwork.player;
 			
-			Hashtable _prop = new Hashtable();
+			ExitGames.Client.Photon.Hashtable _prop = new ExitGames.Client.Photon.Hashtable();
 			Log(" set key "+customPropertyKey.Value+"="+ PlayMakerPhotonProxy.GetValueFromFsmVar(this.Fsm,customPropertyValue));
 			
 			_prop[customPropertyKey.Value] = PlayMakerPhotonProxy.GetValueFromFsmVar(this.Fsm,customPropertyValue);

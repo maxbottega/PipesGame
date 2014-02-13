@@ -17,9 +17,10 @@ public class PhotonViewInspector : Editor
 {
     public override void OnInspectorGUI()
     {
+#if UNITY_3_5
         EditorGUIUtility.LookLikeInspector();
         EditorGUI.indentLevel = 1;
-
+#endif
         PhotonView mp = (PhotonView)this.target;
         bool isProjectPrefab = EditorUtility.IsPersistent(mp.gameObject);
 
@@ -95,7 +96,7 @@ public class PhotonViewInspector : Editor
         {
             if (mp.observed == null)
             {
-                mp.synchronization = ViewSynchronization.Unreliable;    // if we didn't observe anything before, we could observe unreliably now
+                mp.synchronization = ViewSynchronization.UnreliableOnChange;    // if we didn't observe anything yet. use unreliable on change as default
             }
             if (componenValue == null)
             {

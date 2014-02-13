@@ -8,11 +8,12 @@
 // <author>developer@exitgames.com</author>
 // ----------------------------------------------------------------------------
 
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using ExitGames.Client.Photon;
 using ExitGames.Client.Photon.Lite;
+using System;
+using System.Collections.Generic;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
+
 
 /// <summary>
 /// Internally used by PUN, a LoadbalancingPeer provides the operations and enum 
@@ -107,8 +108,9 @@ internal class LoadbalancingPeer : PhotonPeer
     /// </summary>
     /// <param name="roomName"></param>
     /// <param name="playerProperties"></param>
+    /// <param name="createIfNotExists"></param>
     /// <returns>If the operation could be sent (has to be connected).</returns>
-    public virtual bool OpJoinRoom(string roomName, Hashtable playerProperties)
+    public virtual bool OpJoinRoom(string roomName, Hashtable playerProperties, bool createIfNotExists)
     {
         if (this.DebugOut >= DebugLevel.INFO)
         {
@@ -124,6 +126,11 @@ internal class LoadbalancingPeer : PhotonPeer
         Dictionary<byte, object> op = new Dictionary<byte, object>();
         op[ParameterCode.RoomName] = roomName;
         op[ParameterCode.Broadcast] = true;
+
+        if (createIfNotExists)
+        {
+            op[ParameterCode.CreateIfNotExists] = createIfNotExists;
+        }
         if (playerProperties != null)
         {
             op[ParameterCode.PlayerProperties] = playerProperties;
@@ -261,44 +268,6 @@ internal class LoadbalancingPeer : PhotonPeer
 
         return this.OpCustom((byte)OperationCode.SetProperties, opParameters, broadcast, channelId);
     }
-
-    /// <summary>
-    /// Sends this app's appId and appVersion to identify this application server side.
-    /// This is an async request which triggers a OnOperationResponse() call.
-    /// </summary>
-    /// <remarks>
-    /// This operation makes use of encryption, if that is established before.
-    /// See: EstablishEncryption(). Check encryption with IsEncryptionAvailable.
-    /// This operation is allowed only once per connection (multiple calls will have ErrorCode != Ok).
-    /// </remarks>
-    /// <param name="appId">Your application's name or ID to authenticate. This is assigned by Photon Cloud (webpage).</param>
-    /// <param name="appVersion">The client's version (clients with differing client appVersions are separated and players don't meet).</param>
-    /// <returns>If the operation could be sent (has to be connected).</returns>
-    [Obsolete("Use the other overload now.")]
-    public virtual bool OpAuthenticate(string appId, string appVersion)
-    {
-        return OpAuthenticate(appId, appVersion, null, null);
-    }
-
-    /// <summary>
-    /// Sends this app's appId and appVersion to identify this application server side.
-    /// This is an async request which triggers a OnOperationResponse() call.
-    /// </summary>
-    /// <remarks>
-    /// This operation makes use of encryption, if that is established before.
-    /// See: EstablishEncryption(). Check encryption with IsEncryptionAvailable.
-    /// This operation is allowed only once per connection (multiple calls will have ErrorCode != Ok).
-    /// </remarks>
-    /// <param name="appId">Your application's name or ID to authenticate. This is assigned by Photon Cloud (webpage).</param>
-    /// <param name="appVersion">The client's version (clients with differing client appVersions are separated and players don't meet).</param>
-    /// <param name="userId"></param>
-    /// <returns>If the operation could be sent (has to be connected).</returns>
-    [Obsolete("Use the other overload now.")]
-    public virtual bool OpAuthenticate(string appId, string appVersion, string userId)
-    { 
-        return this.OpAuthenticate(appId, appVersion, userId, null);
-    }
-
 
     /// <summary>
     /// Sends this app's appId and appVersion to identify this application server side.
@@ -578,7 +547,7 @@ internal class LoadbalancingPeer : PhotonPeer
 /// Class for constants. These (int) values represent error codes, as defined and sent by the Photon LoadBalancing logic.
 /// Pun uses these constants internally.
 /// </summary>
-/// <note>Codes from the Photon Core are negative. Default-app error codes go down from short.max.</note>
+/// <remarks>Codes from the Photon Core are negative. Default-app error codes go down from short.max.</remarks>
 public class ErrorCode
 {
     /// <summary>(0) is always "OK", anything else an error or specific situation.</summary>
@@ -610,7 +579,7 @@ public class ErrorCode
     /// <summary>(32766) GameId (name) already in use (can't create another). Change name.</summary>
     public const int GameIdAlreadyExists = 0x7FFF - 1;
 
-    /// <summary>(32765) Game is full. This can when players took over while you joined the game.</summary>
+    /// <summary>(32765) Game is full. This rarely happens when some player joined the room before your join completed.</summary>
     public const int GameFull = 0x7FFF - 2;
 
     /// <summary>(32764) Game is closed and can't be joined. Join another game.</summary>
@@ -690,7 +659,7 @@ public class GameProperties
     public const byte IsVisible = 254;
     /// <summary>(253) Allows more players to join a room (or not).</summary>
     public const byte IsOpen = 253;
-    /// <summary>(252) Current count od players in the room. Used only in the lobby on master.</summary>
+    /// <summary>(252) Current count of players in the room. Used only in the lobby on master.</summary>
     public const byte PlayerCount = 252;
     /// <summary>(251) True if the room is to be removed from room listing (used in update to room list in lobby on master)</summary>
     public const byte Removed = 251;
@@ -806,6 +775,9 @@ public class ParameterCode
 
     /// <summary>(216) This key's (string) value provides parameters sent to the custom authentication type/service the client connects with. Used in OpAuthenticate</summary>
     public const byte ClientAuthenticationParams = 216;
+
+    /// <summary>(215) Makes the server create a room if it doesn't exist. OpJoin uses this to always enter a room, unless it exists and is full/closed.</summary>
+    public const byte CreateIfNotExists = 215;
 
     /// <summary>(214) This key's (string or byte[]) value provides parameters sent to the custom authentication service setup in Photon Dashboard. Used in OpAuthenticate</summary>
     public const byte ClientAuthenticationData = 214;

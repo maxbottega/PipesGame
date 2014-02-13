@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using System.IO;
 using HutongGames.PlayMakerEditor;
 
 
@@ -31,6 +32,7 @@ public class PlayMakerPhotonWizard : PhotonEditor
 		dontCheckPunSetup = true; 
 		RegisterOrigin = AccountService.Origin.Playmaker;
 		
+		CheckPunPlus();
 
         EditorApplication.hierarchyWindowChanged += EditorRefresh;
         EditorApplication.playmodeStateChanged += EditorRefresh;
@@ -43,6 +45,15 @@ public class PlayMakerPhotonWizard : PhotonEditor
 		shouldRefresh = true;
 	}
 	
+	private static bool isPunPlus;
+	
+	 private static void CheckPunPlus()
+    {
+        bool androidLibExists = File.Exists("Assets/Plugins/Android/libPhotonSocketPlugin.so");
+        bool iphoneLibExists = File.Exists("Assets/Plugins/IPhone/libPhotonSocketPlugin.so");
+
+        isPunPlus = androidLibExists || iphoneLibExists;
+    }
 	
     [MenuItem(PlayMakerPhotonMenuRoot, false)]
     protected static void photonMenuTemp()
@@ -100,8 +111,9 @@ public class PlayMakerPhotonWizard : PhotonEditor
 
 		FsmEditorGUILayout.ToolWindowLargeTitle(this, "Photon Setup Wizard");
 		GUILayout.Space(_topSpace);
+#if UNITY_3_5
 		EditorGUIUtility.LookLikeControls(200);
-		
+#endif
 		
 		// check pun version support
 		if (! PlayMakerPhotonEditorUtility.IsPunVersionSupported())
@@ -112,10 +124,13 @@ public class PlayMakerPhotonWizard : PhotonEditor
 		}
 		
 		bool hasPro = UnityEditorInternal.InternalEditorUtility.HasAdvancedLicenseOnBuildTarget(EditorUserBuildSettings.activeBuildTarget);
-		if (! hasPro)
+		if (!hasPro && ! isPunPlus)
 		{
 			GUI.color = PlayMakerPhotonEditorUtility.lightOrange;
-			GUILayout.Label("WARNING: Photon requires "+EditorUserBuildSettings.activeBuildTarget+" Pro to make an "+EditorUserBuildSettings.activeBuildTarget+" build.","box",GUILayout.ExpandWidth(true));
+			string text = "WARNING: Photon requires "+EditorUserBuildSettings.activeBuildTarget+" Pro to make an "+EditorUserBuildSettings.activeBuildTarget+" build.";
+			text += "\n PUN+ allows you to publish without pro mobile pro license. \n Contact ExitGames to have access to PUN+" ;
+			GUILayout.Label(text,"box",GUILayout.ExpandWidth(true));
+		
 			GUI.color = Color.white;
 		}
 		

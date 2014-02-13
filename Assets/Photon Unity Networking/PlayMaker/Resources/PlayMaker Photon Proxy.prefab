@@ -94,6 +94,9 @@ MonoBehaviour:
     - name: PHOTON / CREATED ROOM
       isSystemEvent: 0
       isGlobal: 1
+    - name: PHOTON / CUSTOM AUTHENTICATION FAILED
+      isSystemEvent: 0
+      isGlobal: 1
     - name: PHOTON / CUSTOM ROOM PROPERTIES CHANGED
       isSystemEvent: 0
       isGlobal: 1
