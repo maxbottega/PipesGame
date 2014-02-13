@@ -10,12 +10,13 @@ public class Circuit : TRNTH.MonoBehaviour {
 	public UILabel timeRecord;
 	public PlayMakerFSM targetFSM;
 	public CircuitSet[] levels;
-	internal Element[] elementOrderList;
-	internal Container[] containerOrderList;
+	internal Element[] elementOrderList=new Element[]{};
+	internal Container[] containerOrderList=new Container[]{};
 	internal CircuitSet circuitSet;
 	internal bool isLocked=false;
 	internal int levelNow=0;
 	public void checkCircuit(){
+		if(!circuitSet)return;
 		isAllWork=true;
 		foreach(var e in elementOrderList){
 			if(e.status!="work")isAllWork=false;
@@ -24,19 +25,59 @@ public class Circuit : TRNTH.MonoBehaviour {
 		isLocked=false;
 		if(isAllWork){
 			if(targetFSM)targetFSM.SendEvent("Level_"+circuitSet.level+"_end");
+			foreach(var e in elementOrderList){
+				e.collider.enabled=false;
+			}
 			isLocked=true;
 		}
+	}
+	public void checkElementStatus(Element element){
+		var e=element;
+		element.status="qk";
+		if(element.container&&element.container.name!="QK")element.status="broken";
+		int ll=Mathf.Min(elementOrderList.Length,containerOrderList.Length);
+		for(int i=0;i<ll;i++){
+			e=elementOrderList[i];
+			if(e==element&&e==containerOrderList[i].element)e.status="work";
+		}
+		e=element;
+		switch(e.status){
+		case"work":
+			// isLocked=true;
+			// e.OnWork();
+			if(targetFSM)targetFSM.SendEvent("item_"+e.name[0]+"_work");
+			if(e.workActivate)e.workActivate.SetActive(true);
+			if(e.brokenActivate)e.brokenActivate.SetActive(false);
+			e.collider.enabled=false;
+			// Destroy(e.collider);
+			break;
+		case"broken":
+			if(targetFSM)targetFSM.SendEvent("item_"+e.name[0]+"_broken");
+			if(e.workActivate)e.workActivate.SetActive(false);
+			if(e.brokenActivate)e.brokenActivate.SetActive(true);
+			break;
+		default:
+			if(e.workActivate)e.workActivate.SetActive(false);
+			if(e.brokenActivate)e.brokenActivate.SetActive(false);
+			// e.tra.localScale=e.scaleDock*Vector3.one;
+			break;
+		}
+
 	}
 	public void checkElementStatus(){
 		foreach(var e in elementOrderList){
 			if(!e)Debug.LogError("Circuit.elementOrderList is not completed");
-			e.status="none";
+			// e.status="none";
 		}
 		int ll=Mathf.Min(elementOrderList.Length,containerOrderList.Length);
 		for(int i=0;i<ll;i++){
 			var e=elementOrderList[i];
 			if(!e)continue;
-			e.status=e==containerOrderList[i].element?"work":"broken";
+			switch(e.status){
+			case"put":
+				e.status=e==containerOrderList[i].element?"work":"broken";
+				break;
+			}
 			// e.tra.localScale=e.scaleNormal*Vector3.one;
 			switch(e.status){
 			case"work":
@@ -45,6 +86,7 @@ public class Circuit : TRNTH.MonoBehaviour {
 				if(targetFSM)targetFSM.SendEvent("item_"+e.name[0]+"_work");
 				if(e.workActivate)e.workActivate.SetActive(true);
 				if(e.brokenActivate)e.brokenActivate.SetActive(false);
+				Destroy(e.collider);
 				break;
 			case"broken":
 				if(targetFSM)targetFSM.SendEvent("item_"+e.name[0]+"_broken");
@@ -62,7 +104,7 @@ public class Circuit : TRNTH.MonoBehaviour {
 	}
 	void toggleEleCollider(bool value){
 		foreach(var e in elementOrderList){
-			e.collider.enabled=value;
+			if(e.status!="work")e.collider.enabled=value;
 		}
 	}
 	Control control;
@@ -125,9 +167,10 @@ public class Circuit : TRNTH.MonoBehaviour {
 					element.container.collider.enabled=false;
 					element.container.gameObject.SetActive(false);
 					element.collider.enabled=true;
-					element=null;
-					checkElementStatus();
+					element.status="put";
+					checkElementStatus(element);
 					toggleEleCollider(true);
+					element=null;
 				}
 			}
 		}

@@ -19,14 +19,14 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 4.03000021
-        inSlope: 1.414855
-        outSlope: 1.414855
+        value: 4
+        inSlope: 1.52073801
+        outSlope: 1.52073801
         tangentMode: 10
       - time: .283333331
         value: 4.43087578
-        inSlope: -1.08810723
-        outSlope: -1.08810723
+        inSlope: -1.03516579
+        outSlope: -1.03516579
         tangentMode: 10
       - time: .516666651
         value: 3.59295964
@@ -65,13 +65,13 @@ AnimationClip:
         tangentMode: 10
       - time: 2.7166667
         value: 4.43567133
-        inSlope: 3.12419319
-        outSlope: 3.12419319
+        inSlope: 3.09205008
+        outSlope: 3.09205008
         tangentMode: 10
       - time: 3.1833334
-        value: 4.03000021
-        inSlope: -.86929518
-        outSlope: -.86929518
+        value: 4
+        inSlope: -.933581352
+        outSlope: -.933581352
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -107,14 +107,14 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 4.03000021
-        inSlope: 1.414855
-        outSlope: 1.414855
+        value: 4
+        inSlope: 1.52073801
+        outSlope: 1.52073801
         tangentMode: 10
       - time: .283333331
         value: 4.43087578
-        inSlope: -1.08810723
-        outSlope: -1.08810723
+        inSlope: -1.03516579
+        outSlope: -1.03516579
         tangentMode: 10
       - time: .516666651
         value: 3.59295964
@@ -153,13 +153,13 @@ AnimationClip:
         tangentMode: 10
       - time: 2.7166667
         value: 4.43567133
-        inSlope: 3.12419319
-        outSlope: 3.12419319
+        inSlope: 3.09205008
+        outSlope: 3.09205008
         tangentMode: 10
       - time: 3.1833334
-        value: 4.03000021
-        inSlope: -.86929518
-        outSlope: -.86929518
+        value: 4
+        inSlope: -.933581352
+        outSlope: -.933581352
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
