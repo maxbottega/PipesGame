@@ -7596,11 +7596,7 @@ MonoBehaviour:
   isAllWork: 0
   snapRadius: 2
   timePass: 0
-<<<<<<< HEAD
-  timeLabel: {fileID: 0}
-=======
   timeRecord: {fileID: 0}
->>>>>>> 35b7ddff2d218e0a221b8590e06a7c49c04539f8
   targetFSM: {fileID: 0}
   levels: []
 --- !u!114 &11400038
