@@ -7,7 +7,8 @@ public class Circuit : TRNTH.MonoBehaviour {
 	[HideInInspector]public bool refresh=false;
 	public bool isAllWork=false;
 	public float snapRadius=0.3f;
-	public UILabel timeRecord;
+	public float timePass=0;
+	public UILabel timeLabel;
 	public PlayMakerFSM targetFSM;
 	public CircuitSet[] levels;
 	internal Element[] elementOrderList=new Element[]{};
@@ -125,7 +126,8 @@ public class Circuit : TRNTH.MonoBehaviour {
 	}
 	void Update(){
 		// time record 
-		if(timeRecord)timeRecord.text=Mathf.Floor(Time.realtimeSinceStartup-timeStart)+"";
+		timePass=(Time.realtimeSinceStartup-timeStart);
+		if(timeLabel)timeLabel.text=Mathf.Floor(timePass)+"";
 		// main `Element`s drag and drop
 		if(!isLocked){
 			if(control.isHover){

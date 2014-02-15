@@ -7595,6 +7595,7 @@ MonoBehaviour:
   refresh: 0
   isAllWork: 0
   snapRadius: 2
+  timePass: 0
   timeRecord: {fileID: 0}
   targetFSM: {fileID: 0}
   levels: []
