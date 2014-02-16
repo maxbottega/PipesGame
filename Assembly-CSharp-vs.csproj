@@ -814,7 +814,6 @@
      <Compile Include="Assets\_PipeGame\script\CircuitSet.cs" />
      <Compile Include="Assets\_PipeGame\script\Container.cs" />
      <Compile Include="Assets\_PipeGame\script\Element.cs" />
-     <Compile Include="Assets\_PipeGame\script\Test.cs" />
      <Compile Include="Assets\iTween\iTween.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
