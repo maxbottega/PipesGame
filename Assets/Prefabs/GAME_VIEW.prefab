@@ -7525,10 +7525,13 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
-    - name: broken
+    - name: boiler_on
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: work
       isSystemEvent: 0
       isGlobal: 0
-    - name: work
+    - name: broken
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
@@ -7593,6 +7596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   refresh: 0
+  mode: 0
   isAllWork: 0
   snapRadius: 2
   timePass: 0
