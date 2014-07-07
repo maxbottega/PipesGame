@@ -1,4 +1,5 @@
 using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -8,18 +9,18 @@ using HutongGames.PlayMaker;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Adds a new item to a popup list or menu")]
+[HutongGames.PlayMaker.Tooltip("Adds a new item to a popup list or menu")]
 public class NguiAddPopupOption : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI Popup to use")]
+    [HutongGames.PlayMaker.Tooltip("NGUI Popup to use")]
     public FsmOwnerDefault NguiPopup;
 
     [RequiredField]
-    [Tooltip("The new menu option to add")]
+    [HutongGames.PlayMaker.Tooltip("The new menu option to add")]
     public FsmString NewOption;
 
-    [Tooltip("When true, runs on every frame")]
+    [HutongGames.PlayMaker.Tooltip("When true, runs on every frame")]
     public bool everyFrame;
 
     public override void Reset()

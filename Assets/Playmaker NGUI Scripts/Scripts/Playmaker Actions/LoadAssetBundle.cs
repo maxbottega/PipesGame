@@ -1,4 +1,5 @@
 ﻿using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -8,23 +9,23 @@
 */
 
 [ActionCategory("Asset Bundle")]
-[Tooltip("Loads one asset bundle")]
+[HutongGames.PlayMaker.Tooltip("Loads one asset bundle")]
 public class LoadAssetBundle : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("Asset Bundle Manager Prefab")]
+    [HutongGames.PlayMaker.Tooltip("Asset Bundle Manager Prefab")]
     public FsmGameObject BundleManager;
 
     [RequiredField]
-    [Tooltip("URL of asset bundle - including .unity3d extension")]
+    [HutongGames.PlayMaker.Tooltip("URL of asset bundle - including .unity3d extension")]
     public FsmString BundleURL;
 
     [RequiredField]
-    [Tooltip("Asset Name")]
+    [HutongGames.PlayMaker.Tooltip("Asset Name")]
     public FsmString AssetName;
 
     [RequiredField]
-    [Tooltip("Bundle version number")]
+    [HutongGames.PlayMaker.Tooltip("Bundle version number")]
     public FsmInt VersionNumber;
 
     /// <summary>

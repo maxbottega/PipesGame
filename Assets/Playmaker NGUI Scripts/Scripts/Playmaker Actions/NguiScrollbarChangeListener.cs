@@ -1,4 +1,5 @@
 using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -10,18 +11,18 @@ using HutongGames.PlayMaker;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Listens for the scrollbar to change")]
+[HutongGames.PlayMaker.Tooltip("Listens for the scrollbar to change")]
 public class NguiScrollbarChangeListener : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI scrollbar")]
+    [HutongGames.PlayMaker.Tooltip("NGUI scrollbar")]
     public FsmOwnerDefault NguiScrollbar;
 
-    [Tooltip("Event to raise when scrollbar changes")]
+    [HutongGames.PlayMaker.Tooltip("Event to raise when scrollbar changes")]
     public FsmEvent ChangeEvent;
 
     [UIHint(UIHint.Variable)]
-    [Tooltip("Variable to store the scrollbar's value")]
+    [HutongGames.PlayMaker.Tooltip("Variable to store the scrollbar's value")]
     public FsmFloat storeValue;
 
     private bool HasChanged;
@@ -82,7 +83,6 @@ public class NguiScrollbarChangeListener : FsmStateAction
 
         // save the value
         if (storeValue != null)
-            //storeValue.Value = NScroll.scrollValue;
             storeValue.Value = NScroll.value;
 
         // call the event

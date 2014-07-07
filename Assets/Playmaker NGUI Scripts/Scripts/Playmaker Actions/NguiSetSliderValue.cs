@@ -1,4 +1,5 @@
 using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -10,22 +11,22 @@ using HutongGames.PlayMaker;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Sets the value of an NGUI progressbar or Slider")]
+[HutongGames.PlayMaker.Tooltip("Sets the value of an NGUI progressbar or Slider")]
 public class NguiSetSliderValue : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI slider or progressbar to update")]
+    [HutongGames.PlayMaker.Tooltip("NGUI slider or progressbar to update")]
     public FsmOwnerDefault NguiSlider;
 
     [RequiredField]
-    [Tooltip("The new value to assign to the slider progressbar")]
+    [HutongGames.PlayMaker.Tooltip("The new value to assign to the slider progressbar")]
     public FsmFloat value;
 
     [UIHint(UIHint.Variable)]
-    [Tooltip("Save the value to a variable")]
+    [HutongGames.PlayMaker.Tooltip("Save the value to a variable")]
     public FsmFloat saveValue;
 
-    [Tooltip("When true, runs on every frame")]
+    [HutongGames.PlayMaker.Tooltip("When true, runs on every frame")]
     public bool everyFrame;
 
     public override void Reset()
@@ -63,7 +64,6 @@ public class NguiSetSliderValue : FsmStateAction
             return;
 
         // set value
-        //NguiSlide.sliderValue = value.Value;
         NguiSlide.value = value.Value;
 
         // save value

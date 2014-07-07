@@ -55,6 +55,10 @@ ModelImporter:
     100098: 'TextureGroup '
     100100: TextureGroup (2)
     100102: TextureGroup  1
+    100104: 'TextureGroup  '
+    100106: Pipes_section_inner2
+    100108: Texture Group   1
+    100110: TextureLocators
     400000: ' J_Regulator_65'
     400002: ' K_Regulator_45'
     400004: 3 Point Beige 01.lxe
@@ -107,6 +111,10 @@ ModelImporter:
     400098: 'TextureGroup '
     400100: TextureGroup (2)
     400102: TextureGroup  1
+    400104: 'TextureGroup  '
+    400106: Pipes_section_inner2
+    400108: Texture Group   1
+    400110: TextureLocators
     2300000: ' J_Regulator_65'
     2300002: ' K_Regulator_45'
     2300004: A_pump
@@ -140,6 +148,7 @@ ModelImporter:
     2300060: Radiator_inner
     2300062: Radiator_water
     2300064: Radiator_heat
+    2300066: Pipes_section_inner2
     3300000: ' J_Regulator_65'
     3300002: ' K_Regulator_45'
     3300004: A_pump
@@ -173,6 +182,7 @@ ModelImporter:
     3300060: Radiator_inner
     3300062: Radiator_water
     3300064: Radiator_heat
+    3300066: Pipes_section_inner2
     4300000: Temp_PIPES_0
     4300002: L_HorizCollector
     4300004: C_DirtExtractor
@@ -206,6 +216,7 @@ ModelImporter:
     4300060: Radiator_bubbles
     4300062: Radiator_inner
     4300064: Radiator_heat
+    4300066: Pipes_section_inner2
     7400000: Take 001
     7400002: modo_Anim
     9500000: //RootNode

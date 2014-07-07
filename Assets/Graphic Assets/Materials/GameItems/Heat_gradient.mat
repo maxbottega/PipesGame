@@ -19,12 +19,12 @@ Material:
         second:
           m_Texture: {fileID: 2800000, guid: c85214f2a582aac42b200ac52743d827, type: 3}
           m_Scale: {x: 1, y: 1}
-          m_Offset: {x: .25, y: 0}
+          m_Offset: {x: .200000003, y: 0}
       data:
         first:
           name: _MatCap
         second:
-          m_Texture: {fileID: 2800000, guid: 425225bfb97f4df44be7edf0ad4aec35, type: 3}
+          m_Texture: {fileID: 2800000, guid: e653577918d642d4c87e0c2bd35abe67, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats: {}

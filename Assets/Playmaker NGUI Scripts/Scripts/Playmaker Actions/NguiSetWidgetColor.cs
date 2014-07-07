@@ -1,4 +1,5 @@
 using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -8,18 +9,18 @@ using HutongGames.PlayMaker;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Sets the color value of a widget")]
+[HutongGames.PlayMaker.Tooltip("Sets the color value of a widget")]
 public class NguiSetWidgetColor : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI Widget to update")]
+    [HutongGames.PlayMaker.Tooltip("NGUI Widget to update")]
     public FsmOwnerDefault NguiWidget;
 
     [RequiredField]
-    [Tooltip("The new color to assign to the widget")]
+    [HutongGames.PlayMaker.Tooltip("The new color to assign to the widget")]
     public FsmColor color;
 
-    [Tooltip("When true, runs on every frame")]
+    [HutongGames.PlayMaker.Tooltip("When true, runs on every frame")]
     public bool everyFrame;
 
     public override void Reset()

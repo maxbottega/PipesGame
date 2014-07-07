@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sequencer>
+	<sequence persists="true">
+		<name>Create Cube</name>
+		<resource>My Cube</resource>
+	</sequence>	
+	<sequence duration="3" >
+		<name>translate cube</name>
+		<resource>Translate</resource>
+		<properties>
+			<GameObjectTarget>My Cube</GameObjectTarget> 
+			<speed type="float">5</speed>
+		</properties>
+	</sequence>	
+	<sequence duration="4" persists="true">
+		<name>rotate cube</name>
+		<gameObject>Rotate</gameObject>
+		<properties>
+			<GameObjectTarget>My Cube</GameObjectTarget> 
+			<angleSpeed type="float">45</angleSpeed>
+		</properties>
+	</sequence>	
+</sequencer>

@@ -1,5 +1,6 @@
 using HutongGames.PlayMaker;
 using UnityEngine;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -9,18 +10,18 @@ using UnityEngine;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Sets an NGUI Buttons's Enabled property")]
+[HutongGames.PlayMaker.Tooltip("Sets an NGUI Buttons's Enabled property")]
 public class NguiSetButtonEnabled : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI object to update")]
+    [HutongGames.PlayMaker.Tooltip("NGUI object to update")]
     public FsmOwnerDefault NguiButtonToUpdate;
 
     [RequiredField]
-    [Tooltip("The new value to assign the Enabled property")]
+    [HutongGames.PlayMaker.Tooltip("The new value to assign the Enabled property")]
     public FsmBool enabled;
 
-    [Tooltip("When true, runs on every frame")]
+    [HutongGames.PlayMaker.Tooltip("When true, runs on every frame")]
     public bool everyFrame;
 
     public override void Reset()

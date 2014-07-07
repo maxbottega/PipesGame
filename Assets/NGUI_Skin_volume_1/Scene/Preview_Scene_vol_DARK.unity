@@ -103,6 +103,7 @@ Transform:
   m_Children:
   - {fileID: 504972177}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 18
 --- !u!114 &1894168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,6 +188,7 @@ Transform:
   m_Children:
   - {fileID: 1435581821}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 25
 --- !u!114 &11639533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,6 +271,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1947375758}
+  m_RootOrder: 0
 --- !u!114 &26749729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,11 +299,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 170
   mHeight: 40
@@ -310,7 +309,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 4.25
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 73746174655f627574746f6e5f6261636b67726f756e64
+  mSpriteName: state_button_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -348,6 +347,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 1953773340}
+  m_RootOrder: 1
 --- !u!114 &49596224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,11 +375,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 40
   mHeight: 32
@@ -391,32 +387,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: e3d02d84230c6004585e1437e5e4d053, type: 2}
-  mText: 4f6e
+  mText: On
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -453,6 +437,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1535624018}
+  m_RootOrder: 2
 --- !u!65 &57751373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -477,16 +462,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 57751371}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
 --- !u!114 &57751376
 MonoBehaviour:
@@ -515,11 +492,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 20
   mHeight: 30
@@ -529,7 +502,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .666666687
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f7468756d62
+  mSpriteName: slider_H_thumb
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -568,6 +541,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2010794818}
+  m_RootOrder: 0
 --- !u!114 &60149089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -595,11 +569,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -609,7 +579,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f6261636b67726f756e64
+  mSpriteName: slider_H_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -661,6 +631,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 732954288}
+  m_RootOrder: 3
 --- !u!65 &74420667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -700,11 +671,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 100
   mHeight: 40
@@ -714,7 +681,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 2.5
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 7377697463685f6261636b67726f756e64
+  mSpriteName: switch_background
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -764,6 +731,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 732954288}
+  m_RootOrder: 0
 --- !u!114 &76240044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,11 +759,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: .196078435
+  mColor: {r: 1, g: 1, b: 1, a: .196078435}
   mPivot: 4
   mWidth: 18
   mHeight: 32
@@ -807,32 +771,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: e3d02d84230c6004585e1437e5e4d053, type: 2}
-  mText: 30
+  mText: 0
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -868,6 +820,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1733512020}
+  m_RootOrder: 0
 --- !u!114 &92760950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -895,11 +848,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 100
   mHeight: 40
@@ -909,7 +858,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 2.5
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 627574746f6e5f736c696365645f6172726f775f7269676874
+  mSpriteName: button_sliced_arrow_right
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -960,6 +909,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 651269206}
+  m_RootOrder: 2
 --- !u!114 &112245981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -987,11 +937,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  mColor: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   mPivot: 4
   mWidth: 60
   mHeight: 32
@@ -1003,32 +949,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 333025
+  mText: 30%
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -1047,7 +981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b355873c8346a674888df47f98cf8565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addChar: 25
+  addChar: '%'
 --- !u!1 &145272540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,6 +1013,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1953773340}
+  m_RootOrder: 2
 --- !u!114 &145272542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1106,11 +1041,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 50
   mHeight: 40
@@ -1120,7 +1051,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1.25
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 7377697463685f7468756d62
+  mSpriteName: switch_thumb
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -1157,6 +1088,7 @@ MonoBehaviour:
   method: 0
   style: 0
   animationCurve:
+    serializedVersion: 2
     m_Curve:
     - time: 0
       value: 0
@@ -1206,16 +1138,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 145272540}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
 --- !u!1 &172363980
 GameObject:
@@ -1250,6 +1174,7 @@ Transform:
   - {fileID: 650124963}
   - {fileID: 1196735948}
   m_Father: {fileID: 215313755}
+  m_RootOrder: 0
 --- !u!65 &172363982
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1289,22 +1214,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 769529744}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
-  disabledColor:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!114 &172363986
@@ -1330,7 +1243,7 @@ MonoBehaviour:
   checkSprite: {fileID: 0}
   checkAnimation: {fileID: 0}
   eventReceiver: {fileID: 0}
-  functionName: 4f6e4163746976617465
+  functionName: OnActivate
 --- !u!1 &180690573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,6 +1271,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1845704301}
+  m_RootOrder: 1
 --- !u!114 &180690575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1385,11 +1299,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 0
-    b: 0
-    a: 1
+  mColor: {r: 1, g: 0, b: 0, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -1399,7 +1309,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: ed74d195f5c8d1a4da07d4b5543d1022, type: 2}
-  mSpriteName: 736c696465725f485f666f726567726f756e64
+  mSpriteName: slider_H_foreground
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -1438,6 +1348,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1545358680}
+  m_RootOrder: 1
 --- !u!114 &213464110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1465,11 +1376,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 7
   mWidth: 30
   mHeight: 200
@@ -1479,7 +1386,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .150000006
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f565f666f726567726f756e64
+  mSpriteName: slider_V_foreground
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -1531,6 +1438,7 @@ Transform:
   m_Children:
   - {fileID: 172363981}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 7
 --- !u!114 &215313756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1613,6 +1521,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 732954288}
+  m_RootOrder: 1
 --- !u!114 &216061358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1640,11 +1549,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 18
   mHeight: 32
@@ -1656,32 +1561,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: e3d02d84230c6004585e1437e5e4d053, type: 2}
-  mText: 31
+  mText: 1
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -1722,6 +1615,7 @@ Transform:
   - {fileID: 1164759691}
   - {fileID: 1733512020}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 27
 --- !u!114 &245673669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1805,6 +1699,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 831116618}
+  m_RootOrder: 0
 --- !u!114 &267113229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1832,11 +1727,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 40
   mHeight: 60
@@ -1846,7 +1737,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .666666687
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 627574746f6e5f736c696365645f6172726f775f646f776e
+  mSpriteName: button_sliced_arrow_down
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -1898,6 +1789,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1460791122}
+  m_RootOrder: 3
 --- !u!65 &314287217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1937,11 +1829,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 100
   mHeight: 40
@@ -1951,7 +1839,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 2.5
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 7377697463685f6261636b67726f756e64
+  mSpriteName: switch_background
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -2002,6 +1890,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1535624018}
+  m_RootOrder: 1
 --- !u!114 &330550408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2029,11 +1918,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 7
   mWidth: 30
   mHeight: 200
@@ -2043,7 +1928,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .150000006
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f565f666f726567726f756e64
+  mSpriteName: slider_V_foreground
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -2093,6 +1978,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1947375758}
+  m_RootOrder: 2
 --- !u!114 &343974259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2120,11 +2006,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 100
   mHeight: 40
@@ -2134,7 +2016,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 2.5
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 73746174655f627574746f6e5f66726f6e74
+  mSpriteName: state_button_front
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -2174,6 +2056,7 @@ Transform:
   m_Children:
   - {fileID: 2057840110}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 24
 --- !u!114 &347086714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2256,6 +2139,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 711211001}
+  m_RootOrder: 0
 --- !u!114 &351288907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2283,11 +2167,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: .191176474
-    g: .191176474
-    b: .191176474
-    a: .592156887
+  mColor: {r: .191176474, g: .191176474, b: .191176474, a: .592156887}
   mPivot: 4
   mWidth: 1500
   mHeight: 800
@@ -2297,7 +2177,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1.875
   mAtlas: {fileID: 11400000, guid: ed74d195f5c8d1a4da07d4b5543d1022, type: 2}
-  mSpriteName: 6261636b67726f756e645f74696c65
+  mSpriteName: background_tile
   mType: 2
   mFillDirection: 4
   mFillAmount: 1
@@ -2337,6 +2217,7 @@ Transform:
   m_Children:
   - {fileID: 2007450056}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 20
 --- !u!114 &355125628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,6 +2306,7 @@ Transform:
   - {fileID: 1696027073}
   - {fileID: 734157350}
   m_Father: {fileID: 245673668}
+  m_RootOrder: 2
 --- !u!65 &389287525
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2494,22 +2376,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1696027072}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
-  disabledColor:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!1 &403161740
@@ -2543,6 +2413,7 @@ Transform:
   - {fileID: 931258468}
   - {fileID: 1343163418}
   m_Father: {fileID: 1303726986}
+  m_RootOrder: 0
 --- !u!65 &403161742
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2609,6 +2480,7 @@ Transform:
   - {fileID: 1953923105}
   - {fileID: 1658690352}
   m_Father: {fileID: 2147458104}
+  m_RootOrder: 1
 --- !u!65 &483645824
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2663,22 +2535,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1953923104}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
-  disabledColor:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!1 &488276381
@@ -2714,6 +2574,7 @@ Transform:
   - {fileID: 1748402420}
   - {fileID: 2115468005}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 14
 --- !u!114 &488276383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2812,6 +2673,7 @@ Transform:
   - {fileID: 1172218662}
   - {fileID: 1016908678}
   m_Father: {fileID: 1894167}
+  m_RootOrder: 0
 --- !u!65 &504972178
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2842,7 +2704,7 @@ MonoBehaviour:
   onChange: []
   rawValue: 1
   eventReceiver: {fileID: 0}
-  functionName: 4f6e536c696465724368616e6765
+  functionName: OnSliderChange
 --- !u!1 &508460857
 GameObject:
   m_ObjectHideFlags: 0
@@ -2872,6 +2734,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1748402420}
+  m_RootOrder: 2
 --- !u!65 &508460859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2926,11 +2789,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
+  mColor: {r: 1, g: 1, b: 1, a: 0}
   mPivot: 4
   mWidth: 20
   mHeight: 30
@@ -2940,7 +2799,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .666666687
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f7468756d62
+  mSpriteName: slider_H_thumb
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -2984,6 +2843,7 @@ Transform:
   - {fileID: 2132183937}
   - {fileID: 948265505}
   m_Father: {fileID: 753525605}
+  m_RootOrder: 0
 --- !u!65 &525502708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3023,22 +2883,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 2084812509}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
-  disabledColor:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!114 &525502712
@@ -3064,7 +2912,7 @@ MonoBehaviour:
   checkSprite: {fileID: 0}
   checkAnimation: {fileID: 0}
   eventReceiver: {fileID: 0}
-  functionName: 4f6e4163746976617465
+  functionName: OnActivate
 --- !u!1 &529317564
 GameObject:
   m_ObjectHideFlags: 0
@@ -3092,6 +2940,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 1746816683}
+  m_RootOrder: 0
 --- !u!114 &529317566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3119,11 +2968,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: .335820913
-    g: .335820913
-    b: .335820913
-    a: 1
+  mColor: {r: .335820913, g: .335820913, b: .335820913, a: 1}
   mPivot: 3
   mWidth: 166
   mHeight: 32
@@ -3135,32 +2980,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: e3d02d84230c6004585e1437e5e4d053, type: 2}
-  mText: 43756265735465616d
+  mText: CubesTeam
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 2, y: 2}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -3197,6 +3030,7 @@ Transform:
   m_Children:
   - {fileID: 1446089992}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 1
 --- !u!114 &548384253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3281,6 +3115,7 @@ Transform:
   m_Children:
   - {fileID: 777912072}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 11
 --- !u!114 &555242097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3366,6 +3201,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1721154095}
+  m_RootOrder: 0
 --- !u!65 &564951058
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3416,11 +3252,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 806
   mHeight: 30
@@ -3430,7 +3262,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 26.8666668
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f6261636b67726f756e64
+  mSpriteName: slider_H_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -3483,6 +3315,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 814009448}
+  m_RootOrder: 1
 --- !u!65 &566156592
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3533,11 +3366,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
   mWidth: 38
   mHeight: 484
@@ -3547,7 +3376,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .0785124004
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f565f666f726567726f756e64
+  mSpriteName: slider_V_foreground
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -3601,6 +3430,7 @@ Transform:
   - {fileID: 958071167}
   - {fileID: 1401429984}
   m_Father: {fileID: 961628634}
+  m_RootOrder: 0
 --- !u!65 &572145166
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3665,6 +3495,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1721154095}
+  m_RootOrder: 1
 --- !u!65 &581535015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3715,11 +3546,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 800
   mHeight: 30
@@ -3729,7 +3556,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 26.666666
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f666f726567726f756e64
+  mSpriteName: slider_H_foreground
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -3780,6 +3607,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1649840322}
+  m_RootOrder: 2
 --- !u!114 &583438293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3807,11 +3635,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
   mWidth: 512
   mHeight: 128
@@ -3821,7 +3645,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 4
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 7061747465726e5f33
+  mSpriteName: pattern_3
   mType: 2
   mFillDirection: 4
   mFillAmount: 1
@@ -3873,6 +3697,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1845704301}
+  m_RootOrder: 2
 --- !u!65 &585866442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3912,11 +3737,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
+  mColor: {r: 1, g: 1, b: 1, a: 0}
   mPivot: 4
   mWidth: 20
   mHeight: 30
@@ -3926,7 +3747,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .666666687
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f7468756d62
+  mSpriteName: slider_H_thumb
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -3981,6 +3802,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2115468005}
+  m_RootOrder: 2
 --- !u!65 &607928883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4035,11 +3857,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
+  mColor: {r: 1, g: 1, b: 1, a: 0}
   mPivot: 4
   mWidth: 20
   mHeight: 30
@@ -4049,7 +3867,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .666666687
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f7468756d62
+  mSpriteName: slider_H_thumb
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -4087,6 +3905,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 172363981}
+  m_RootOrder: 1
 --- !u!114 &650124964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4114,11 +3933,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 40
   mHeight: 40
@@ -4128,7 +3943,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 436865636b626f785f666f7267726f756e645f58
+  mSpriteName: Checkbox_forground_X
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -4169,6 +3984,7 @@ Transform:
   - {fileID: 1149266571}
   - {fileID: 112245980}
   m_Father: {fileID: 1758807278}
+  m_RootOrder: 0
 --- !u!114 &651269207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4188,7 +4004,7 @@ MonoBehaviour:
   numberOfSteps: 0
   onChange:
   - mTarget: {fileID: 112245981}
-    mMethodName: 53657443757272656e7450657263656e74
+    mMethodName: SetCurrentPercent
     oneShot: 0
   foreground: {fileID: 1149266571}
   rawValue: .300000012
@@ -4222,6 +4038,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1649840322}
+  m_RootOrder: 3
 --- !u!114 &697179465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4261,11 +4078,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
   mWidth: 512
   mHeight: 128
@@ -4275,7 +4088,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 4
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 7061747465726e5f34
+  mSpriteName: pattern_4
   mType: 2
   mFillDirection: 4
   mFillAmount: 1
@@ -4315,6 +4128,7 @@ Transform:
   m_Children:
   - {fileID: 351288906}
   m_Father: {fileID: 1984073362}
+  m_RootOrder: 0
 --- !u!114 &711211002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4403,6 +4217,7 @@ Transform:
   - {fileID: 1491997337}
   - {fileID: 74420666}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 22
 --- !u!114 &732954289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4414,8 +4229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3cf0cc400973f44978cade9a3a9c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftText: 31
-  rightText: 30
+  leftText: 1
+  rightText: 0
   state: 1
   lbl_left: {fileID: 216061358}
   lbl_right: {fileID: 76240044}
@@ -4502,6 +4317,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1748402420}
+  m_RootOrder: 1
 --- !u!114 &733439966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4529,11 +4345,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 0
-    g: 1
-    b: .118881226
-    a: 1
+  mColor: {r: 0, g: 1, b: .118881226, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -4543,7 +4355,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: ed74d195f5c8d1a4da07d4b5543d1022, type: 2}
-  mSpriteName: 736c696465725f485f666f726567726f756e64
+  mSpriteName: slider_H_foreground
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -4581,6 +4393,7 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 389287524}
+  m_RootOrder: 1
 --- !u!114 &734157351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4608,11 +4421,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 172
   mHeight: 32
@@ -4624,32 +4433,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 536c6963656420427574746f6e
+  mText: Sliced Button
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -4687,6 +4484,7 @@ Transform:
   - {fileID: 1702777303}
   - {fileID: 1350286873}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 28
 --- !u!114 &739501191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4771,6 +4569,7 @@ Transform:
   m_Children:
   - {fileID: 525502707}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 8
 --- !u!114 &753525606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4853,6 +4652,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2115468005}
+  m_RootOrder: 1
 --- !u!114 &766709757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4880,11 +4680,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 0
-    g: .189414978
-    b: 1
-    a: 1
+  mColor: {r: 0, g: .189414978, b: 1, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -4894,7 +4690,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: ed74d195f5c8d1a4da07d4b5543d1022, type: 2}
-  mSpriteName: 736c696465725f485f666f726567726f756e64
+  mSpriteName: slider_H_foreground
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -4932,6 +4728,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 172363981}
+  m_RootOrder: 0
 --- !u!114 &769529746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4959,11 +4756,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 40
   mHeight: 40
@@ -4973,7 +4766,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1
   mAtlas: {fileID: 11400000, guid: ed74d195f5c8d1a4da07d4b5543d1022, type: 2}
-  mSpriteName: 436865636b626f785f6261636b67726f756e64
+  mSpriteName: Checkbox_background
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -5015,6 +4808,7 @@ Transform:
   - {fileID: 1004394309}
   - {fileID: 1609743490}
   m_Father: {fileID: 555242096}
+  m_RootOrder: 0
 --- !u!65 &777912073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5080,6 +4874,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1460791122}
+  m_RootOrder: 2
 --- !u!65 &779440716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5119,11 +4914,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 50
   mHeight: 40
@@ -5133,7 +4924,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1.25
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 7377697463685f7468756d62
+  mSpriteName: switch_thumb
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -5158,6 +4949,7 @@ MonoBehaviour:
   method: 0
   style: 0
   animationCurve:
+    serializedVersion: 2
     m_Curve:
     - time: 0
       value: 0
@@ -5207,16 +4999,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 779440714}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
 --- !u!1 &786370454
 GameObject:
@@ -5246,6 +5030,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2007450056}
+  m_RootOrder: 0
 --- !u!114 &786370456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5273,11 +5058,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 300
   mHeight: 40
@@ -5287,7 +5068,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 7.5
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 746578745f66696c6564
+  mSpriteName: text_filed
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -5339,6 +5120,7 @@ Transform:
   - {fileID: 1670401522}
   - {fileID: 566156591}
   m_Father: {fileID: 1339091293}
+  m_RootOrder: 0
 --- !u!114 &814009449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5392,6 +5174,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1535624018}
+  m_RootOrder: 0
 --- !u!114 &824215821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5419,11 +5202,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 7
   mWidth: 30
   mHeight: 200
@@ -5433,7 +5212,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .150000006
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f565f6261636b67726f756e64
+  mSpriteName: slider_V_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -5483,6 +5262,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 2007450056}
+  m_RootOrder: 1
 --- !u!114 &826024176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5510,14 +5290,10 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 279
-  mHeight: 32
+  mHeight: 31
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -5526,32 +5302,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 596f752063616e20747970652068657265202e2e2e
+  mText: You can type here ...
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 0
   mMaxLineCount: 1
   mEffectStyle: 1
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 2, y: 2}
   mOverflow: 3
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -5592,6 +5356,7 @@ Transform:
   - {fileID: 267113228}
   - {fileID: 1812163511}
   m_Father: {fileID: 245673668}
+  m_RootOrder: 0
 --- !u!65 &831116619
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5661,22 +5426,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 267113227}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
-  disabledColor:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!1 &838839159
@@ -5707,6 +5460,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 572145165}
+  m_RootOrder: 0
 --- !u!114 &838839161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5734,11 +5488,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -5748,7 +5498,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f6261636b67726f756e64
+  mSpriteName: slider_H_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -5798,6 +5548,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 872757073}
+  m_RootOrder: 1
 --- !u!114 &840649420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5825,11 +5576,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 268
   mHeight: 32
@@ -5841,32 +5588,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 596f752063616e20747970652068657265202e2e2e
+  mText: You can type here ...
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 0
   mMaxLineCount: 1
   mEffectStyle: 1
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 2, y: 2}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -5904,6 +5639,7 @@ Transform:
   - {fileID: 1684949615}
   - {fileID: 840649419}
   m_Father: {fileID: 2147458104}
+  m_RootOrder: 0
 --- !u!65 &872757074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5934,21 +5670,9 @@ MonoBehaviour:
   characterLimit: 0
   savedAs: 
   selectOnTab: {fileID: 0}
-  activeTextColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  caretColor:
-    r: 1
-    g: 1
-    b: 1
-    a: .800000012
-  selectionColor:
-    r: 1
-    g: .874509811
-    b: .552941203
-    a: .5
+  activeTextColor: {r: 1, g: 1, b: 1, a: 1}
+  caretColor: {r: 1, g: 1, b: 1, a: .800000012}
+  selectionColor: {r: 1, g: .874509811, b: .552941203, a: .5}
   onSubmit: []
   onChange: []
   mValue: 
@@ -5981,6 +5705,7 @@ Transform:
   m_Children:
   - {fileID: 978873448}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 19
 --- !u!114 &894101891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6064,6 +5789,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1945494703}
+  m_RootOrder: 1
 --- !u!114 &921363730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6091,11 +5817,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: .737254918
-    g: .737254918
-    b: .737254918
-    a: 1
+  mColor: {r: .737254918, g: .737254918, b: .737254918, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -6105,7 +5827,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 50726f67726573734261725f666f726567726f756e64
+  mSpriteName: ProgressBar_foreground
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -6156,6 +5878,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 403161741}
+  m_RootOrder: 1
 --- !u!114 &931258469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6183,11 +5906,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 7
   mWidth: 30
   mHeight: 200
@@ -6197,7 +5916,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .150000006
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f565f666f726567726f756e64
+  mSpriteName: slider_V_foreground
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -6247,6 +5966,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 525502707}
+  m_RootOrder: 2
 --- !u!114 &948265506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6274,11 +5994,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 86
   mHeight: 32
@@ -6290,32 +6006,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 4f7074696f6e
+  mText: Option
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -6351,6 +6055,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 572145165}
+  m_RootOrder: 1
 --- !u!114 &958071168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6378,11 +6083,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -6392,7 +6093,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f666f726567726f756e64
+  mSpriteName: slider_H_foreground
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -6444,6 +6145,7 @@ Transform:
   m_Children:
   - {fileID: 572145165}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 13
 --- !u!114 &961628635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6530,6 +6232,7 @@ Transform:
   - {fileID: 1777651515}
   - {fileID: 1247274129}
   m_Father: {fileID: 894101890}
+  m_RootOrder: 0
 --- !u!65 &978873449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6560,7 +6263,7 @@ MonoBehaviour:
   onChange: []
   rawValue: 1
   eventReceiver: {fileID: 0}
-  functionName: 4f6e536c696465724368616e6765
+  functionName: OnSliderChange
 --- !u!1 &1003787546
 GameObject:
   m_ObjectHideFlags: 0
@@ -6589,6 +6292,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1786145505}
+  m_RootOrder: 0
 --- !u!114 &1003787548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6616,11 +6320,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 40
   mHeight: 60
@@ -6630,7 +6330,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .666666687
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 627574746f6e5f736c696365645f6172726f775f7570
+  mSpriteName: button_sliced_arrow_up
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -6681,6 +6381,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 777912072}
+  m_RootOrder: 1
 --- !u!114 &1004394310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6708,11 +6409,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -6722,7 +6419,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f666f726567726f756e64
+  mSpriteName: slider_H_foreground
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -6774,6 +6471,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 504972177}
+  m_RootOrder: 2
 --- !u!65 &1016908679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6798,16 +6496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1016908677}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
 --- !u!114 &1016908682
 MonoBehaviour:
@@ -6836,11 +6526,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 140
   mHeight: 140
@@ -6850,7 +6536,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 536c69646572436972636c655f5468756d5f424947
+  mSpriteName: SliderCircle_Thum_BIG
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -6888,6 +6574,7 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 1733512020}
+  m_RootOrder: 1
 --- !u!114 &1044100629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6915,11 +6602,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 60
   mHeight: 32
@@ -6931,32 +6614,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 4e657874
+  mText: Next
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -6991,6 +6662,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1446089992}
+  m_RootOrder: 1
 --- !u!114 &1067093776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7018,11 +6690,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 170
   mHeight: 40
@@ -7032,7 +6700,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 4.25
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 4c697374426f785f6261636b67726f756e64
+  mSpriteName: ListBox_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -7070,6 +6738,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1845704301}
+  m_RootOrder: 0
 --- !u!114 &1125804316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7097,11 +6766,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -7111,7 +6776,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: ed74d195f5c8d1a4da07d4b5543d1022, type: 2}
-  mSpriteName: 736c696465725f485f6261636b67726f756e64
+  mSpriteName: slider_H_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -7149,6 +6814,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 1446089992}
+  m_RootOrder: 0
 --- !u!114 &1143478902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7176,11 +6842,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 164
   mHeight: 32
@@ -7192,32 +6854,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 4c697374204f7074696f6e2030
+  mText: List Option 0
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -7253,6 +6903,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 651269206}
+  m_RootOrder: 1
 --- !u!114 &1149266572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7280,11 +6931,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: .78039217
-    g: .78039217
-    b: .78039217
-    a: 1
+  mColor: {r: .78039217, g: .78039217, b: .78039217, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -7294,7 +6941,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 50726f67726573734261725f666f726567726f756e64
+  mSpriteName: ProgressBar_foreground
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -7350,6 +6997,7 @@ Transform:
   - {fileID: 2093399110}
   - {fileID: 1270277191}
   m_Father: {fileID: 245673668}
+  m_RootOrder: 3
 --- !u!65 &1164759692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7419,22 +7067,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 2093399109}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
-  disabledColor:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!1 &1172218661
@@ -7465,6 +7101,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 504972177}
+  m_RootOrder: 1
 --- !u!114 &1172218663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7492,11 +7129,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
   mWidth: 140
   mHeight: 140
@@ -7506,7 +7139,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 536c69646572436972636c655f466f726567726f756e645f424947
+  mSpriteName: SliderCircle_Foreground_BIG
   mType: 3
   mFillDirection: 4
   mFillAmount: .600000024
@@ -7558,6 +7191,7 @@ Transform:
   m_Children:
   - {fileID: 1269025492}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 26
 --- !u!114 &1176840051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7640,6 +7274,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 1746816683}
+  m_RootOrder: 1
 --- !u!114 &1177681683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7667,11 +7302,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: .490196079
-    g: .490196079
-    b: .490196079
-    a: 1
+  mColor: {r: .490196079, g: .490196079, b: .490196079, a: 1}
   mPivot: 3
   mWidth: 888
   mHeight: 32
@@ -7683,32 +7314,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 4755492f4e47554920536b696e20636f6c6c656374696f6e203230313320766f6c756d65202331205b3030303030305d5b204441524b202f2047524159202f205748495445205d5b2d5d
+  mText: 'GUI/NGUI Skin collection 2013 volume #1 [000000][ DARK / GRAY / WHITE ][-]'
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -7743,6 +7362,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 172363981}
+  m_RootOrder: 2
 --- !u!114 &1196735949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7770,11 +7390,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 124
   mHeight: 32
@@ -7786,32 +7402,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 436865636b626f78
+  mText: Checkbox
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -7848,6 +7452,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 978873448}
+  m_RootOrder: 2
 --- !u!65 &1247274130
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7872,16 +7477,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1247274128}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
 --- !u!114 &1247274133
 MonoBehaviour:
@@ -7910,11 +7507,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 80
   mHeight: 80
@@ -7924,7 +7517,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 536c69646572436972636c655f5468756d
+  mSpriteName: SliderCircle_Thum
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -7962,6 +7555,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2115468005}
+  m_RootOrder: 0
 --- !u!114 &1255099808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7989,11 +7583,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -8003,7 +7593,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: ed74d195f5c8d1a4da07d4b5543d1022, type: 2}
-  mSpriteName: 736c696465725f485f6261636b67726f756e64
+  mSpriteName: slider_H_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -8042,6 +7632,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1176840050}
+  m_RootOrder: 0
 --- !u!114 &1269025493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8069,11 +7660,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
   mWidth: 150
   mHeight: 200
@@ -8083,7 +7670,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .75
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 4672616d655f5570
+  mSpriteName: Frame_Up
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -8133,6 +7720,7 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 1164759691}
+  m_RootOrder: 1
 --- !u!114 &1270277192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8160,11 +7748,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 66
   mHeight: 32
@@ -8176,32 +7760,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 507265762e
+  mText: Prev.
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -8236,6 +7808,7 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 1786145505}
+  m_RootOrder: 1
 --- !u!114 &1283262970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8263,11 +7836,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 28
   mHeight: 32
@@ -8279,32 +7848,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 2e2e2e
+  mText: '...'
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -8341,6 +7898,7 @@ Transform:
   m_Children:
   - {fileID: 403161741}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 16
 --- !u!114 &1303726987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8423,6 +7981,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1746816683}
+  m_RootOrder: 2
 --- !u!114 &1309501447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8450,11 +8009,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 6
   mWidth: 150
   mHeight: 150
@@ -8464,7 +8019,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 63756265735f626c61636b
+  mSpriteName: cubes_black
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -8505,6 +8060,7 @@ Transform:
   m_Children:
   - {fileID: 1672211501}
   m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!54 &1324235882
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8604,6 +8160,7 @@ Transform:
   m_Children:
   - {fileID: 814009448}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 2
 --- !u!114 &1339091294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8688,6 +8245,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 403161741}
+  m_RootOrder: 2
 --- !u!65 &1343163419
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8727,11 +8285,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 30
   mHeight: 20
@@ -8741,7 +8295,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1.5
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f565f7468756d625f42
+  mSpriteName: slider_V_thumb_B
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -8764,16 +8318,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1343163417}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
 --- !u!1 &1345673623
 GameObject:
@@ -8805,6 +8351,7 @@ Transform:
   m_Children:
   - {fileID: 1945494703}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 9
 --- !u!114 &1345673625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8902,6 +8449,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 739501190}
+  m_RootOrder: 1
 --- !u!114 &1350286874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8929,11 +8477,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
   mWidth: 300
   mHeight: 200
@@ -8943,7 +8487,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1.5
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 57696e646f77
+  mSpriteName: Window
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -8995,6 +8539,7 @@ Transform:
   m_Children:
   - {fileID: 1545358680}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 15
 --- !u!114 &1363573767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9080,6 +8625,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 572145165}
+  m_RootOrder: 2
 --- !u!65 &1401429985
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9119,16 +8665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1401429983}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
 --- !u!114 &1401429988
 MonoBehaviour:
@@ -9157,11 +8695,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 20
   mHeight: 30
@@ -9171,7 +8705,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .666666687
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f7468756d62
+  mSpriteName: slider_H_thumb
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -9209,6 +8743,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 1947375758}
+  m_RootOrder: 1
 --- !u!114 &1401432752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9236,11 +8771,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 182
   mHeight: 32
@@ -9252,32 +8783,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 546f67676c6520427574746f6e
+  mText: Toggle Button
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -9313,6 +8832,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 11639532}
+  m_RootOrder: 0
 --- !u!114 &1435581822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9340,11 +8860,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
   mWidth: 170
   mHeight: 40
@@ -9354,7 +8870,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 4.25
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 57696e646f7743617074696f6e
+  mSpriteName: WindowCaption
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -9410,6 +8926,7 @@ Transform:
   - {fileID: 1143478901}
   - {fileID: 1067093775}
   m_Father: {fileID: 548384252}
+  m_RootOrder: 0
 --- !u!65 &1446089993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9449,22 +8966,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1067093774}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
-  disabledColor:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!114 &1446089996
@@ -9483,38 +8988,26 @@ MonoBehaviour:
   trueTypeFont: {fileID: 0}
   fontSize: 16
   fontStyle: 0
-  backgroundSprite: 746578745f66696c6564
-  highlightSprite: 4c697374426f785f68696c69676874
+  backgroundSprite: text_filed
+  highlightSprite: ListBox_hilight
   position: 2
   items:
-  - 4c697374204f7074696f6e2030
-  - 4c697374204f7074696f6e2031
-  - 4c697374204f7074696f6e2032
-  - 4c697374204f7074696f6e2033
-  - 4c697374204f7074696f6e2034
+  - List Option 0
+  - List Option 1
+  - List Option 2
+  - List Option 3
+  - List Option 4
   padding: {x: 0, y: 15}
-  textColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  backgroundColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  highlightColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightColor: {r: 1, g: 1, b: 1, a: 1}
   isAnimated: 1
   isLocalized: 0
   onChange:
   - mTarget: {fileID: 1143478902}
-    mMethodName: 53657443757272656e7453656c656374696f6e
+    mMethodName: SetCurrentSelection
     oneShot: 0
-  mSelectedItem: 4c697374204f7074696f6e2030
+  mSelectedItem: List Option 0
   eventReceiver: {fileID: 0}
   functionName: 
   textScale: 0
@@ -9531,7 +9024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7fee06681a472243a6427c8b9847475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyName: 4c697374426f784974656d
+  keyName: ListBoxItem
 --- !u!1 &1460791121
 GameObject:
   m_ObjectHideFlags: 0
@@ -9565,6 +9058,7 @@ Transform:
   - {fileID: 779440715}
   - {fileID: 314287216}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 23
 --- !u!114 &1460791123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9576,8 +9070,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3cf0cc400973f44978cade9a3a9c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftText: 596573
-  rightText: 4e6f
+  leftText: Yes
+  rightText: No
   state: 0
   lbl_left: {fileID: 1988494268}
   lbl_right: {fileID: 1654723152}
@@ -9664,6 +9158,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 1953773340}
+  m_RootOrder: 0
 --- !u!114 &1466822185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9691,11 +9186,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: .196078435
+  mColor: {r: 1, g: 1, b: 1, a: .196078435}
   mPivot: 4
   mWidth: 44
   mHeight: 32
@@ -9707,32 +9198,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: e3d02d84230c6004585e1437e5e4d053, type: 2}
-  mText: 4f6666
+  mText: Off
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -9767,6 +9246,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 978873448}
+  m_RootOrder: 0
 --- !u!114 &1480364034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9794,11 +9274,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: .121568628
+  mColor: {r: .196078435, g: .196078435, b: .196078435, a: .121568628}
   mPivot: 4
   mWidth: 80
   mHeight: 80
@@ -9808,7 +9284,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 536c69646572436972636c655f4261636b67726f756e64
+  mSpriteName: SliderCircle_Background
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -9846,6 +9322,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1748402420}
+  m_RootOrder: 0
 --- !u!114 &1487242200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9873,11 +9350,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -9887,7 +9360,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: ed74d195f5c8d1a4da07d4b5543d1022, type: 2}
-  mSpriteName: 736c696465725f485f6261636b67726f756e64
+  mSpriteName: slider_H_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -9929,6 +9402,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 732954288}
+  m_RootOrder: 2
 --- !u!65 &1491997338
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9968,11 +9442,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 50
   mHeight: 40
@@ -9982,7 +9452,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1.25
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 7377697463685f7468756d62
+  mSpriteName: switch_thumb
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -10007,6 +9477,7 @@ MonoBehaviour:
   method: 0
   style: 0
   animationCurve:
+    serializedVersion: 2
     m_Curve:
     - time: 0
       value: 0
@@ -10056,16 +9527,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1491997336}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
 --- !u!1 &1534264057
 GameObject:
@@ -10095,6 +9558,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2010794818}
+  m_RootOrder: 1
 --- !u!114 &1534264059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10122,11 +9586,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -10136,7 +9596,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f666f726567726f756e64
+  mSpriteName: slider_H_foreground
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -10190,6 +9650,7 @@ Transform:
   - {fileID: 330550407}
   - {fileID: 57751372}
   m_Father: {fileID: 2105731568}
+  m_RootOrder: 0
 --- !u!65 &1535624019
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10255,6 +9716,7 @@ Transform:
   - {fileID: 213464109}
   - {fileID: 1862125547}
   m_Father: {fileID: 1363573766}
+  m_RootOrder: 0
 --- !u!65 &1545358681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10318,6 +9780,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1953773340}
+  m_RootOrder: 3
 --- !u!114 &1559847698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10345,11 +9808,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 100
   mHeight: 40
@@ -10359,7 +9818,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 2.5
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 7377697463685f6261636b67726f756e64
+  mSpriteName: switch_background
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -10451,6 +9910,7 @@ Transform:
   - {fileID: 739501190}
   - {fileID: 2015832303}
   m_Father: {fileID: 1672211501}
+  m_RootOrder: 0
 --- !u!114 &1577425541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10499,6 +9959,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 777912072}
+  m_RootOrder: 2
 --- !u!65 &1609743491
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10538,11 +9999,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 20
   mHeight: 30
@@ -10552,7 +10009,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .666666687
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f7468756d625f42
+  mSpriteName: slider_H_thumb_B
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -10575,16 +10032,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1609743489}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
 --- !u!114 &1609743494
 MonoBehaviour:
@@ -10633,6 +10082,7 @@ Transform:
   - {fileID: 583438291}
   - {fileID: 697179463}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 0
 --- !u!114 &1649840323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10715,6 +10165,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 1460791122}
+  m_RootOrder: 0
 --- !u!114 &1654723152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10742,11 +10193,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: .196078435
+  mColor: {r: 1, g: 1, b: 1, a: .196078435}
   mPivot: 4
   mWidth: 40
   mHeight: 32
@@ -10758,32 +10205,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: e3d02d84230c6004585e1437e5e4d053, type: 2}
-  mText: 4e6f
+  mText: No
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -10818,6 +10253,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 483645823}
+  m_RootOrder: 1
 --- !u!114 &1658690353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10845,11 +10281,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 5
   mWidth: 66
   mHeight: 32
@@ -10861,32 +10293,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 53656e64
+  mText: Send
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -10924,6 +10344,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 814009448}
+  m_RootOrder: 0
 --- !u!65 &1670401523
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10974,11 +10395,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
   mWidth: 30
   mHeight: 484
@@ -10988,7 +10405,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .0619834699
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f565f6261636b67726f756e64
+  mSpriteName: slider_V_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -11042,6 +10459,7 @@ Transform:
   - {fileID: 1577425540}
   - {fileID: 1984073362}
   m_Father: {fileID: 1324235881}
+  m_RootOrder: 0
 --- !u!20 &1672211502
 Camera:
   m_ObjectHideFlags: 0
@@ -11069,8 +10487,11 @@ Camera:
     m_Bits: 1
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!81 &1672211503
 AudioListener:
   m_ObjectHideFlags: 0
@@ -11090,7 +10511,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventType: 1
-  eventReceiverMask: {}
+  eventReceiverMask:
+    serializedVersion: 2
+    m_Bits: 1
   debug: 0
   useMouse: 1
   useTouch: 1
@@ -11104,9 +10527,9 @@ MonoBehaviour:
   touchDragThreshold: 40
   touchClickThreshold: 40
   rangeDistance: -1
-  scrollAxisName: 4d6f757365205363726f6c6c576865656c
-  verticalAxisName: 566572746963616c
-  horizontalAxisName: 486f72697a6f6e74616c
+  scrollAxisName: Mouse ScrollWheel
+  verticalAxisName: Vertical
+  horizontalAxisName: Horizontal
   submitKey0: 13
   submitKey1: 330
   cancelKey0: 27
@@ -11139,6 +10562,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 872757073}
+  m_RootOrder: 0
 --- !u!114 &1684949616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11166,11 +10590,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 300
   mHeight: 40
@@ -11180,7 +10600,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 7.5
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 746578745f66696c6564
+  mSpriteName: text_filed
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -11231,6 +10651,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 777912072}
+  m_RootOrder: 0
 --- !u!114 &1686196644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11258,11 +10679,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -11272,7 +10689,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f6261636b67726f756e64
+  mSpriteName: slider_H_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -11323,6 +10740,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 389287524}
+  m_RootOrder: 0
 --- !u!114 &1696027074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11350,11 +10768,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 150
   mHeight: 40
@@ -11364,7 +10778,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 3.75
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 627574746f6e5f736c69636564
+  mSpriteName: button_sliced
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -11414,6 +10828,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 739501190}
+  m_RootOrder: 0
 --- !u!114 &1702777304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11441,11 +10856,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
   mWidth: 212
   mHeight: 32
@@ -11457,32 +10868,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: e3d02d84230c6004585e1437e5e4d053, type: 2}
-  mText: 57696e646f77206672616d65
+  mText: Window frame
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 1
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -11517,6 +10916,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!114 &1720953425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11557,6 +10957,7 @@ Transform:
   - {fileID: 564951057}
   - {fileID: 581535014}
   m_Father: {fileID: 1933448976}
+  m_RootOrder: 0
 --- !u!114 &1721154096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11610,6 +11011,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1649840322}
+  m_RootOrder: 0
 --- !u!114 &1722408263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11637,11 +11039,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
   mWidth: 512
   mHeight: 128
@@ -11651,7 +11049,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 4
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 7061747465726e5f31
+  mSpriteName: pattern_1
   mType: 2
   mFillDirection: 4
   mFillAmount: 1
@@ -11707,6 +11105,7 @@ Transform:
   - {fileID: 92760949}
   - {fileID: 1044100628}
   m_Father: {fileID: 245673668}
+  m_RootOrder: 4
 --- !u!65 &1733512021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11776,22 +11175,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 92760948}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
-  disabledColor:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!1 &1746816682
@@ -11825,6 +11212,7 @@ Transform:
   - {fileID: 1177681682}
   - {fileID: 1309501446}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 6
 --- !u!114 &1746816684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11911,6 +11299,7 @@ Transform:
   - {fileID: 733439965}
   - {fileID: 508460858}
   m_Father: {fileID: 488276382}
+  m_RootOrder: 2
 --- !u!65 &1748402421
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11942,7 +11331,7 @@ MonoBehaviour:
   numberOfSteps: 0
   onChange:
   - mTarget: {fileID: 1720953425}
-    mMethodName: 53657447
+    mMethodName: SetG
     oneShot: 0
   foreground: {fileID: 733439965}
   rawValue: .667999983
@@ -11978,6 +11367,7 @@ Transform:
   m_Children:
   - {fileID: 651269206}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 10
 --- !u!114 &1758807279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12075,6 +11465,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1545358680}
+  m_RootOrder: 0
 --- !u!114 &1774321424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12102,11 +11493,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 7
   mWidth: 30
   mHeight: 200
@@ -12116,7 +11503,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .150000006
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f565f6261636b67726f756e64
+  mSpriteName: slider_V_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -12167,6 +11554,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 978873448}
+  m_RootOrder: 1
 --- !u!114 &1777651516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12194,11 +11582,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
   mWidth: 80
   mHeight: 80
@@ -12208,7 +11592,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 536c69646572436972636c655f466f726567726f756e64
+  mSpriteName: SliderCircle_Foreground
   mType: 3
   mFillDirection: 4
   mFillAmount: .75
@@ -12264,6 +11648,7 @@ Transform:
   - {fileID: 1003787547}
   - {fileID: 1283262969}
   m_Father: {fileID: 245673668}
+  m_RootOrder: 1
 --- !u!65 &1786145506
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12333,22 +11718,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1003787546}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
-  disabledColor:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!1 &1789276772
@@ -12379,6 +11752,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1649840322}
+  m_RootOrder: 1
 --- !u!114 &1789276775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12418,11 +11792,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
   mWidth: 512
   mHeight: 128
@@ -12432,7 +11802,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 4
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 7061747465726e5f32
+  mSpriteName: pattern_2
   mType: 2
   mFillDirection: 4
   mFillAmount: 1
@@ -12470,6 +11840,7 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 831116618}
+  m_RootOrder: 1
 --- !u!114 &1812163512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12497,11 +11868,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 28
   mHeight: 32
@@ -12513,32 +11880,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 0e8c74b3fa5e00543a21ab0c470f5053, type: 2}
-  mText: 2e2e2e
+  mText: '...'
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -12577,6 +11932,7 @@ Transform:
   - {fileID: 180690574}
   - {fileID: 585866441}
   m_Father: {fileID: 488276382}
+  m_RootOrder: 1
 --- !u!65 &1845704302
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12608,7 +11964,7 @@ MonoBehaviour:
   numberOfSteps: 0
   onChange:
   - mTarget: {fileID: 1720953425}
-    mMethodName: 53657452
+    mMethodName: SetR
     oneShot: 0
   foreground: {fileID: 180690574}
   rawValue: .667999983
@@ -12643,6 +11999,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2010794818}
+  m_RootOrder: 2
 --- !u!65 &1850727845
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12697,11 +12054,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
+  mColor: {r: 1, g: 1, b: 1, a: 0}
   mPivot: 4
   mWidth: 20
   mHeight: 30
@@ -12711,7 +12064,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .666666687
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f7468756d62
+  mSpriteName: slider_H_thumb
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -12750,6 +12103,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1545358680}
+  m_RootOrder: 2
 --- !u!65 &1862125548
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12789,11 +12143,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
+  mColor: {r: 1, g: 1, b: 1, a: 0}
   mPivot: 4
   mWidth: 20
   mHeight: 30
@@ -12803,7 +12153,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .666666687
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f7468756d62
+  mSpriteName: slider_H_thumb
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -12842,6 +12192,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2015832303}
+  m_RootOrder: 0
 --- !u!114 &1866479327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12869,11 +12220,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
   mWidth: 150
   mHeight: 200
@@ -12883,7 +12230,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .75
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 4672616d655f446f776e
+  mSpriteName: Frame_Down
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -12934,6 +12281,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1945494703}
+  m_RootOrder: 0
 --- !u!114 &1933033399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12961,11 +12309,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -12975,7 +12319,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f6261636b67726f756e64
+  mSpriteName: slider_H_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -13027,6 +12371,7 @@ Transform:
   m_Children:
   - {fileID: 1721154095}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 3
 --- !u!114 &1933448977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13111,6 +12456,7 @@ Transform:
   - {fileID: 1933033398}
   - {fileID: 921363729}
   m_Father: {fileID: 1345673624}
+  m_RootOrder: 0
 --- !u!114 &1945494704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13166,6 +12512,7 @@ Transform:
   - {fileID: 1401432751}
   - {fileID: 343974258}
   m_Father: {fileID: 1983559479}
+  m_RootOrder: 0
 --- !u!65 &1947375759
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13205,22 +12552,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 26749727}
-  hover:
-    r: .392156869
-    g: .392156869
-    b: .392156869
-    a: 1
-  pressed:
-    r: .196078435
-    g: .196078435
-    b: .196078435
-    a: 1
+  hover: {r: .392156869, g: .392156869, b: .392156869, a: 1}
+  pressed: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   duration: .200000003
-  disabledColor:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!114 &1947375763
@@ -13246,7 +12581,7 @@ MonoBehaviour:
   checkSprite: {fileID: 0}
   checkAnimation: {fileID: 0}
   eventReceiver: {fileID: 0}
-  functionName: 4f6e4163746976617465
+  functionName: OnActivate
 --- !u!1 &1953773339
 GameObject:
   m_ObjectHideFlags: 0
@@ -13280,6 +12615,7 @@ Transform:
   - {fileID: 145272541}
   - {fileID: 1559847697}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 17
 --- !u!114 &1953773341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13331,8 +12667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3cf0cc400973f44978cade9a3a9c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftText: 4f6666
-  rightText: 4f6e
+  leftText: Off
+  rightText: On
   state: 0
   lbl_left: {fileID: 1466822185}
   lbl_right: {fileID: 49596224}
@@ -13380,6 +12716,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 483645823}
+  m_RootOrder: 0
 --- !u!114 &1953923106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13407,11 +12744,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 5
   mWidth: 70
   mHeight: 40
@@ -13421,7 +12754,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1.75
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 627574746f6e5f736c696365645f6172726f775f6c656674
+  mSpriteName: button_sliced_arrow_left
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -13473,6 +12806,7 @@ Transform:
   m_Children:
   - {fileID: 1947375758}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 5
 --- !u!114 &1983559480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13556,6 +12890,7 @@ Transform:
   m_Children:
   - {fileID: 711211001}
   m_Father: {fileID: 1672211501}
+  m_RootOrder: 1
 --- !u!114 &1984073363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13602,6 +12937,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 403161741}
+  m_RootOrder: 0
 --- !u!114 &1986366577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13629,11 +12965,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 7
   mWidth: 30
   mHeight: 200
@@ -13643,7 +12975,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .150000006
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f565f6261636b67726f756e64
+  mSpriteName: slider_V_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -13693,6 +13025,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 1460791122}
+  m_RootOrder: 1
 --- !u!114 &1988494268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13720,11 +13053,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 52
   mHeight: 32
@@ -13736,32 +13065,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: e3d02d84230c6004585e1437e5e4d053, type: 2}
-  mText: 596573
+  mText: Yes
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -13796,6 +13113,7 @@ Transform:
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 488276382}
+  m_RootOrder: 0
 --- !u!114 &1990317055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13823,11 +13141,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: .25373137
-    g: .25373137
-    b: .25373137
-    a: 1
+  mColor: {r: .25373137, g: .25373137, b: .25373137, a: 1}
   mPivot: 3
   mWidth: 290
   mHeight: 32
@@ -13839,32 +13153,20 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: e3d02d84230c6004585e1437e5e4d053, type: 2}
-  mText: 4368616e6765207468656d6520636f6c6f72
+  mText: Change theme color
   mFontSize: 31
   mFontStyle: 0
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 2, y: 2}
   mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
-  mGradientTop:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  mGradientBottom:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .5, g: .5, b: .5, a: 1}
   mSpacingX: 0
   mSpacingY: 0
   mShrinkToFit: 0
@@ -13902,6 +13204,7 @@ Transform:
   - {fileID: 786370455}
   - {fileID: 826024175}
   m_Father: {fileID: 355125627}
+  m_RootOrder: 0
 --- !u!65 &2007450057
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13932,21 +13235,9 @@ MonoBehaviour:
   characterLimit: 0
   savedAs: 
   selectOnTab: {fileID: 0}
-  activeTextColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  caretColor:
-    r: 1
-    g: 1
-    b: 1
-    a: .800000012
-  selectionColor:
-    r: 1
-    g: .874509811
-    b: .552941203
-    a: .5
+  activeTextColor: {r: 1, g: 1, b: 1, a: 1}
+  caretColor: {r: 1, g: 1, b: 1, a: .800000012}
+  selectionColor: {r: 1, g: .874509811, b: .552941203, a: .5}
   onSubmit: []
   onChange: []
   mValue: 
@@ -13981,6 +13272,7 @@ Transform:
   - {fileID: 1534264058}
   - {fileID: 1850727844}
   m_Father: {fileID: 2119618098}
+  m_RootOrder: 0
 --- !u!65 &2010794819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14044,6 +13336,7 @@ Transform:
   m_Children:
   - {fileID: 1866479326}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 29
 --- !u!114 &2015832304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14126,6 +13419,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 504972177}
+  m_RootOrder: 0
 --- !u!114 &2044346348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14153,11 +13447,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 0
-    g: 0
-    b: 0
-    a: .200000003
+  mColor: {r: 0, g: 0, b: 0, a: .200000003}
   mPivot: 4
   mWidth: 140
   mHeight: 140
@@ -14167,7 +13457,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 536c69646572436972636c655f4261636b67726f756e645f424947
+  mSpriteName: SliderCircle_Background_BIG
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -14206,6 +13496,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 347086713}
+  m_RootOrder: 0
 --- !u!114 &2057840111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14233,11 +13524,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
   mWidth: 170
   mHeight: 40
@@ -14247,7 +13534,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 4.25
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 57696e646f77466f6f746572
+  mSpriteName: WindowFooter
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -14298,6 +13585,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 651269206}
+  m_RootOrder: 0
 --- !u!114 &2061354167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14325,11 +13613,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
   mWidth: 200
   mHeight: 30
@@ -14339,7 +13623,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.66666651
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 736c696465725f485f6261636b67726f756e64
+  mSpriteName: slider_H_background
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -14389,6 +13673,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 525502707}
+  m_RootOrder: 0
 --- !u!114 &2084812511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14416,11 +13701,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 40
   mHeight: 40
@@ -14430,7 +13711,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1
   mAtlas: {fileID: 11400000, guid: ed74d195f5c8d1a4da07d4b5543d1022, type: 2}
-  mSpriteName: 4f7074696f6e5f6261636b67726f756e64
+  mSpriteName: Option_background
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -14469,6 +13750,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1164759691}
+  m_RootOrder: 0
 --- !u!114 &2093399111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14496,11 +13778,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 100
   mHeight: 40
@@ -14510,7 +13788,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 2.5
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 627574746f6e5f736c696365645f6172726f775f6c656674
+  mSpriteName: button_sliced_arrow_left
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -14562,6 +13840,7 @@ Transform:
   m_Children:
   - {fileID: 1535624018}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 12
 --- !u!114 &2105731569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14648,6 +13927,7 @@ Transform:
   - {fileID: 766709756}
   - {fileID: 607928882}
   m_Father: {fileID: 488276382}
+  m_RootOrder: 3
 --- !u!65 &2115468006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14679,7 +13959,7 @@ MonoBehaviour:
   numberOfSteps: 0
   onChange:
   - mTarget: {fileID: 1720953425}
-    mMethodName: 53657442
+    mMethodName: SetB
     oneShot: 0
   foreground: {fileID: 766709756}
   rawValue: .667999983
@@ -14714,6 +13994,7 @@ Transform:
   m_Children:
   - {fileID: 2010794818}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 4
 --- !u!114 &2119618099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14796,6 +14077,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 525502707}
+  m_RootOrder: 1
 --- !u!114 &2132183938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14823,11 +14105,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 40
   mHeight: 40
@@ -14837,7 +14115,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1
   mAtlas: {fileID: 11400000, guid: 94f52b961ae836d49bddca57fce64250, type: 2}
-  mSpriteName: 4f7074696f6e5f666f726567726f756e645f646f74
+  mSpriteName: Option_foreground_dot
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -14878,6 +14156,7 @@ Transform:
   - {fileID: 872757073}
   - {fileID: 483645823}
   m_Father: {fileID: 1577425540}
+  m_RootOrder: 21
 --- !u!114 &2147458105
 MonoBehaviour:
   m_ObjectHideFlags: 0

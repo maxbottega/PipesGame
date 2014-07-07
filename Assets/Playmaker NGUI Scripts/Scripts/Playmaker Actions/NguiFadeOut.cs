@@ -1,5 +1,6 @@
 using HutongGames.PlayMaker;
 using UnityEngine;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -13,15 +14,15 @@ using UnityEngine;
 /// </summary>
 [System.Obsolete("NGUI Fade In and NGUI Fade Out are obsolete for NGUI v3+. NGUI v3 made breaking changes to how tween fading works, which broke the functionality of these two actions")]
 [ActionCategory("NGUI")]
-[Tooltip("Fades out a group of NGUI widgets. Fades out all children. Sets the widgets to Inactive after fadeout")]
+[HutongGames.PlayMaker.Tooltip("Fades out a group of NGUI widgets. Fades out all children. Sets the widgets to Inactive after fadeout")]
 public class NguiFadeOut : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI Parent widget. All children of this widget will be faded out")]
+    [HutongGames.PlayMaker.Tooltip("NGUI Parent widget. All children of this widget will be faded out")]
     public FsmOwnerDefault NguiParent;
 
     [RequiredField]
-    [Tooltip("Duration of the fade out, in seconds")]
+    [HutongGames.PlayMaker.Tooltip("Duration of the fade out, in seconds")]
     public FsmFloat Duration;
 
     /// <summary>

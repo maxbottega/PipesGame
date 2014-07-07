@@ -1,4 +1,5 @@
 using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -8,18 +9,18 @@ using HutongGames.PlayMaker;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Sets an NGUI object as Active or Inactive")]
+[HutongGames.PlayMaker.Tooltip("Sets an NGUI object as Active or Inactive")]
 public class NguiSetActive : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI object")]
+    [HutongGames.PlayMaker.Tooltip("NGUI object")]
     public FsmOwnerDefault NguiObject;
 
     [RequiredField]
-    [Tooltip("Active state to make this object")]
+    [HutongGames.PlayMaker.Tooltip("Active state to make this object")]
     public FsmBool active;
 
-    [Tooltip("When true, runs on every frame")]
+    [HutongGames.PlayMaker.Tooltip("When true, runs on every frame")]
     public bool everyFrame;
 
     public override void Reset()

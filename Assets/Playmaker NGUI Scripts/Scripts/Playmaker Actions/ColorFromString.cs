@@ -1,5 +1,6 @@
 using HutongGames.PlayMaker;
 using UnityEngine;
+//// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -9,22 +10,22 @@ using UnityEngine;
 */
 
 [ActionCategory(ActionCategory.Color)]
-[Tooltip("Sets a color variable based on a string value")]
+[HutongGames.PlayMaker.Tooltip("Sets a color variable based on a string value")]
 public class ColorFromString : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("String to read the value from")]
+    [HutongGames.PlayMaker.Tooltip("String to read the value from")]
     public FsmString ColorString;
 
     [RequiredField]
     [UIHint(UIHint.Variable)]
-    [Tooltip("The color variable to updated")]
+    [HutongGames.PlayMaker.Tooltip("The color variable to updated")]
     public FsmColor color;
 
-    [Tooltip("Default color to assign if no match")]
+    [HutongGames.PlayMaker.Tooltip("Default color to assign if no match")]
     public FsmColor DefaultColor;
 
-    [Tooltip("When true, runs on every frame")]
+    [HutongGames.PlayMaker.Tooltip("When true, runs on every frame")]
     public bool everyFrame;
 
     public override void Reset()

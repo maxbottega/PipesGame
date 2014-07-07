@@ -1,4 +1,5 @@
 using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -10,16 +11,16 @@ using HutongGames.PlayMaker;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Sets the value (position) of the scrollbar")]
+[HutongGames.PlayMaker.Tooltip("Sets the value (position) of the scrollbar")]
 public class NguiScrollbarSetValue : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI scrollbar")]
+    [HutongGames.PlayMaker.Tooltip("NGUI scrollbar")]
     public FsmOwnerDefault NguiScrollbar;
 
     [RequiredField]
     [UIHint(UIHint.Variable)]
-    [Tooltip("New scrollbar value")]
+    [HutongGames.PlayMaker.Tooltip("New scrollbar value")]
     public FsmFloat newValue;
 
     public override void Reset()

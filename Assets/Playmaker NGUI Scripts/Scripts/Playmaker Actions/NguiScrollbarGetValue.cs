@@ -1,4 +1,5 @@
 using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -10,19 +11,19 @@ using HutongGames.PlayMaker;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Saves the value of a scrollbar to a variable")]
+[HutongGames.PlayMaker.Tooltip("Saves the value of a scrollbar to a variable")]
 public class NguiScrollbarGetValue : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI scrollbar")]
+    [HutongGames.PlayMaker.Tooltip("NGUI scrollbar")]
     public FsmOwnerDefault NguiScrollbar;
 
     [RequiredField]
     [UIHint(UIHint.Variable)]
-    [Tooltip("Variable to store the scrollbar's value")]
+    [HutongGames.PlayMaker.Tooltip("Variable to store the scrollbar's value")]
     public FsmFloat storeValue;
 
-    [Tooltip("When true, runs on every frame")]
+    [HutongGames.PlayMaker.Tooltip("When true, runs on every frame")]
     public bool everyFrame;
 
     public override void Reset()
@@ -59,7 +60,6 @@ public class NguiScrollbarGetValue : FsmStateAction
             return;
 
         // save the value
-        //storeValue.Value = NScroll.scrollValue;
         storeValue.Value = NScroll.value;
     }
 }

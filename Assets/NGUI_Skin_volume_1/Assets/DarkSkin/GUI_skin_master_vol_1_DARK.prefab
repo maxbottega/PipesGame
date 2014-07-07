@@ -40,9 +40,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: abee28d2e8951b14c977c892e80b0165, type: 2}
   mSprites:
-  - name: 627574746f6e5f736c69636564
-    x: 675
-    y: 729
+  - name: background_tile
+    x: 611
+    y: 1711
+    width: 80
+    height: 80
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 1
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: button_sliced
+    x: 932
+    y: 1273
     width: 80
     height: 38
     borderLeft: 20
@@ -53,126 +66,9 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 56657264616e6133325f30
-    x: 513
-    y: 768
-    width: 256
-    height: 256
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 6261636b67726f756e645f74696c65
-    x: 141
-    y: 24
-    width: 80
-    height: 80
-    borderLeft: 1
-    borderRight: 1
-    borderTop: 1
-    borderBottom: 1
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 627574746f6e5f736c696365645f6172726f775f6c656674
-    x: 594
-    y: 727
-    width: 80
-    height: 40
-    borderLeft: 30
-    borderRight: 15
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 57696e646f77
-    x: 141
-    y: 267
-    width: 80
-    height: 80
-    borderLeft: 15
-    borderRight: 15
-    borderTop: 40
-    borderBottom: 15
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 56657264616e613332425f30
-    x: 0
-    y: 768
-    width: 512
-    height: 256
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 4672616d655f5570
-    x: 141
-    y: 348
-    width: 80
-    height: 80
-    borderLeft: 15
-    borderRight: 15
-    borderTop: 15
-    borderBottom: 15
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 4672616d655f446f776e
-    x: 141
-    y: 429
-    width: 80
-    height: 80
-    borderLeft: 15
-    borderRight: 15
-    borderTop: 15
-    borderBottom: 15
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 57696e646f7743617074696f6e
-    x: 432
-    y: 727
-    width: 80
-    height: 40
-    borderLeft: 15
-    borderRight: 15
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 57696e646f77466f6f746572
-    x: 871
-    y: 783
-    width: 80
-    height: 40
-    borderLeft: 15
-    borderRight: 15
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 627574746f6e5f736c696365645f6172726f775f646f776e
-    x: 971
-    y: 863
+  - name: button_sliced_arrow_down
+    x: 965
+    y: 1710
     width: 40
     height: 80
     borderLeft: 0
@@ -183,22 +79,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 627574746f6e5f736c696365645f6172726f775f7570
-    x: 971
-    y: 944
-    width: 40
-    height: 80
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 25
-    borderBottom: 15
+  - name: button_sliced_arrow_left
+    x: 385
+    y: 1380
+    width: 80
+    height: 40
+    borderLeft: 30
+    borderRight: 15
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 627574746f6e5f736c696365645f6172726f775f7269676874
-    x: 270
-    y: 727
+  - name: button_sliced_arrow_right
+    x: 856
+    y: 1404
     width: 80
     height: 40
     borderLeft: 15
@@ -209,23 +105,23 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 746578745f66696c6564
-    x: 513
-    y: 727
-    width: 80
-    height: 40
-    borderLeft: 15
-    borderRight: 15
-    borderTop: 15
+  - name: button_sliced_arrow_up
+    x: 703
+    y: 1363
+    width: 40
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 25
     borderBottom: 15
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 536c69646572436972636c655f4261636b67726f756e64
-    x: 141
-    y: 186
-    width: 80
+  - name: CaleffiHydronics
+    x: 371
+    y: 1711
+    width: 239
     height: 80
     borderLeft: 0
     borderRight: 0
@@ -235,217 +131,9 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 536c69646572436972636c655f466f726567726f756e64
-    x: 141
-    y: 105
-    width: 80
-    height: 80
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 536c69646572436972636c655f5468756d
-    x: 0
-    y: 6
-    width: 80
-    height: 80
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 536c69646572436972636c655f4261636b67726f756e645f424947
-    x: 0
-    y: 627
-    width: 140
-    height: 140
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 536c69646572436972636c655f466f726567726f756e645f424947
-    x: 0
-    y: 486
-    width: 140
-    height: 140
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 536c69646572436972636c655f5468756d5f424947
-    x: 0
-    y: 345
-    width: 140
-    height: 140
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 7377697463685f7468756d62
-    x: 952
-    y: 783
-    width: 50
-    height: 40
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 7377697463685f6261636b67726f756e64
-    x: 770
-    y: 783
-    width: 100
-    height: 40
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 736c696465725f485f7468756d62
-    x: 1003
-    y: 793
-    width: 20
-    height: 30
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 736c696465725f485f6261636b67726f756e64
-    x: 756
-    y: 737
-    width: 80
-    height: 30
-    borderLeft: 10
-    borderRight: 10
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 736c696465725f485f666f726567726f756e64
-    x: 837
-    y: 737
-    width: 80
-    height: 30
-    borderLeft: 10
-    borderRight: 10
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 736c696465725f565f7468756d62
-    x: 222
-    y: 286
-    width: 30
-    height: 20
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 736c696465725f565f6261636b67726f756e64
-    x: 222
-    y: 429
-    width: 30
-    height: 80
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 15
-    borderBottom: 15
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 736c696465725f565f666f726567726f756e64
-    x: 81
-    y: 6
-    width: 30
-    height: 80
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 15
-    borderBottom: 15
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 50726f67726573734261725f666f726567726f756e64
-    x: 918
-    y: 737
-    width: 80
-    height: 30
-    borderLeft: 10
-    borderRight: 10
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 4f7074696f6e5f666f726567726f756e645f646f74
-    x: 222
-    y: 64
-    width: 30
-    height: 40
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 4f7074696f6e5f6261636b67726f756e64
-    x: 222
-    y: 23
-    width: 30
-    height: 40
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 436865636b626f785f6261636b67726f756e64
-    x: 222
-    y: 307
+  - name: Checkbox_background
+    x: 932
+    y: 1151
     width: 40
     height: 40
     borderLeft: 0
@@ -456,9 +144,9 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 436865636b626f785f666f7267726f756e645f58
-    x: 222
-    y: 226
+  - name: Checkbox_forground_X
+    x: 963
+    y: 1232
     width: 40
     height: 40
     borderLeft: 0
@@ -469,9 +157,9 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 63756265735f626c61636b
-    x: 770
-    y: 824
+  - name: cubes_black
+    x: 0
+    y: 919
     width: 200
     height: 200
     borderLeft: 0
@@ -482,61 +170,35 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 736c696465725f485f7468756d625f42
-    x: 112
-    y: 56
-    width: 20
-    height: 30
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 736c696465725f565f7468756d625f42
-    x: 222
-    y: 367
-    width: 30
-    height: 20
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 73746174655f627574746f6e5f66726f6e74
-    x: 222
-    y: 388
-    width: 40
-    height: 40
-    borderLeft: 20
+  - name: Frame_Down
+    x: 884
+    y: 1710
+    width: 80
+    height: 80
+    borderLeft: 15
     borderRight: 15
-    borderTop: 0
-    borderBottom: 0
+    borderTop: 15
+    borderBottom: 15
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 73746174655f627574746f6e5f6261636b67726f756e64
-    x: 222
-    y: 145
-    width: 40
-    height: 40
-    borderLeft: 20
+  - name: Frame_Up
+    x: 692
+    y: 1711
+    width: 80
+    height: 80
+    borderLeft: 15
     borderRight: 15
-    borderTop: 0
-    borderBottom: 0
+    borderTop: 15
+    borderBottom: 15
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 4c697374426f785f6261636b67726f756e64
-    x: 351
-    y: 727
+  - name: ListBox_background
+    x: 937
+    y: 1404
     width: 80
     height: 40
     borderLeft: 16
@@ -547,9 +209,9 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 4c697374426f785f68696c69676874
-    x: 971
-    y: 832
+  - name: ListBox_hilight
+    x: 533
+    y: 1680
     width: 50
     height: 30
     borderLeft: 15
@@ -560,9 +222,113 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 7061747465726e5f31
-    x: 141
-    y: 510
+  - name: logo-gioco
+    x: 0
+    y: 1353
+    width: 283
+    height: 324
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 38
+    paddingRight: 49
+    paddingTop: 12
+    paddingBottom: 34
+  - name: logo-gioco_2
+    x: 0
+    y: 1678
+    width: 370
+    height: 370
+    borderLeft: 2
+    borderRight: 2
+    borderTop: 347
+    borderBottom: 2
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: lvl_Heating_2
+    x: 233
+    y: 1120
+    width: 232
+    height: 232
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 17
+    paddingRight: 21
+    paddingTop: 18
+    paddingBottom: 20
+  - name: lvl_Sanitary_2
+    x: 775
+    y: 1445
+    width: 232
+    height: 232
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 17
+    paddingRight: 21
+    paddingTop: 18
+    paddingBottom: 20
+  - name: multi-player
+    x: 541
+    y: 1444
+    width: 233
+    height: 233
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 6
+    paddingRight: 8
+    paddingTop: 7
+    paddingBottom: 5
+  - name: multi-player-02
+    x: 466
+    y: 1120
+    width: 232
+    height: 232
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 17
+    paddingRight: 21
+    paddingTop: 18
+    paddingBottom: 20
+  - name: Option_background
+    x: 273
+    y: 938
+    width: 30
+    height: 40
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Option_foreground_dot
+    x: 242
+    y: 938
+    width: 30
+    height: 40
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: pattern_1
+    x: 884
+    y: 1920
     width: 128
     height: 128
     borderLeft: 5
@@ -573,9 +339,9 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 7061747465726e5f32
-    x: 141
-    y: 639
+  - name: pattern_2
+    x: 884
+    y: 1791
     width: 128
     height: 128
     borderLeft: 0
@@ -586,28 +352,379 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: 7061747465726e5f34
-    x: 0
-    y: 216
-    width: 128
-    height: 128
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 7061747465726e5f33
-    x: 0
-    y: 87
+  - name: pattern_3
+    x: 624
+    y: 991
     width: 128
     height: 128
     borderLeft: 1
     borderRight: 1
     borderTop: 1
     borderBottom: 1
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: pattern_4
+    x: 753
+    y: 991
+    width: 128
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ProgressBar_foreground
+    x: 371
+    y: 1680
+    width: 80
+    height: 30
+    borderLeft: 10
+    borderRight: 10
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: single-player
+    x: 0
+    y: 1120
+    width: 232
+    height: 232
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 7
+    paddingTop: 7
+    paddingBottom: 6
+  - name: single-player-02
+    x: 699
+    y: 1120
+    width: 232
+    height: 232
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 17
+    paddingRight: 21
+    paddingTop: 18
+    paddingBottom: 20
+  - name: slider_H_background
+    x: 452
+    y: 1680
+    width: 80
+    height: 30
+    borderLeft: 10
+    borderRight: 10
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: slider_H_foreground
+    x: 611
+    y: 1680
+    width: 80
+    height: 30
+    borderLeft: 10
+    borderRight: 10
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: slider_H_thumb
+    x: 584
+    y: 1680
+    width: 20
+    height: 30
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: slider_H_thumb_B
+    x: 854
+    y: 1761
+    width: 20
+    height: 30
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: slider_V_background
+    x: 744
+    y: 1363
+    width: 30
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 15
+    borderBottom: 15
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: slider_V_foreground
+    x: 932
+    y: 1192
+    width: 30
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 15
+    borderBottom: 15
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: slider_V_thumb
+    x: 692
+    y: 1690
+    width: 30
+    height: 20
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: slider_V_thumb_B
+    x: 723
+    y: 1690
+    width: 30
+    height: 20
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SliderCircle_Background
+    x: 541
+    y: 1363
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SliderCircle_Background_BIG
+    x: 342
+    y: 979
+    width: 140
+    height: 140
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SliderCircle_Foreground
+    x: 773
+    y: 1711
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SliderCircle_Foreground_BIG
+    x: 201
+    y: 979
+    width: 140
+    height: 140
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SliderCircle_Thum
+    x: 622
+    y: 1363
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SliderCircle_Thum_BIG
+    x: 483
+    y: 979
+    width: 140
+    height: 140
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: state_button_background
+    x: 973
+    y: 1151
+    width: 40
+    height: 40
+    borderLeft: 20
+    borderRight: 15
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: state_button_front
+    x: 201
+    y: 938
+    width: 40
+    height: 40
+    borderLeft: 20
+    borderRight: 15
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: switch_background
+    x: 284
+    y: 1380
+    width: 100
+    height: 40
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: switch_thumb
+    x: 466
+    y: 1380
+    width: 50
+    height: 40
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: text_filed
+    x: 856
+    y: 1363
+    width: 80
+    height: 40
+    borderLeft: 15
+    borderRight: 15
+    borderTop: 15
+    borderBottom: 15
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Verdana32_0
+    x: 284
+    y: 1421
+    width: 256
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Verdana32B_0
+    x: 371
+    y: 1792
+    width: 512
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Window
+    x: 775
+    y: 1364
+    width: 80
+    height: 80
+    borderLeft: 15
+    borderRight: 15
+    borderTop: 40
+    borderBottom: 15
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: WindowCaption
+    x: 932
+    y: 1312
+    width: 80
+    height: 40
+    borderLeft: 15
+    borderRight: 15
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: WindowFooter
+    x: 937
+    y: 1363
+    width: 80
+    height: 40
+    borderLeft: 15
+    borderRight: 15
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0

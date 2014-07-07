@@ -1,4 +1,5 @@
 using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -10,22 +11,22 @@ using HutongGames.PlayMaker;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Displays the value from a slider or progressbar in an NGUI Label, as a percent")]
+[HutongGames.PlayMaker.Tooltip("Displays the value from a slider or progressbar in an NGUI Label, as a percent")]
 public class NguiSliderValueToPercentLabel : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI slider or progressbar")]
+    [HutongGames.PlayMaker.Tooltip("NGUI slider or progressbar")]
     public FsmOwnerDefault NguiSlider;
 
     [RequiredField]
-    [Tooltip("NGUI label used to display the value")]
+    [HutongGames.PlayMaker.Tooltip("NGUI label used to display the value")]
     public FsmGameObject NguiLabel;
 
     [UIHint(UIHint.Variable)]
-    [Tooltip("Variable to store the slider's value")]
+    [HutongGames.PlayMaker.Tooltip("Variable to store the slider's value")]
     public FsmFloat storeValue;
 
-    [Tooltip("When true, runs on every frame")]
+    [HutongGames.PlayMaker.Tooltip("When true, runs on every frame")]
     public bool everyFrame;
 
     public override void Reset()
@@ -66,12 +67,10 @@ public class NguiSliderValueToPercentLabel : FsmStateAction
             return;
 
         // set the label text
-        //NLabel.text = string.Format("{0:P}", NSlider.sliderValue);
         NLabel.text = string.Format("{0:P}", NSlider.value);
 
         // save the value
         if (storeValue != null)
-            //storeValue.Value = NSlider.sliderValue;
             storeValue.Value = NSlider.value;
     }
 }

@@ -1,5 +1,5 @@
 using HutongGames.PlayMaker;
-using UnityEngine;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -9,19 +9,19 @@ using UnityEngine;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Updates the text in an NGUI Label")]
+[HutongGames.PlayMaker.Tooltip("Updates the text in an NGUI Label")]
 public class NguiUpdateLabelText : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI Label to update")]
+    [HutongGames.PlayMaker.Tooltip("NGUI Label to update")]
     public FsmOwnerDefault NguiLabel;
 
     [RequiredField]
     [UIHint(UIHint.Variable)]
-    [Tooltip("New text for NGUI Label")]
+    [HutongGames.PlayMaker.Tooltip("New text for NGUI Label")]
     public FsmString newValue;
 
-    [Tooltip("When true, runs on every frame")]
+    [HutongGames.PlayMaker.Tooltip("When true, runs on every frame")]
     public bool everyFrame;
 
     /// <summary>
@@ -61,8 +61,7 @@ public class NguiUpdateLabelText : FsmStateAction
             return;
 
         // get the object as a GO
-        if (NLabel == null)
-            NLabel = Fsm.GetOwnerDefaultTarget(NguiLabel).GetComponent<UILabel>();
+        NLabel = Fsm.GetOwnerDefaultTarget(NguiLabel).GetComponent<UILabel>();
 
         // exit if there is no NGUI label on it
         if (NLabel == null)

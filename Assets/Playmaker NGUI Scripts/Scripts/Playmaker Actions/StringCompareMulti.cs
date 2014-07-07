@@ -1,4 +1,5 @@
 using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -8,29 +9,29 @@ using HutongGames.PlayMaker;
 */
 
 [ActionCategory(ActionCategory.String)]
-[Tooltip("Compares a string value to multiple options")]
+[HutongGames.PlayMaker.Tooltip("Compares a string value to multiple options")]
 public class StringCompareMulti : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("String to check")]
+    [HutongGames.PlayMaker.Tooltip("String to check")]
     public FsmString StringVariable;
 
     [CompoundArray("Strings", "CompareTo", "CompareEvent")]
 
-    [Tooltip("String to compare to")]
+    [HutongGames.PlayMaker.Tooltip("String to compare to")]
     [UIHint(UIHint.Variable)]
     public FsmString[] CompareTos;
 
-    [Tooltip("Event to raise on match")]
+    [HutongGames.PlayMaker.Tooltip("Event to raise on match")]
     public FsmEvent[] CompareEvents;
 
-    [Tooltip("Event to raise if no matches are found")]
+    [HutongGames.PlayMaker.Tooltip("Event to raise if no matches are found")]
     public FsmEvent NoMatchEvent;
 
-    [Tooltip("When true, compare strings on case")]
+    [HutongGames.PlayMaker.Tooltip("When true, compare strings on case")]
     public FsmBool CaseSensitive;
 
-    [Tooltip("When true, runs on every frame")]
+    [HutongGames.PlayMaker.Tooltip("When true, runs on every frame")]
     public bool everyFrame;
 
     public override void Reset()

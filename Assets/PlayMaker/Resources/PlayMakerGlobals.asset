@@ -12,8 +12,56 @@ MonoBehaviour:
   m_Name: PlayMakerGlobals
   m_EditorClassIdentifier: 
   variables:
-    floatVariables: []
+    floatVariables:
+    - useVariable: 1
+      name: ClientTotalTimeF
+      tooltip: 
+      showInInspector: 0
+      networkSync: 1
+      value: 0
+    - useVariable: 1
+      name: ServerTotalTimeF
+      tooltip: 
+      showInInspector: 0
+      networkSync: 1
+      value: 0
+    - useVariable: 1
+      name: TestF1
+      tooltip: 
+      showInInspector: 0
+      networkSync: 1
+      value: 0
+    - useVariable: 1
+      name: TestF2
+      tooltip: 
+      showInInspector: 0
+      networkSync: 1
+      value: 0
+    - useVariable: 1
+      name: TotalTime
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     intVariables:
+    - useVariable: 1
+      name: ReadyInstances
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: ServerPort
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Victories
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     - useVariable: 1
       name: activeItem
       tooltip: 
@@ -26,8 +74,92 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0
-    boolVariables: []
-    stringVariables: []
+    - useVariable: 1
+      name: playersFinished
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    boolVariables:
+    - useVariable: 1
+      name: DebugModeActive
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: isClient
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: isMultiplayer
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: isServer
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    stringVariables:
+    - useVariable: 1
+      name: AutoConnect
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: on
+    - useVariable: 1
+      name: ControlType
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: tap
+    - useVariable: 1
+      name: Level
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
+    - useVariable: 1
+      name: Role
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: server
+    - useVariable: 1
+      name: ServerIP
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
+    - useVariable: 1
+      name: ServerPortS
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
+    - useVariable: 1
+      name: SoundPref
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: off
+    - useVariable: 1
+      name: TimeDisplayed
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0.00
+    - useVariable: 1
+      name: playerEmail
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
     vector2Variables: []
     vector3Variables: []
     colorVariables: []
@@ -38,10 +170,6 @@ MonoBehaviour:
     materialVariables: []
     textureVariables: []
   events:
-  - "\x03\x020006119123"
-  - 0006119123
-  - 0002486637
-  - 0006143845
   - Key1_pressed
   - Key2_pressed
   - Key3_pressed
@@ -70,26 +198,6 @@ MonoBehaviour:
   - OnePLayer_selected
   - TwoPlayers_selected
   - next
-  - 4e475549202f204f4e20434c49434b
-  - 4e475549202f204f4e20444f55424c4520434c49434b
-  - 4e475549202f204f4e2044524147
-  - 4e475549202f204f4e20445241472046494e4953484544
-  - 4e475549202f204f4e2044524f50
-  - 4e475549202f204f4e20484f564552202d2045584954
-  - 4e475549202f204f4e20484f564552202d20484f564552494e47
-  - 4e475549202f204f4e20494e505554
-  - 4e475549202f204f4e204b4559
-  - 4e475549202f204f4e204d4f555345574845454c205343524f4c4c
-  - 4e475549202f204f4e205052455353202d2050524553534544
-  - 4e475549202f204f4e205052455353202d2052454c4541534544
-  - 4e475549202f204f4e205343524f4c4c424152204348414e4745
-  - 4e475549202f204f4e2053454c454354202d2050524553534544
-  - 4e475549202f204f4e2053454c454354202d2052454c4541534544
-  - 4e475549202f204f4e2053454c454354494f4e204348414e4745
-  - 4e475549202f204f4e20534c49444552204348414e4745
-  - 4e475549202f204f4e205355424d4954
-  - 4e475549202f204f4e20544f4f4c544950202d2048494445
-  - 4e475549202f204f4e20544f4f4c544950202d2053484f57
   - start_heat_flow
   - L1S
   - L2S
@@ -123,3 +231,201 @@ MonoBehaviour:
   - L5E
   - L5S
   - L2E
+  - L1E
+  - stop_dirt
+  - Man_1.5
+  - Man_0
+  - Man_3.5
+  - cool_off
+  - boiler_on
+  - Lose
+  - Win
+  - PHOTON / CONNECTED TO PHOTON
+  - PHOTON / CONNECTION FAIL
+  - PHOTON / CREATED ROOM
+  - PHOTON / CUSTOM AUTHENTICATION FAILED
+  - PHOTON / CUSTOM ROOM PROPERTIES CHANGED
+  - PHOTON / DISCONNECTED FROM PHOTON
+  - PHOTON / FAILED TO CONNECT TO PHOTON
+  - PHOTON / JOINED LOBBY
+  - PHOTON / JOINED ROOM
+  - PHOTON / LEFT LOBBY
+  - PHOTON / LEFT ROOM
+  - PHOTON / MASTER CLIENT SWITCHED
+  - PHOTON / PHOTON CREATE ROOM FAILED
+  - PHOTON / PHOTON INSTANTIATE
+  - PHOTON / PHOTON JOIN ROOM FAILED
+  - PHOTON / PHOTON PLAYER CONNECTED
+  - PHOTON / PHOTON PLAYER DISCONNECTED
+  - PHOTON / PHOTON RANDOM JOIN FAILED
+  - PHOTON / PLAYER PROPERTIES CHANGED
+  - PHOTON / RECEIVED ROOM LIST
+  - PHOTON / RECEIVED ROOM LIST UPDATE
+  - 'PHOTON / STATE : CONNECTED'
+  - 'PHOTON / STATE : CONNECTING'
+  - 'PHOTON / STATE : DISCONNECTED'
+  - 'PHOTON / STATE : DISCONNECTING'
+  - 'PHOTON / STATE : INITIALIZING APPLICATION'
+  - Im Ready !
+  - start circuit
+  - Menu/start
+  - GameWin
+  - retry
+  - half_heat
+  - waterFlow
+  - normalize
+  - tooHot
+  - 34Heat
+  - instant off
+  - Siren
+  - IWON
+  - MakeServer
+  - ConnectToServer
+  - networkWin
+  - Menu/title
+  - Menu/options
+  - timer/Lvl2end
+  - timer/Lvl3end
+  - timer/Lvl4end
+  - timer/Lvl5end
+  - timer/startLvl1
+  - timer/startLvl2
+  - timer/startLvl3
+  - timer/startLvl4
+  - timer/startLvl5
+  - timer/Lvl1end
+  - timer/getTotal
+  - timer/Start
+  - timer/End
+  - localWin
+  - timer/Reset
+  - Network2PStart
+  - 2Pstart
+  - P2Ready
+  - AllStart
+  - NetworkAllStart
+  - L1finshed
+  - NetworkL1Finished
+  - NextLevel
+  - LevelFinished
+  - framesIN
+  - framesOUT
+  - framesCLOSE
+  - email_registered
+  - AddPlayer
+  - Menu/mode
+  - AssignTimeValue
+  - Siren_stop
+  - ClientConnected
+  - NetworkClientConnected
+  - LOAD
+  - SAVE
+  - Menu/Pause
+  - Menu/Resume
+  - Menu/Restart
+  - Menu/Quit
+  - CommunicateTime
+  - NetworkComTime
+  - CompareTimes
+  - ServerWins
+  - ClientWins
+  - Menu/pause
+  - StopServer
+  - Network/disconnect
+  - Menu/network
+  - Network/init
+  - Network/makeServer
+  - Network/makeClient
+  - Profiles/Init
+  - Profiles/Save
+  - Profiles/Load
+  - Profiles/AddPlayer
+  - Profiles/SaveTime
+  - Menu/Registration
+  - MPSynch/Align
+  - MPSynch/ServerReady
+  - MPSynch/ClientReady
+  - MPSynch/Check
+  - Menu/Waiting
+  - Menu/InGame
+  - MPSynch/NetworKNext
+  - MPSynch/LocalReady
+  - MPSynche/RemoteReady
+  - MPSynch/RemoteReady
+  - Menu/Mode
+  - timer/init
+  - LevelNext
+  - RegistrationFinished
+  - Message/Waiting
+  - Message/Clear
+  - timer/CompareTimes
+  - GameStart
+  - GameFinished
+  - Level_1_end
+  - Level_2_end
+  - Level_3_end
+  - Level_4_end
+  - Level_5_end
+  - MPSynch/SetClientTotalTime
+  - MPSynch/SetServerTotalTime
+  - MPSynch/SetNetworkTime
+  - Victory/add
+  - Victory/check
+  - Victory/Init
+  - MPSynch/NetworkYouLoose
+  - MPSynch/RemoteSednYouLoose
+  - MPSynch/RemoteSendYouWin
+  - MPSynch/NetworkYouWin
+  - Menu/Title
+  - Menu/Options
+  - Sound/PlayIntro
+  - PlayMainTheme
+  - Sound/PlayMainTheme
+  - Status/disableOthers
+  - Level/Heating
+  - Level/Sanitary
+  - Level_6_end
+  - Level_7_end
+  - item_I_broken
+  - item_M_work
+  - item_N_work
+  - item_O_work
+  - item_P_work
+  - item_Q_work
+  - item_R_work
+  - item_S_work
+  - item_S_broken
+  - item_R_broken
+  - item_Q_broken
+  - item_P_broken
+  - item_O_broken
+  - item_N_broken
+  - item_M_broken
+  - Heat_flow
+  - Heat_Flow_red
+  - Network/StartSanitary
+  - Network/StartHeating
+  - Network/Back
+  - Net/LocalReady
+  - Net/RemoteReady
+  - Net/SetServerReadyTrue
+  - Net/SetClientReadyTrue
+  - Net/Add1ReadyInstances
+  - Net/InstanceReady
+  - Menu/MainMenu
+  - MPSynch/Restart
+  - Sound/Deactivate
+  - Sound/Activate
+  - Profiles/SaveSoundPref
+  - Profiles/SaveControlPrefs
+  - controlTap
+  - controlDrag
+  - Network/OnePlayer
+  - Network/TwoPlayers
+  - Profiles/SaveAutoConnect
+  - StartServer
+  - StartCLient
+  - Profiles/SaveConnectionData
+  - SEQUENCER / ITEM / END
+  - SEQUENCER / ITEM / INIT
+  - SEQUENCER / ITEM / START

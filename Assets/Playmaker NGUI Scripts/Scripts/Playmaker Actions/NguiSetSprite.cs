@@ -1,4 +1,5 @@
 using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -11,15 +12,15 @@ using HutongGames.PlayMaker;
 /// Sets the sprite value of a UISprite
 /// </summary>
 [ActionCategory("NGUI")]
-[Tooltip("Sets the sprite value of a UISprite")]
+[HutongGames.PlayMaker.Tooltip("Sets the sprite value of a UISprite")]
 public class NguiSetSprite : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI Sprite to set")]
+    [HutongGames.PlayMaker.Tooltip("NGUI Sprite to set")]
     public FsmOwnerDefault NguiSprite;
 
     [RequiredField]
-    [Tooltip("The name of the new sprite")]
+    [HutongGames.PlayMaker.Tooltip("The name of the new sprite")]
     public FsmString NewSpriteName;
 
     public override void Reset()

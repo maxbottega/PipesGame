@@ -1,4 +1,5 @@
 using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -8,33 +9,33 @@ using HutongGames.PlayMaker;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Sets the list of NGUI objects used when loading a scene")]
+[HutongGames.PlayMaker.Tooltip("Sets the list of NGUI objects used when loading a scene")]
 public class NguiSceneLoaderObjects : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI window which holds the NGUI controls used during scene load")]
+    [HutongGames.PlayMaker.Tooltip("NGUI window which holds the NGUI controls used during scene load")]
     public FsmGameObject NguiWindow;
 
     [RequiredField]
     [UIHint(UIHint.Variable)]
-    [Tooltip("The variable to hold the NGUI window")]
+    [HutongGames.PlayMaker.Tooltip("The variable to hold the NGUI window")]
     public FsmGameObject PmNguiWindow;
 
 
     [RequiredField]
-    [Tooltip("NGUI progressbar to display during scene load")]
+    [HutongGames.PlayMaker.Tooltip("NGUI progressbar to display during scene load")]
     public FsmGameObject NguiProgressbar;
 
     [RequiredField]
     [UIHint(UIHint.Variable)]
-    [Tooltip("The variable to hold the progressbar")]
+    [HutongGames.PlayMaker.Tooltip("The variable to hold the progressbar")]
     public FsmGameObject PmProgressbar;
 
-    [Tooltip("OPTIONAL - Label to display on the progressbar to show text of progress")]
+    [HutongGames.PlayMaker.Tooltip("OPTIONAL - Label to display on the progressbar to show text of progress")]
     public FsmGameObject NguiProgressbarLabel;
 
     [UIHint(UIHint.Variable)]
-    [Tooltip("The variable to hold the progressbar label")]
+    [HutongGames.PlayMaker.Tooltip("The variable to hold the progressbar label")]
     public FsmGameObject PmProgressbarLabel;
 
     public override void Reset()

@@ -1,5 +1,6 @@
 using HutongGames.PlayMaker;
 using UnityEngine;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -9,15 +10,15 @@ using UnityEngine;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Changes the UIFont on a label")]
+[HutongGames.PlayMaker.Tooltip("Changes the UIFont on a label")]
 public class NguiChangeUifont : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI Label to change font")]
+    [HutongGames.PlayMaker.Tooltip("NGUI Label to change font")]
     public FsmOwnerDefault NguiLabel;
 
     [RequiredField]
-    [Tooltip("The new font to use")]
+    [HutongGames.PlayMaker.Tooltip("The new font to use")]
     public FsmGameObject NewFont;
 
     public override void Reset()

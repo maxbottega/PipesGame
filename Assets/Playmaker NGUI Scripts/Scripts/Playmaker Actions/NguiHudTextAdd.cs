@@ -6,6 +6,7 @@
 
 
 using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -19,9 +20,9 @@ using HutongGames.PlayMaker;
 /// </summary>
 [ActionCategory("NGUI")]
 #if HudTextAvailable
-    [Tooltip("Adds text to an existing HUD Text object")]
+    [HutongGames.PlayMaker.Tooltip("Adds text to an existing HUD Text object")]
 #else
-    [Tooltip("HUD Text action is disabled. You must uncomment the define in NguiHudTextAdd.cs in order to use this action. I had to prevent the class from running for those people who do not have the HUD Text package. You can download the NGUI Hud Text package here: http://bit.ly/1d72um5")]
+    [HutongGames.PlayMaker.Tooltip("HUD Text action is disabled. You must uncomment the define in NguiHudTextAdd.cs in order to use this action. I had to prevent the class from running for those people who do not have the HUD Text package. You can download the NGUI Hud Text package here: http://bit.ly/1d72um5")]
 #endif
 public class NguiHudTextAdd : FsmStateAction
 {
@@ -29,19 +30,19 @@ public class NguiHudTextAdd : FsmStateAction
 #if HudTextAvailable
 
     [RequiredField]
-    [Tooltip("Object with the HUDText component attached")]
+    [HutongGames.PlayMaker.Tooltip("Object with the HUDText component attached")]
     public FsmOwnerDefault HudTextObject;
 
     [RequiredField]
-    [Tooltip("Color of the text")]
+    [HutongGames.PlayMaker.Tooltip("Color of the text")]
     public FsmColor TextColor;
 
     [RequiredField]
-    [Tooltip("How long the text should stay in place on the screen, before moving. Set to 0 to begin moving immediately")]
+    [HutongGames.PlayMaker.Tooltip("How long the text should stay in place on the screen, before moving. Set to 0 to begin moving immediately")]
     public FsmInt StayDuration;
 
     [RequiredField]
-    [Tooltip("The text to display")]
+    [HutongGames.PlayMaker.Tooltip("The text to display")]
     public FsmString HudString;
 
     public override void Reset()

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using HutongGames.PlayMaker;
 using UnityEngine;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -12,36 +13,36 @@ using UnityEngine;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Sends each object in the list to the GPU for pre-rendering")]
+[HutongGames.PlayMaker.Tooltip("Sends each object in the list to the GPU for pre-rendering")]
 public class NguiSceneLoaderObjList : FsmStateAction
 {
     #region Public_PlayMaker_Variables
     
     [RequiredField]
-    [Tooltip("The camera used to load the objects into the GPU")]
+    [HutongGames.PlayMaker.Tooltip("The camera used to load the objects into the GPU")]
     public FsmOwnerDefault SceneLoaderCamera;
 
     [RequiredField]
-    [Tooltip("The progressbar")]
+    [HutongGames.PlayMaker.Tooltip("The progressbar")]
     public FsmGameObject NguiProgressbar;
 
-    [Tooltip("The progressbar label")]
+    [HutongGames.PlayMaker.Tooltip("The progressbar label")]
     public FsmGameObject NguiProgressbarLabel;
 
     /// <summary>
     /// NOTE: I generally only set this for demo purposes, as it forces a delay between each object being loaded and slows down the scene loader.
     /// It's really only useful to force showing of the loading screen
     /// </summary>
-    [Tooltip("When set, introduces a delay between each object being loaded. Useful to force showing of the progressbar")]
+    [HutongGames.PlayMaker.Tooltip("When set, introduces a delay between each object being loaded. Useful to force showing of the progressbar")]
     public FsmFloat DelayBetweenObjectLoads;
 
     [CompoundArray("PreRenderList", "SceneObject", "ParseChildren")]
 
     [RequiredField]
-    [Tooltip("GameObject to pre-render to GPU")]
+    [HutongGames.PlayMaker.Tooltip("GameObject to pre-render to GPU")]
     public FsmGameObject[] SceneObjects;
 
-    [Tooltip("When checked, the camera will visit each child of the scene object.")]
+    [HutongGames.PlayMaker.Tooltip("When checked, the camera will visit each child of the scene object.")]
     public FsmBool[] ParseChildrens;
     
     // Public_PlayMaker_Variables
@@ -326,23 +327,20 @@ public class NguiSceneLoaderObjList : FsmStateAction
     private void SetProgressbarValue(float increment)
     {
         // check if we need to clear the progressbar
-        if (increment == 0)
+        if (increment <= 0)
         {
             // set value to zero
-            //SldProgressbar.sliderValue = 0;
             SldProgressbar.value = 0;
         }
 
         // add to the value
         else
         {
-            //SldProgressbar.sliderValue += increment;
             SldProgressbar.value += increment;
         }
 
         // update the label, if one is assigned
         if (LblProgressText != null)
-            //LblProgressText.text = string.Format("{0:N2}%", SldProgressbar.sliderValue * 100);
             LblProgressText.text = string.Format("{0:N2}%", SldProgressbar.value * 100);
     }
 

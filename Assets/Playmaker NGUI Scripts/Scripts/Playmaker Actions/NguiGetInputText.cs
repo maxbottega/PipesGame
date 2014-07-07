@@ -1,4 +1,5 @@
 using HutongGames.PlayMaker;
+// using Tooltip = HutongGames.PlayMaker;
 
 /*
  * *************************************************************************************
@@ -8,19 +9,19 @@ using HutongGames.PlayMaker;
 */
 
 [ActionCategory("NGUI")]
-[Tooltip("Saves the text in an NGUI Label to a variable")]
+[HutongGames.PlayMaker.Tooltip("Saves the text in an NGUI Label to a variable")]
 public class NguiGetInputText : FsmStateAction
 {
     [RequiredField]
-    [Tooltip("NGUI Label to read")]
+    [HutongGames.PlayMaker.Tooltip("NGUI Label to read")]
     public FsmOwnerDefault NguiLabel;
 
     [RequiredField]
     [UIHint(UIHint.Variable)]
-    [Tooltip("Variable to store the label's text")]
+    [HutongGames.PlayMaker.Tooltip("Variable to store the label's text")]
     public FsmString storeValue;
 
-    [Tooltip("When true, runs on every frame")]
+    [HutongGames.PlayMaker.Tooltip("When true, runs on every frame")]
     public bool everyFrame;
 
     public override void Reset()
