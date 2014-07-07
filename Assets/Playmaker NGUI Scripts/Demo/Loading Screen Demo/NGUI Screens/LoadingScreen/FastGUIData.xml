@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psd width="1024" height="768">
+<layer type='SPRITE'> 
+        <name>Background</name>
+        <path></path>
+        <posX>512</posX>
+        <posY>384</posY>
+        <source>Background.png</source>
+        <layerID>3</layerID>
+</layer> 
+<layer type='PROGRESSBAR'> 
+        <name>pgsb_LoadProgress</name>
+        <path></path>
+        <posX>512.5</posX>
+        <posY>666.5</posY>
+        <layerID>9</layerID>
+        <states> 
+                <foreground>pgsb_LoadProgress_foreground.png</foreground>
+                <background>pgsb_LoadProgress_background.png</background>
+        </states>
+</layer> 
+<layer type='TEXT_LABEL'> 
+        <name>txt_Lucida_Message</name>
+        <path></path>
+        <posX>360</posX>
+        <posY>544</posY>
+        <fontName>Lucida_Message</fontName>
+        <fontSize>30</fontSize>
+        <fontColor>0;0;0</fontColor>
+        <contents>Game hints, tips, or other info can go here</contents>
+        <layerID>6</layerID>
+</layer>
+<layer type='TEXT_LABEL'> 
+        <name>txt_Lucida_PercentText</name>
+        <path></path>
+        <posX>501</posX>
+        <posY>666.5</posY>
+        <fontName>Lucida_PercentText</fontName>
+        <fontSize>30</fontSize>
+        <fontColor>0;0;0</fontColor>
+        <contents>100%</contents>
+        <layerID>17</layerID>
+</layer>
+</psd>
