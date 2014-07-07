@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<content type="wrongType" customAttribute="what?">Not me</content>	
+	<content type="usual" customAttribute="what?">Hello
+		<meta>
+			<quantity>5</quantity>
+		</meta>
+		<name>My Name</name>
+		
+	</content>
+</root>

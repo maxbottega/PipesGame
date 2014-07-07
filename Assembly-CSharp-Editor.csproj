@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{55C27521-CC79-E578-6C82-4C42B048FA87}</ProjectGuid>
+	<ProjectGuid>{3ACF8296-E83D-020F-FF32-41E3734ED4A7}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -84,6 +84,7 @@
      <Compile Include="Assets\NGUI\Scripts\Editor\UIAtlasMaker.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonColorEditor.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonEditor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIButtonMessageEditor.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UICameraEditor.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UICameraTool.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UICreateNewUIWizard.cs" />
@@ -91,8 +92,10 @@
      <Compile Include="Assets\NGUI\Scripts\Editor\UIDragObjectEditor.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIDrawCallInspector.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIDrawCallViewer.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIEventTriggerEditor.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIFontInspector.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIFontMaker.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIForwardEventsEditor.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIGridEditor.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIImageButtonInspector.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIInputEditor.cs" />
@@ -128,6 +131,21 @@
      <Compile Include="Assets\Photon Unity Networking\PlayMaker\Editor\PlayMakerPhotonEditorUtility.cs" />
      <Compile Include="Assets\Photon Unity Networking\PlayMaker\Editor\PlayMakerPhotonGameObjectProxyEditor.cs" />
      <Compile Include="Assets\Photon Unity Networking\PlayMaker\Editor\PlayMakerPhotonWizard.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\Editor\PlayMakerArrayListProxyObjectPropertyDrawer.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\ThirdParty\XmlMaker\Actions\Editor\HashTableGetXmlNodePropertiesEditor.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\__internal__\Editor\PlayMakerArrayListProxyInspector.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\__internal__\Editor\PlayMakerCollectionProxyInspector.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\__internal__\Editor\PlayMakerHashTableProxyInspector.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\Actions\Editor\XmlGetNodePropertiesEditor.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\Actions\Editor\XmlSelectNodesEditor.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\Actions\Editor\XmlSelectSingleNodeEditor.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\Editor\DataMakerXmlEditor.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\Editor\DataMakerXmlNodeListProxyEditor.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\Editor\DataMakerXmlNodeProxyEditor.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\Editor\DataMakerXmlProxyEditor.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\Editor\UI\DataMakerEditorGUILayoutUtils.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\_internal_\Editor\DataMakerActionEditorUtils.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\_internal_\Editor\DataMakerEditor.cs" />
      <Compile Include="Assets\PlayMaker NGUI\Scripts\Editor\NGuiEventsToPlaymakerFsmEventsInspector.cs" />
      <Compile Include="Assets\PlayMaker\Actions\Editor\LookAtActionEditor.cs" />
      <Compile Include="Assets\PlayMaker\Actions\Editor\MoveTowardsActionEditor.cs" />
@@ -165,6 +183,7 @@
      <Compile Include="Assets\iTween\PlayMaker\Editor\iTweenMoveToActionEditor.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Photon Unity Networking\PlayMaker\ReleaseNotes.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureAdd_Bumped.shader" />
      <None Include="Assets\Playmaker NGUI Scripts\Demo\Scrollbar Demo\Wooden\Arimo20.txt" />
@@ -176,7 +195,9 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\Plugins\Easy Save 2\readme.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\PlayMaker DataMaker\Xml\Examples\Sequencer\sequence.xml.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
      <None Include="Assets\Playmaker NGUI Scripts\Demo\Scrollbar Demo\Wooden\Arimo18.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
@@ -187,6 +208,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBloom.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureMult_Bumped.shader" />
+     <None Include="Assets\PlayMaker DataMaker\Xml\Examples\test\test.xml.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
@@ -202,12 +224,16 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Graphic Assets\Shaders\Glass_clean_Reflect_Mobile.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Graphic Assets\Textures\Shaders\Hologram.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\release_history.txt" />
+     <None Include="Assets\PlayMaker ArrayMaker\readme.txt" />
      <None Include="Assets\Playmaker NGUI Scripts\Demo\NGUI Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Graphic Assets\Shaders\Glass_clean_Reflect_Mobile.shader" />
      <None Include="Assets\Playmaker NGUI Scripts\README - Upgrading from Previous Versions.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\PlayMaker DataMaker\Xml\Examples\test\invalid.xml.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Lit.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Plain_Bumped.shader" />
@@ -226,6 +252,7 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionSelective.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\PlayMaker DataMaker\Xml\Examples\Books\books.xml.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Plain.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
@@ -249,6 +276,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
+     <None Include="Assets\Plugins\Easy Save 2\link.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
@@ -339,6 +367,12 @@
  <Reference Include="JMOAssets">
  <HintPath>Assets\JMO Assets\Editor\JMOAssets.dll</HintPath>
  </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>Assets\Photon Unity Networking\Editor\PhotonNetwork\Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.dll</HintPath>
+ </Reference>
  <Reference Include="PlayMaker">
  <HintPath>Assets\PlayMaker\PlayMaker.dll</HintPath>
  </Reference>
@@ -378,6 +412,21 @@
  <Reference Include="PlayMakerEditor.zh-TW.resources">
  <HintPath>Assets\PlayMaker\Editor\zh-TW\PlayMakerEditor.zh-TW.resources.dll</HintPath>
  </Reference>
+ <Reference Include="ES2Standalone">
+ <HintPath>Assets\Plugins\ES2Standalone.dll</HintPath>
+ </Reference>
+ <Reference Include="MoodkieSecurity">
+ <HintPath>Assets\Plugins\MoodkieSecurity.dll</HintPath>
+ </Reference>
+ <Reference Include="ES2">
+ <HintPath>Assets\Plugins\Easy Save 2\Libraries\ES2.dll</HintPath>
+ </Reference>
+ <Reference Include="ES2IO">
+ <HintPath>Assets\Plugins\Easy Save 2\Libraries\ES2IO.dll</HintPath>
+ </Reference>
+ <Reference Include="ES2Settings">
+ <HintPath>Assets\Plugins\Easy Save 2\Libraries\ES2Settings.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:\Program Files (x86)\Unity_432f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -399,11 +448,13 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{2A674FF9-A709-E5CB-BCA1-DCA63D5F9E4D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{7585B4A5-BC4B-9C90-B3DE-D0F2BA24FB81}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{6525A06D-EA6D-77A9-BA7C-325FDB2FBEF8}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{575668BE-9246-89F0-1AC3-F5AD1E02B8D2}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{BAFE3B2F-020D-070C-95BC-558FF4F5796C}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{8DEBD3FD-7AAA-342E-2337-853212547F9B}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
+      <Project>{8062BD6D-33C7-936A-2624-DAAD322EAAB7}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

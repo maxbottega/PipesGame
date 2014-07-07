@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{BAFE3B2F-020D-070C-95BC-558FF4F5796C}</ProjectGuid>
+	<ProjectGuid>{8DEBD3FD-7AAA-342E-2337-853212547F9B}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -72,6 +72,7 @@
      <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragResize.cs" />
      <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragScrollView.cs" />
      <Compile Include="Assets\NGUI\Scripts\Interaction\UIDraggableCamera.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIEventTrigger.cs" />
      <Compile Include="Assets\NGUI\Scripts\Interaction\UIForwardEvents.cs" />
      <Compile Include="Assets\NGUI\Scripts\Interaction\UIGrid.cs" />
      <Compile Include="Assets\NGUI\Scripts\Interaction\UIImageButton.cs" />
@@ -127,6 +128,7 @@
      <Compile Include="Assets\NGUI\Scripts\Tweening\TweenWidth.cs" />
      <Compile Include="Assets\NGUI\Scripts\Tweening\UITweener.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UI2DSprite.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UI2DSpriteAnimation.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIAnchor.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIAtlas.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UICamera.cs" />
@@ -230,6 +232,90 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TestBase.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TestDontDestroyOnLoad.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListAdd.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListAddRange.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListClear.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListConcat.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListContains.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListCopyTo.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListCount.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListFindGameObjectsByTag.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListGet.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListGetClosestGameObject.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListGetNext.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListGetPrevious.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListGetRandom.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListIndexOf.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListLastIndexOf.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListRemove.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListRemoveAt.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListRemoveRange.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListReverse.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListSet.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListShuffle.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListSort.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\CreateArrayList.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\DestroyArrayList.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\FindArrayList.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\CreateHashTable.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\DestroyHashTable.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\HashTableAdd.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\HashTableClear.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\HashTableConcat.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\HashTableContains.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\HashTableContainsKey.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\HashTableContainsValue.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\HashTableCount.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\HashTableGet.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\HashTableGetNext.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\HashTableKeys.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\HashTableRemove.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\HashTableSet.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Actions\HashTable\HashTableValues.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\ThirdParty\EasySave2\Actions\ArrayListEasyDownload.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\ThirdParty\EasySave2\Actions\ArrayListEasyLoad.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\ThirdParty\EasySave2\Actions\ArrayListEasySave.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\ThirdParty\EasySave2\Actions\ArrayListEasyUpload.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\ThirdParty\EasySave2\Actions\HashTableEasyDownload.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\ThirdParty\EasySave2\Actions\HashTableEasyLoad.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\ThirdParty\EasySave2\Actions\HashTableEasySave.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\ThirdParty\EasySave2\Actions\HashTableEasyUpload.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\ThirdParty\XmlMaker\Actions\HashTableGetXmlNodeProperties.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\Unity\Mesh\ArrayListGetVertexColors.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\Unity\Mesh\ArrayListGetVertexPositions.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\Unity\Mesh\ArrayListSetVertexColors.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\Unity\Mesh\ArrayListSetVertexPositions.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\Unity\Screen\ArrayListGetScreenResolutions.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\Unity\Screen\GetCurrentResolution.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\Unity\Screen\ScreenSetResolution.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\Addons\Unity\Text\SplitTextToArrayList.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\__internal__\ArrayListActions.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\__internal__\CollectionsActions.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\__internal__\HashTableActions.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\__internal__\PlayMakerArrayListProxy.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\__internal__\PlayMakerCollectionProxy.cs" />
+     <Compile Include="Assets\PlayMaker ArrayMaker\__internal__\PlayMakerHashTableProxy.cs" />
+     <Compile Include="Assets\PlayMaker Custom Actions\Convert\ConvertFormatedStringToFloat.cs" />
+     <Compile Include="Assets\PlayMaker Custom Actions\Convert\ConvertFormatedStringToInt.cs" />
+     <Compile Include="Assets\PlayMaker Custom Actions\Logic\ResetFsmVariables.cs" />
+     <Compile Include="Assets\PlayMaker Custom Actions\Resources\ResourcesLoad.cs" />
+     <Compile Include="Assets\PlayMaker Custom Actions\WriteToFile.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\Actions\XmlGetNodeProperties.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\Actions\XmlSaveInProxy.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\Actions\XmlSelectNodes.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\Actions\XmlSelectSingleNode.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\Actions\__internal__\FsmXmlSource.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\DataMakerXmlActions.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\DataMakerXmlNodeActions.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\DataMakerXmlNodeListActions.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\DataMakerXmlNodeListProxy.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\DataMakerXmlNodeProxy.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\DataMakerXmlProxy.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\DataMakerXmlUtils.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\Objects\FsmXmlNode.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\Xml\__internal__\Objects\FsmXmlNodeList.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\_internal_\DataMakerCore.cs" />
+     <Compile Include="Assets\PlayMaker DataMaker\_internal_\DataMakerProxyBase.cs" />
      <Compile Include="Assets\PlayMaker NGUI\Actions\Buttons\NguiPlayTween.cs" />
      <Compile Include="Assets\PlayMaker NGUI\Actions\Text\NguiTextEncodeColor.cs" />
      <Compile Include="Assets\PlayMaker NGUI\Actions\Text\NguiTextParseColor.cs" />
@@ -241,6 +327,14 @@
      <Compile Include="Assets\PlayMaker NGUI\Scripts\UIRootAdjustment.cs" />
      <Compile Include="Assets\PlayMaker NGUI\Widgets\Actions\NguiGetJoystickInput.cs" />
      <Compile Include="Assets\PlayMaker NGUI\Widgets\UIJoystick.cs" />
+     <Compile Include="Assets\PlayMaker Shuriken\Actions\GetNextCollisionEvent.cs" />
+     <Compile Include="Assets\PlayMaker Shuriken\Scripts\playMakerShurikenProxy.cs" />
+     <Compile Include="Assets\PlayMaker Utils\Event Properties\Actions\GetEventProperties.cs" />
+     <Compile Include="Assets\PlayMaker Utils\Event Properties\Actions\SetEventProperties.cs" />
+     <Compile Include="Assets\PlayMaker Utils\PlayMakerUtils.cs" />
+     <Compile Include="Assets\PlayMaker Utils\PlayMakerUtils_Events.cs" />
+     <Compile Include="Assets\PlayMaker Utils\PlayMakerUtils_FsmVar.cs" />
+     <Compile Include="Assets\PlayMaker Utils\PlayMakerUtils_Serialization.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ActivateGameObject.cs" />
      <Compile Include="Assets\PlayMaker\Actions\AddAnimationClip.cs" />
      <Compile Include="Assets\PlayMaker\Actions\AddComponent.cs" />
@@ -335,6 +429,7 @@
      <Compile Include="Assets\PlayMaker\Actions\DrawFullscreenColor.cs" />
      <Compile Include="Assets\PlayMaker\Actions\DrawStateLabel.cs" />
      <Compile Include="Assets\PlayMaker\Actions\DrawTexture.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\ES2PlayMakerAction.cs" />
      <Compile Include="Assets\PlayMaker\Actions\EnableAnimation.cs" />
      <Compile Include="Assets\PlayMaker\Actions\EnableBehaviour.cs" />
      <Compile Include="Assets\PlayMaker\Actions\EnableFSM.cs" />
@@ -848,11 +943,13 @@
      <Compile Include="Assets\TrnthScript\RadioBase.cs" />
      <Compile Include="Assets\TrnthScript\Utility.cs" />
      <Compile Include="Assets\TrnthScript\spinRotate.cs" />
+     <Compile Include="Assets\VirtualKeyboard\Key.cs" />
      <Compile Include="Assets\_PipeGame\script\CanJoinRoom.cs" />
      <Compile Include="Assets\_PipeGame\script\Circuit.cs" />
      <Compile Include="Assets\_PipeGame\script\CircuitSet.cs" />
      <Compile Include="Assets\_PipeGame\script\Container.cs" />
      <Compile Include="Assets\_PipeGame\script\Element.cs" />
+     <Compile Include="Assets\_PipeGame\script\Test.cs" />
      <Compile Include="Assets\iTween\iTween.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
@@ -871,7 +968,9 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\Plugins\Easy Save 2\readme.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\PlayMaker DataMaker\Xml\Examples\Sequencer\sequence.xml.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
      <None Include="Assets\Playmaker NGUI Scripts\Demo\Scrollbar Demo\Wooden\Arimo18.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
@@ -882,6 +981,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBloom.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureMult_Bumped.shader" />
+     <None Include="Assets\PlayMaker DataMaker\Xml\Examples\test\test.xml.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
@@ -897,12 +997,16 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Graphic Assets\Shaders\Glass_clean_Reflect_Mobile.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Graphic Assets\Textures\Shaders\Hologram.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\release_history.txt" />
+     <None Include="Assets\PlayMaker ArrayMaker\readme.txt" />
      <None Include="Assets\Playmaker NGUI Scripts\Demo\NGUI Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Graphic Assets\Shaders\Glass_clean_Reflect_Mobile.shader" />
      <None Include="Assets\Playmaker NGUI Scripts\README - Upgrading from Previous Versions.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\PlayMaker DataMaker\Xml\Examples\test\invalid.xml.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Lit.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Plain_Bumped.shader" />
@@ -921,6 +1025,7 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionSelective.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\PlayMaker DataMaker\Xml\Examples\Books\books.xml.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Plain.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
@@ -944,6 +1049,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
+     <None Include="Assets\Plugins\Easy Save 2\link.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
@@ -976,15 +1082,33 @@
  <HintPath>Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="Assets\PlayMaker\PlayMaker">
+ <Reference Include="Photon3Unity3D">
+ <HintPath>Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.dll</HintPath>
+ </Reference>
  <Reference Include="PlayMaker">
  <HintPath>Assets\PlayMaker\PlayMaker.dll</HintPath>
+ </Reference>
+ <Reference Include="ES2Standalone">
+ <HintPath>Assets\Plugins\ES2Standalone.dll</HintPath>
+ </Reference>
+ <Reference Include="MoodkieSecurity">
+ <HintPath>Assets\Plugins\MoodkieSecurity.dll</HintPath>
+ </Reference>
+ <Reference Include="ES2">
+ <HintPath>Assets\Plugins\Easy Save 2\Libraries\ES2.dll</HintPath>
+ </Reference>
+ <Reference Include="ES2IO">
+ <HintPath>Assets\Plugins\Easy Save 2\Libraries\ES2IO.dll</HintPath>
+ </Reference>
+ <Reference Include="ES2Settings">
+ <HintPath>Assets\Plugins\Easy Save 2\Libraries\ES2Settings.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{2A674FF9-A709-E5CB-BCA1-DCA63D5F9E4D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{7585B4A5-BC4B-9C90-B3DE-D0F2BA24FB81}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{6525A06D-EA6D-77A9-BA7C-325FDB2FBEF8}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{575668BE-9246-89F0-1AC3-F5AD1E02B8D2}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
