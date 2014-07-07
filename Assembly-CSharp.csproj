@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{8DEBD3FD-7AAA-342E-2337-853212547F9B}</ProjectGuid>
+	<ProjectGuid>{BAFE3B2F-020D-070C-95BC-558FF4F5796C}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -19,8 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
-	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_2;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -44,10 +43,6 @@
 	</Reference>
 	<Reference Include="UnityEditor">
 	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
-	  <HintPath>C:/Program Files (x86)/Unity_432f1/Editor/Data/Managed/UnityEngine.dll</HintPath>
-	</Reference>
-	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity_432f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -155,83 +150,6 @@
      <Compile Include="Assets\NGUI_Skin_volume_1\Scripts\ext\GetThemeColor.cs" />
      <Compile Include="Assets\NGUI_Skin_volume_1\Scripts\ext\ext_Switch.cs" />
      <Compile Include="Assets\NGUI_Skin_volume_1\Scripts\ext\ext_SwitchButtonEvent.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonGUILayoutToolBarWithPlayers.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonGUILayoutToolBarWithRooms.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkConnectManually.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkConnectUsingSettings.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkCreateRoom.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkCreateRoomAdvanced.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkDeleteRoomCustomProperty.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkDestroy.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkDestroyPlayer.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkDisconnect.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkGetConnectionState.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkGetIsConnected.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkGetLastDisconnectCause.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkGetLastMessagePlayerProperties.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkGetNextPlayerProperties.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkGetNextRoomProperties.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkGetPlayersCount.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkGetPlayersInRoomsCount.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkGetPlayersOnMasterCount.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkGetRoomProperties.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkGetRoomsCount.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkInstantiate.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkJoinRandomRoom.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkJoinRoom.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkLeaveRoom.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkSetAuthenticationValues.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkSetAutoJoinLobby.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkSetIsMessageQueueRunning.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkSetPlayerCustomProperty.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkSetPlayerName.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkSetRoomCustomProperty.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonViewDeleteOwnerCustomProperty.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonViewGetID.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonViewGetIsMine.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonViewGetIsSceneView.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonViewGetOwnerProperties.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonViewRpcBroadcastFsmEvent.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonViewRpcBroadcastFsmEventToPlayer.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Scripts\PlayMakerPhotonGameObjectProxy.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Scripts\PlayMakerPhotonProxy.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Scripts\PlayMakerPhotonSynchProxy.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Scripts\PlayMakerPhotonView.cs" />
-     <Compile Include="Assets\Photon Unity Networking\PlayMaker\Scripts\UnitySerializer.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\CustomTypes.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Enums.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Extension\PhotonView.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Extensions.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\FriendInfo.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\LoadbalancingPeer.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonClasses.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetSimSettingsGui.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonPlayer.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonStatsGui.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PingCloudRegions.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\RPC.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Room.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\RoomInfo.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\RpcIndexComponent.cs" />
-     <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\ServerSettings.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\ConnectAndJoinRandom.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\InRoomChat.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\InputToEvent.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\ManualPhotonViewAllocator.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\MoveByKeys.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnAwakeUsePhotonView.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnClickDestroy.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnClickInstantiate.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnClickLoadSomething.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PointedAtGameObjectInfo.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\ServerTime.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SmoothSyncMovement.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TestBase.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TestDontDestroyOnLoad.cs" />
-     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
      <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListAdd.cs" />
      <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListAddRange.cs" />
      <Compile Include="Assets\PlayMaker ArrayMaker\Actions\ArrayList\ArrayListClear.cs" />
@@ -953,10 +871,6 @@
      <Compile Include="Assets\iTween\iTween.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
-     <None Include="Assets\Photon Unity Networking\PlayMaker\ReleaseNotes.txt" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
-     <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureAdd_Bumped.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureAdd_Bumped.shader" />
      <None Include="Assets\Playmaker NGUI Scripts\Demo\Scrollbar Demo\Wooden\Arimo20.txt" />
@@ -990,22 +904,9 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
-     <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.xml" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
-     <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\release_history.txt" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
-     <None Include="Assets\Graphic Assets\Shaders\Glass_clean_Reflect_Mobile.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Graphic Assets\Textures\Shaders\Hologram.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
-     <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\release_history.txt" />
-     <None Include="Assets\PlayMaker ArrayMaker\readme.txt" />
-     <None Include="Assets\Playmaker NGUI Scripts\Demo\NGUI Atlases\Refractive\Refractive Font - Normal.txt" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
-     <None Include="Assets\Graphic Assets\Shaders\Glass_clean_Reflect_Mobile.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
-     <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\release_history.txt" />
      <None Include="Assets\PlayMaker ArrayMaker\readme.txt" />
      <None Include="Assets\Playmaker NGUI Scripts\Demo\NGUI Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
@@ -1058,7 +959,6 @@
      <None Include="Assets\Plugins\Easy Save 2\link.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
-     <None Include="Assets\Photon Unity Networking\readme.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
@@ -1079,42 +979,34 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\PlayMaker\Versions\readme.txt" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Textures\BenSimonds\_Textures Readme.txt" />
-     <None Include="Assets\Photon Unity Networking\changelog.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\JMO Assets\MatCap Shaders\_MatCap Shaders Readme.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
- <Reference Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D">
- <HintPath>Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.dll</HintPath>
- </Reference>
  <Reference Include="Assets\PlayMaker\PlayMaker">
- <Reference Include="Photon3Unity3D">
- <HintPath>Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.dll</HintPath>
- </Reference>
- <Reference Include="PlayMaker">
  <HintPath>Assets\PlayMaker\PlayMaker.dll</HintPath>
  </Reference>
- <Reference Include="ES2Standalone">
+ <Reference Include="Assets\Plugins\ES2Standalone">
  <HintPath>Assets\Plugins\ES2Standalone.dll</HintPath>
  </Reference>
- <Reference Include="MoodkieSecurity">
+ <Reference Include="Assets\Plugins\MoodkieSecurity">
  <HintPath>Assets\Plugins\MoodkieSecurity.dll</HintPath>
  </Reference>
- <Reference Include="ES2">
+ <Reference Include="Assets\Plugins\Easy Save 2\Libraries\ES2">
  <HintPath>Assets\Plugins\Easy Save 2\Libraries\ES2.dll</HintPath>
  </Reference>
- <Reference Include="ES2IO">
+ <Reference Include="Assets\Plugins\Easy Save 2\Libraries\ES2IO">
  <HintPath>Assets\Plugins\Easy Save 2\Libraries\ES2IO.dll</HintPath>
  </Reference>
- <Reference Include="ES2Settings">
+ <Reference Include="Assets\Plugins\Easy Save 2\Libraries\ES2Settings">
  <HintPath>Assets\Plugins\Easy Save 2\Libraries\ES2Settings.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{7585B4A5-BC4B-9C90-B3DE-D0F2BA24FB81}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{2A674FF9-A709-E5CB-BCA1-DCA63D5F9E4D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{575668BE-9246-89F0-1AC3-F5AD1E02B8D2}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{6525A06D-EA6D-77A9-BA7C-325FDB2FBEF8}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
