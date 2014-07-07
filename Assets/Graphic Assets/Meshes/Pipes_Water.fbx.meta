@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: f66d14914e7cb0a43a62d3d0813e7525
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: Camera
     100002: Directional Light
@@ -9,18 +9,23 @@ ModelImporter:
     100006: Texture Group
     100008: Water0
     100010: Water1
+    100012: arrow
     400000: Camera
     400002: Directional Light
     400004: //RootNode
     400006: Texture Group
     400008: Water0
     400010: Water1
+    400012: arrow
     2300000: Water0
     2300002: Water1
+    2300004: arrow
     3300000: Water0
     3300002: Water1
+    3300004: arrow
     4300000: Water1
     4300002: Water0
+    4300004: arrow
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -73,5 +78,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  additionalBone: 0
   userData: 

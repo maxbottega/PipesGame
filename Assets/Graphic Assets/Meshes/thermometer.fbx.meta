@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: b8c1f2f198caa034d8b2cb0a19076b1a
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: Camera
     100002: Directional Light
@@ -78,5 +78,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  additionalBone: 0
   userData: 

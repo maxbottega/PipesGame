@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 25778bca6c6d39d45a712d3377d92210
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: Camera
     100002: Directional Light
@@ -12,6 +12,7 @@ ModelImporter:
     100012: Dirt4
     100014: //RootNode
     100016: Texture Group
+    100018: Dirt5
     400000: Camera
     400002: Directional Light
     400004: Dirt0
@@ -21,21 +22,25 @@ ModelImporter:
     400012: Dirt4
     400014: //RootNode
     400016: Texture Group
+    400018: Dirt5
     2300000: Dirt0
     2300002: Dirt1
     2300004: Dirt2
     2300006: Dirt3
     2300008: Dirt4
+    2300010: Dirt5
     3300000: Dirt0
     3300002: Dirt1
     3300004: Dirt2
     3300006: Dirt3
     3300008: Dirt4
+    3300010: Dirt5
     4300000: Dirt0
     4300002: Dirt3
     4300004: Dirt4
     4300006: Dirt1
     4300008: Dirt2
+    4300010: Dirt5
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -88,5 +93,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  additionalBone: 0
   userData: 

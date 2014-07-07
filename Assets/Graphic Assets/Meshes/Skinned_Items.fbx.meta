@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: c3cfd26e62f068742891c3e8581a2ce6
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: A_Pump
     100002: B_AirExtractor
@@ -98,5 +98,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  additionalBone: 0
   userData: 

@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 97221000f11b6144690c6647aff83ef9
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: Camera
     100002: Dial
@@ -11,6 +11,7 @@ ModelImporter:
     100010: //RootNode
     100012: Texture Group
     100014: glow
+    100016: TextureLocators
     400000: Camera
     400002: Dial
     400004: Directional Light
@@ -19,6 +20,7 @@ ModelImporter:
     400010: //RootNode
     400012: Texture Group
     400014: glow
+    400016: TextureLocators
     2300000: Dial
     2300002: Glass
     2300004: Manomater
@@ -83,5 +85,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  additionalBone: 0
   userData: 
