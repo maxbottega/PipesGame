@@ -125,6 +125,8 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Graphic Assets\Shaders\Glass_clean_Reflect_Mobile.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\release_history.txt" />
+     <None Include="Assets\PlayMaker ArrayMaker\readme.txt" />
      <None Include="Assets\Playmaker NGUI Scripts\Demo\NGUI Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Graphic Assets\Shaders\Glass_clean_Reflect_Mobile.shader" />

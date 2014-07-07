@@ -36,9 +36,13 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
 <<<<<<< HEAD
+<<<<<<< HEAD
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
 =======
 >>>>>>> new graphics
+=======
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+>>>>>>> re pull
   spritePixelsToUnits: 100
   alphaIsTransparency: 0
   textureType: -1

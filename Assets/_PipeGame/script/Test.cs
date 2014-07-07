@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 using UnityEngine;
+=======
+﻿using UnityEngine;
+>>>>>>> re pull
 using System.Collections;
 
 public class Test : MonoBehaviour {
 
 	// Use this for initialization
+<<<<<<< HEAD
 	void Start () {		
 	}	
 	// Update is called once per frame
@@ -15,3 +20,14 @@ public class Test : MonoBehaviour {
 	}
 }
  // hheeeeee
+=======
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+}
+>>>>>>> re pull

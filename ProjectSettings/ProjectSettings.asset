@@ -15,11 +15,15 @@ PlayerSettings:
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> re pull
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
   defaultScreenWidthWeb: 640
   defaultScreenHeightWeb: 480
   m_RenderingPath: 1
+<<<<<<< HEAD
 =======
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -27,6 +31,8 @@ PlayerSettings:
   defaultScreenHeightWeb: 1080
   m_RenderingPath: 2
 >>>>>>> new graphics
+=======
+>>>>>>> re pull
   m_MobileRenderingPath: 1
   m_ActiveColorSpace: 0
   m_MTRendering: 1
@@ -73,6 +79,8 @@ PlayerSettings:
     16:9: 1
     Others: 0
   iPhoneBundleIdentifier: com.Company.ProductName
+  metroEnableIndependentInputSource: 0
+  metroEnableLowLatencyPresentationAPI: 0
   productGUID: b8c4d65ac30323d40a17ecd42cdc50a0
   iPhoneBundleVersion: 1.0
   AndroidBundleVersionCode: 1
@@ -201,6 +209,7 @@ PlayerSettings:
   metroSplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   metroSplashScreenUseBackgroundColor: 0
   metroCapabilities: {}
+  metroUnprocessedPlugins: []
   metroCompilationOverrides: 1
   blackberryDeviceAddress: 
   blackberryDevicePassword: 
