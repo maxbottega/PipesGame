@@ -4,7 +4,9 @@ using TRNTH;
 namespace PipeGame{
 [RequireComponent (typeof (TRNTH.Control))]
 public class Circuit : TRNTH.MonoBehaviour {
+	public enum Mode{drag,tap}
 	[HideInInspector]public bool refresh=false;
+	public Mode _mode;
 	public bool isAllWork=false;
 	public float snapRadius=0.3f;
 	public float timePass=0;
@@ -124,57 +126,65 @@ public class Circuit : TRNTH.MonoBehaviour {
 			Debug.LogWarning("No Fsm Target assigned");
 		}
 	}
+	void piciItem(Element e){
+		if(e.container){
+			e.container.element=null;
+			e.container.collider.enabled=true;
+			e.container.gameObject.SetActive(true);
+		}
+		e.collider.enabled=false;
+		element=e;
+		toggleEleCollider(false);
+	}
+	void putItem(){
+		element.pos=element.container.pos;
+		element.container.element=element;
+		element.container.collider.enabled=false;
+		element.container.gameObject.SetActive(false);
+		element.collider.enabled=true;
+		element.status="put";
+		checkElementStatus(element);
+		toggleEleCollider(true);
+		element=null;
+	}
+	void snapItemMouse(){
+		element.pos=control.hit.point;
+		// Debug.Log(control.hit.point.x+"");
+		element.status="air";
+		var cols=Physics.OverlapSphere(element.pos,snapRadius,~0);
+		var arr=U.filter<Container>(cols);
+		if(arr.Length>0){
+			Container c=arr[0];
+			foreach(var e in arr){
+				if(element.dis(e)<element.dis(c)
+					&&c.element==null)c=e;
+			}
+			element.container=c;
+			element.pos=c.pos;
+			element.tra.eulerAngles=element.eulerAngles+c.tra.eulerAngles;
+		}
+	}
 	void Update(){
-		// time record 
 		timePass=(Time.realtimeSinceStartup-timeStart);
 		if(timeLabel)timeLabel.text=Mathf.Floor(timePass)+"";
-		// main `Element`s drag and drop
 		if(!isLocked){
-			if(control.isHover){
-				var e=control.hit.collider.GetComponent<Element>();
-				if(control.isDown&&e){
-					if(e.container){
-						e.container.element=null;
-						e.container.collider.enabled=true;
-						e.container.gameObject.SetActive(true);
-					}
-					e.collider.enabled=false;
-					element=e;
-					toggleEleCollider(false);
-				}
-			}
+			var isHover=control.isHover;			
 			if(element){
-				// control.hover(~layerElement.value);
-				if(control.isHold){
-					element.pos=control.hit.point;
-					element.status="air";
-					var cols=Physics.OverlapSphere(element.pos,snapRadius,~0);
-					var arr=U.filter<Container>(cols);
-					// arr=filter(arr);
-					if(arr.Length>0){
-						Container c=arr[0];
-						foreach(var e in arr){
-							if(element.dis(e)<element.dis(c)
-								&&c.element==null)c=e;
-						}
-						element.container=c;
-						element.pos=c.pos;
-						element.tra.eulerAngles=element.eulerAngles+c.tra.eulerAngles;
-					}
-					//end
+				switch(_mode){
+				case Mode.tap: snapItemMouse(); break;
+				case Mode.drag: if(control.isHold)snapItemMouse(); break;
 				}
-				if(control.isUp&&element.container){
-					element.pos=element.container.pos;
-					element.container.element=element;
-					element.container.collider.enabled=false;
-					element.container.gameObject.SetActive(false);
-					element.collider.enabled=true;
-					element.status="put";
-					checkElementStatus(element);
-					toggleEleCollider(true);
-					element=null;
+				if(control.isUp&&element.container)putItem();
+			}else if(isHover){
+				var e=control.hit.collider.GetComponent<Element>();
+				if(e){
+					switch(_mode){
+					case Mode.tap:if(control.isUp)piciItem(e);break;
+					case Mode.drag:if(control.isDown)piciItem(e);break;
+					}					
 				}
 			}
+			
 		}
 	}
 	void OnDestroy(){
